@@ -335,7 +335,7 @@ Tablet Styles: 481px and greater
 */
 @media only screen and (min-width: 481px) {
 	body {
-		border: solid 10px green;
+		/* border: solid 10px green; */
 	}
 
 	.flex-container-body-01-sectionTitle {

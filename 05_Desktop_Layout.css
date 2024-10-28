@@ -23,7 +23,7 @@ Desktop Styles: 769px and greater
 
 		min-width: 900px;
 		max-width: 1500px;
-		border: solid 10px blue;
+		/* border: solid 10px blue; */
 	}
 
 	html {
