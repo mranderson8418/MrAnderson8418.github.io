@@ -305,6 +305,66 @@ Desktop Styles: 769px and greater
 	div.flexContainerBody-BarSoap-Article h2 {
 		font-size: 0.5rem;
 	}
+	div.flexContainerBody-BarSoap-Article h2 {
+		font-size: 1rem;
+	}
+
+	/* Liquid Soap */
+
+	section.flexContainerBody-LiquidSoap {
+		display: flex;
+		flex-direction: column;
+		flex-wrap: wrap;
+		align-items: center;
+		justify-content: center;
+
+		padding: 0px;
+		margin: 0px;
+		flex-grow: 0;
+		line-height: normal;
+	}
+
+	section.flexContainerBody-LiquidSoap article {
+		display: flex;
+		justify-content: center;
+		text-align: center;
+		padding: 10px;
+		margin: 0px;
+		flex-grow: 0;
+	}
+
+	section.flexContainerBody-LiquidSoap article {
+		display: block;
+		text-align: center;
+		padding: 10px;
+		margin-top: 15px;
+		margin: 0px;
+		flex-grow: 0;
+		min-width: 100%;
+		height: auto;
+		/* border: solid 10px yellow; */
+		position: relative;
+		margin: auto;
+		padding: auto;
+	}
+
+	section.flexContainerBody-LiquidSoap article div a img {
+		/* display: block; */
+
+		text-align: center;
+		padding: 10px;
+		margin: auto;
+		flex-grow: 0;
+		max-width: 50%;
+		height: auto;
+		/* border: solid 10px yellow; */
+	}
+
+	section.flexContainerBody-LiquidSoap article div h2 {
+		/* display: block; */
+
+		font-size: 5rem;
+	}
 
 	section.flex-container-body-02 div.flex-container-body-02-title > p {
 		display: inline-block;
@@ -514,6 +574,22 @@ Desktop Styles: 769px and greater
 	}
 
 	section.flex-container-body-01 > div.slogan h2 {
+		text-align: center;
+		font-family: TwoShotsCleanFull;
+		text-shadow: 5px 5px 10px #201f1f;
+		font-size: 7rem;
+		-webkit-text-stroke-width: 0.5px;
+		-webkit-text-stroke-color: white;
+		text-shadow: 8px 8px 20px black;
+		font-weight: normal;
+		color: #b43b07;
+		line-height: normal;
+		margin: 0px;
+		padding: 0px;
+		min-width: 100%;
+	}
+
+	section.flex-container-body-01 > div h2 {
 		text-align: center;
 		font-family: TwoShotsCleanFull;
 		text-shadow: 5px 5px 10px #201f1f;
