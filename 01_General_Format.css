@@ -42,6 +42,10 @@ ul.horizontal-mainmenu-dropdown-dropdown-contents[href="#"] {
 	width: 100%;
 }
 
+section.flex-container-body-02 > div > h1 {
+	letter-spacing: 5px; /* Adjust the value as needed */
+}
+
 /* Background Styles */
 
 html {

@@ -383,6 +383,8 @@ Desktop Styles: 769px and greater
 	}
 
 	section.flex-container-body-02 > div > h1 {
+		letter-spacing: 5px; /* Adjust the value as needed */
+
 		text-align: center;
 		font-family: TwoShotsCleanFull;
 		text-shadow: 5px 5px 10px #201f1f;
