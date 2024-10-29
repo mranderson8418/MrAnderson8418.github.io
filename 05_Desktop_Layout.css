@@ -1,5 +1,10 @@
 @charset "utf-8";
 
+* {
+	padding: 0px;
+	margin: 0px;
+}
+
 /* =================================
 Desktop Styles: 769px and greater
 =================================
@@ -164,12 +169,43 @@ Desktop Styles: 769px and greater
 	ul.horizontal-mainmenu-dropdown-dropdown-contents:hover,
 	ul:hover {
 		display: block;
+		/* position: relative; */
+		color: blue;
+		border: none;
+		width: 100%;
+		min-height: 100%;
+		padding: 0px;
+		margin: 0px;
+	}
+
+	/* 
+	ul:hover {
+		display: block;
+		position: relative;
+		color: blue;
+		border: none;
+		width: 100%;
+		min-height: 100%;
+	} */
+
+	/*
+	ul.horizontal-mainmenu-dropdown-dropdown-contents {
+		display: block;
 		position: relative;
 		color: blue;
 		border: none;
 		width: 100%;
 		min-height: 100%;
 	}
+
+	a.horizontal-mainmenu-dropdown {
+		display: block;
+		position: relative;
+		color: blue;
+		border: none;
+		width: 100%;
+		min-height: 100%;
+	} */
 
 	a.horizontal-mainmenu-dropdown a:link {
 		background-color: rgb(73, 58, 49, 0.5);
@@ -195,6 +231,14 @@ Desktop Styles: 769px and greater
 
 		min-height: 100%;
 		z-index: 2;
+	}
+
+	nav.horizontal a:hover {
+		/* outline: solid 5px yellow; */
+		color: red;
+
+		padding: 0px;
+		margin: 0px;
 	}
 
 	ul.horizontal-mainmenu li {
