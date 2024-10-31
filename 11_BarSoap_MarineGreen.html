@@ -24,10 +24,6 @@
 				padding: 0;
 			}
 
-			body {
-				background: #ecf4fb;
-			}
-
 			.img-gallery {
 				width: 80%;
 				margin: 100px auto 50px;
@@ -36,25 +32,121 @@
 				grid-gap: 30px;
 			}
 
+			.full-img {
+				width: 100%;
+				height: 100vh;
+				background-color: rgba(0, 0, 0, 0, 0.9);
+				position: fixed;
+
+				top: 0;
+				left: 0;
+				display: none;
+				align-items: center;
+				justify-content: center;
+			}
+
 			.img-gallery img {
 				width: 100%;
 				cursor: pointer;
+				border-radius: 0.5rem;
+			}
+
+			.full-img img {
+				width: 90%;
+				max-width: 1000px;
+				border-radius: 0.5rem;
+			}
+
+			.full-img span {
+				position: absolute;
+				top: 5%;
+				right: 5%;
+				font-size: 30px;
+				color: #fff;
 			}
 
 			.img-gallery img:hover {
-				transform: scale(0.8) rotate(-15deg);
-				border-radius: 20px;
-				box-shadow: 0 32px 75px rgba(68, 77, 136, 0.2);
+				/* transform: scale(0.8) rotate(-15deg); */
+
+				box-shadow: 10px 10px 10px rgba(245, 245, 245, 0.5);
+			}
+
+			div#fullImgBox.full-img {
+				background-color: rgba(0, 0, 0, 0.9);
+				/* background-color: black; */
+				z-index: 2;
 			}
 		</style>
 	</head>
 
 	<body>
-		<div class="full-img"></div>
-		<div class="img-gallery"><img src="SOAP_PICS\MARINE_GREEN_JPG\MARINE_GREEN_new_1.jpeg" alt="Sea Green Soap" /></div>
-		<div class="img-gallery"><img src="SOAP_PICS\MARINE_GREEN_JPG\MARINE_GREEN_new_2.jpeg" alt="Sea Green Soap" /></div>
-		<div class="img-gallery"><img src="SOAP_PICS\MARINE_GREEN_JPG\MARINE_GREEN_new_3.jpeg" alt="Sea Green Soap" /></div>
-		<div class="img-gallery"><img src="SOAP_PICS\MARINE_GREEN_JPG\MARINE_GREEN_new_4.jpeg" alt="Sea Green Soap" /></div>
-		<div class="img-gallery"><img src="SOAP_PICS\MARINE_GREEN_JPG\MARINE_GREEN_new_5.jpeg" alt="Sea Green Soap" /></div>
+		<header class="buttons">
+			<a id="banner1" href="index.html"><img id="banner" src="SOAP_PICS\BANNERS_JPG\BANNERS_12.jpeg" alt="Scrublands Apothecary" /></a>
+
+			<nav class="horizontal">
+				<ul class="horizontal-mainmenu">
+					<li class="bannerImages">
+						<a href="index.html" class="horizontal-mainmenu-dropdown">Home</a>
+					</li>
+
+					<li class="bannerImages">
+						<a href="02_ProductList.html" class="horizontal-mainmenu-dropdown">Product List</a>
+
+						<ul class="horizontal-mainmenu-dropdown-dropdown-contents">
+							<li class="bannerImages"><a href="03_BarSoap.html">Bar Soap</a></li>
+
+							<li class="bannerImages"><a href="04_LiquidSoap.html">Liquid Soap</a></li>
+							<li class="bannerImages"><a href="05_DogShampoo.html">Dog Shampoo</a></li>
+						</ul>
+					</li>
+
+					<li class="bannerImages"><a href="06_FormPage.html" class="horizontal-mainmenu-dropdown">Forms Page</a></li>
+
+					<li class="bannerImages"><a href="10_AboutUs.html" class="horizontal-mainmenu-dropdown">About Us </a></li>
+
+					<li class="bannerImages"><a href="09_ContactUs.html" class="horizontal-mainmenu-dropdown">Contact Us </a></li>
+				</ul>
+			</nav>
+		</header>
+
+		<div class="full-img" id="fullImgBox">
+			<img src="Picture" id="fullImg" alt="marine green 01" />
+			<span onclick="closeFullImg()">X</span>
+		</div>
+
+		<div class="img-gallery">
+			<img src="SOAP_PICS\MARINE_GREEN_JPG\MARINE_GREEN_new_23.jpeg" onclick="openFullImg(this.src)" />
+
+			<img src="SOAP_PICS\MARINE_GREEN_JPG\MARINE_GREEN_new_3.jpeg" onclick="openFullImg(this.src)" />
+
+			<img src="SOAP_PICS\MARINE_GREEN_JPG\MARINE_GREEN_new_8.jpeg" onclick="openFullImg(this.src)" />
+
+			<img src="SOAP_PICS\MARINE_GREEN_JPG\MARINE_GREEN_new_10.jpeg" onclick="openFullImg(this.src)" />
+
+			<img src="SOAP_PICS\MARINE_GREEN_JPG\MARINE_GREEN_new_41.jpeg" onclick="openFullImg(this.src)" />
+		</div>
+
+		<script>
+			var fullImgBox = document.getElementById("fullImgBox");
+
+			var fullImg = document.getElementById("fullImg");
+
+			function openFullImg(pic) {
+				fullImgBox.style.display = "flex";
+				fullImg.src = pic;
+			}
+
+			function closeFullImg() {
+				fullImgBox.style.display = "none";
+			}
+
+			document.addEventListener("keydown", (event) => {
+				if (event.key === "Escape") {
+					// Do something when the Escape key is pressed
+					closeFullImg();
+					console.log("Escape key pressed");
+				}
+			});
+		</script>
 	</body>
 </html>
