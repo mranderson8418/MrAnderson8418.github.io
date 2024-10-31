@@ -15,78 +15,46 @@
 		<link href="06_Grid_Elements.css" rel="stylesheet" />
 		<link href="08_Clock_Format.css" rel="stylesheet" />
 		<link href="09_Web_Form_Style.css" rel="stylesheet" />
-		<script src="scrublands.js" defer></script>
+
+		<script src="/js/swiper.js"></script>
+
+		<style>
+			* {
+				margin: 0;
+				padding: 0;
+			}
+
+			body {
+				background: #ecf4fb;
+			}
+
+			.img-gallery {
+				width: 80%;
+				margin: 100px auto 50px;
+				display: grid;
+				grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+				grid-gap: 30px;
+			}
+
+			.img-gallery img {
+				width: 100%;
+				cursor: pointer;
+			}
+
+			.img-gallery img:hover {
+				transform: scale(0.8) rotate(-15deg);
+				border-radius: 20px;
+				box-shadow: 0 32px 75px rgba(68, 77, 136, 0.2);
+			}
+		</style>
 	</head>
 
-	<style>
-
-	</style>
-
 	<body>
-		<header class="buttons">
-			<a id="banner1" href="index.html"><img id="banner" src="SOAP_PICS\BANNERS_JPG\BANNERS_12.jpeg" alt="Scrublands Apothecary" /></a>
-
-			<nav class="horizontal">
-				<ul class="horizontal-mainmenu">
-					<li class="bannerImages">
-						<a href="index.html" class="horizontal-mainmenu-dropdown">Home</a>
-					</li>
-
-					<li class="bannerImages">
-						<a href="02_ProductList.html" class="horizontal-mainmenu-dropdown">Product List</a>
-
-						<ul class="horizontal-mainmenu-dropdown-dropdown-contents">
-							<li class="bannerImages"><a href="03_BarSoap.html">Bar Soap</a></li>
-
-							<li class="bannerImages"><a href="04_LiquidSoap.html">Liquid Soap</a></li>
-							<li class="bannerImages"><a href="05_DogShampoo.html">Dog Shampoo</a></li>
-						</ul>
-					</li>
-
-					<li class="bannerImages"><a href="06_FormPage.html" class="horizontal-mainmenu-dropdown">Forms Page</a></li>
-
-					<li class="bannerImages"><a href="10_AboutUs.html" class="horizontal-mainmenu-dropdown">About Us </a></li>
-
-					<li class="bannerImages"><a href="09_ContactUs.html" class="horizontal-mainmenu-dropdown">Contact Us </a></li>
-				</ul>
-			</nav>
-		</header>
-
-
-
-		
-		<script src="01_SCRUBLANDS_WEBPAGE_SMA/swiper.js"></script>
-		<body>
-
-
-		<!-- <div >
-
-		  <div ">
-			<h2>Marine Green Sea Salt Soap Bar</h2>
-			<a href="#" onclick="next()"><img src="SeaGreen.jpg" width="50%" height="auto" alt="soap-bar-pic" /></a>
-		
-		  </div>
-
-	  </div> -->
-
-	  <div class="gallery" align="center">
-		<h3>Simple and Effective Photo Gallery with HTML and JavaScript</h3><br/>
-  
-		<div class="thumbnails">
-		  <img onmouseover="preview.src=img1.src" id="img1" src="http://bit.ly/2rz3hy" alt="Image Not Loaded"/>
-		  <img onmouseover="preview.src=img2.src" id="img2" src="http://bit.ly/1ug1e6" alt="Image Not Loaded"/>
-		  <img onmouseover="preview.src=img3.src" id="img3" src="http://bit.ly/1yIAYc" alt="Image Not Loaded"/>
-		  <img onmouseover="preview.src=img4.src" id="img4" src="http://bit.ly/2LHyDW" alt="Image Not Loaded"/>
-		  <img onmouseover="preview.src=img5.src" id="img5" src="http://bit.ly/2wyHSR" alt="Image Not Loaded"/>
-		  <img onmouseover="preview.src=img6.src" id="img6" src="http://bit.ly/yRo1i" alt="Image Not Loaded"/>
-		</div><br/>
-  
-		<div class="preview" align="center">
-		  <img id="preview" src="http://bit.ly/2rz3hy" alt="No Image Loaded"/>
-		</div><br/>
-	  </div>
-
-
-</body>
-
+		<div class="full-img"></div>
+		<div class="img-gallery"><img src="SOAP_PICS\MARINE_GREEN_JPG\MARINE_GREEN_new_1.jpeg" alt="Sea Green Soap" /></div>
+		<div class="img-gallery"><img src="SOAP_PICS\MARINE_GREEN_JPG\MARINE_GREEN_new_2.jpeg" alt="Sea Green Soap" /></div>
+		<div class="img-gallery"><img src="SOAP_PICS\MARINE_GREEN_JPG\MARINE_GREEN_new_3.jpeg" alt="Sea Green Soap" /></div>
+		<div class="img-gallery"><img src="SOAP_PICS\MARINE_GREEN_JPG\MARINE_GREEN_new_4.jpeg" alt="Sea Green Soap" /></div>
+		<div class="img-gallery"><img src="SOAP_PICS\MARINE_GREEN_JPG\MARINE_GREEN_new_5.jpeg" alt="Sea Green Soap" /></div>
+	</body>
 </html>

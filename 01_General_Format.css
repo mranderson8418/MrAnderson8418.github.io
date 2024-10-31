@@ -19,6 +19,20 @@
 	padding: 0px;
 }
 
+/* .swiper {
+	width: 600px;
+	height: 300px;
+} */
+
+div.swiper-slide {
+	width: 300px;
+	height: 300px;
+}
+
+div.swiper-slide img {
+	width: 300px;
+	height: 300px;
+}
 a[target="_blank"] {
 	background-color: red;
 }
