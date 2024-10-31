@@ -25,7 +25,7 @@
 			}
 
 			.img-gallery {
-				width: 80%;
+				width: 100%;
 				margin: 100px auto 50px;
 				display: grid;
 				grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -49,6 +49,7 @@
 				width: 100%;
 				cursor: pointer;
 				border-radius: 0.5rem;
+				max-width: 800px;
 			}
 
 			.full-img img {
@@ -75,6 +76,37 @@
 				background-color: rgba(0, 0, 0, 0.9);
 				/* background-color: black; */
 				z-index: 2;
+			}
+			.item1 {
+				grid-area: header;
+			}
+			.item2 {
+				grid-area: menu;
+			}
+			.item3 {
+				grid-area: main;
+			}
+
+			.item5 {
+				grid-area: footer;
+			}
+
+			.grid-container {
+				display: grid;
+				grid-template-areas:
+					"header header header header header header"
+					"menu main main main main main"
+					"menu footer footer footer footer footer";
+				gap: 10px;
+				/* background-color: #2196f3; */
+				padding: 10px;
+			}
+
+			.grid-container > div {
+				/* background-color: rgba(255, 255, 255, 0.8); */
+				text-align: center;
+				padding: 20px 0;
+				font-size: 30px;
 			}
 		</style>
 	</head>
@@ -109,22 +141,84 @@
 			</nav>
 		</header>
 
-		<div class="full-img" id="fullImgBox">
-			<img src="Picture" id="fullImg" alt="marine green 01" />
-			<span onclick="closeFullImg()">X</span>
+		<div class="grid-container">
+			<div class="item1"><h1>Marine Green Sea Salt Soap</h1></div>
+			<div class="item2">
+				<div class="full-img" id="fullImgBox">
+					<img src="Picture" id="fullImg" alt="marine green 01" />
+					<span onclick="closeFullImg()">X</span>
+				</div>
+
+				<div class="img-gallery">
+					<img src="SOAP_PICS\MARINE_GREEN_JPG\MARINE_GREEN_new_23.jpeg" onclick="openFullImg(this.src)" />
+
+					<img src="SOAP_PICS\MARINE_GREEN_JPG\MARINE_GREEN_new_3.jpeg" onclick="openFullImg(this.src)" />
+
+					<img src="SOAP_PICS\MARINE_GREEN_JPG\MARINE_GREEN_new_8.jpeg" onclick="openFullImg(this.src)" />
+
+					<img src="SOAP_PICS\MARINE_GREEN_JPG\MARINE_GREEN_new_10.jpeg" onclick="openFullImg(this.src)" />
+
+					<img src="SOAP_PICS\MARINE_GREEN_JPG\MARINE_GREEN_new_41.jpeg" onclick="openFullImg(this.src)" />
+				</div>
+			</div>
+			<div class="item3">
+				<div>
+					<p>
+						Marine Green Sea Salt Soap is a luxurious soap made with Himalayan Sea Salt, Shea Butter, and Eucalyptus Essential Oil. Marine
+						Green Himalayan Sea Salt Soap is loaded with Himalayan Sea Salt. We use one cup of Himalayan Sea Salt per pound of cold
+						process soap. Large size granules of Himalayan Sea Salt are added to induce a creamy lather that soothes and softens the skin.
+						The sea salts create a solid, dense bar of soap that is gentle for sensitive skin types.  Unrefined Yellow Shea butter is
+						added at 10% of the total base oils. Shea butter creates a moisturizing layer of protection for the skin and covers the body
+						with all-natural vitamins and skin loving fatty acids. 
+					</p>
+					<br />
+
+					<p>
+						All Scrublands Apothecary Soap is cold process soap made in the backcountry of North Carolina. Scrublands Apothecary will
+						guarantee you are %100 satisfied with your purchase or your money back. 
+					</p>
+					<br />
+					<p>
+						** Allergy Warning: People with skin sensitivities or allergies should test the soap on a small spot of the skin and stop
+						using it if any irritation occurs. 
+					</p>
+					<br />
+					<p>**No Detergents, No Sodium Lauryl Sulfate, No Harsh Chemicals, No Sulfates </p>
+					<br />
+					<p>** Soap is shrink wrapped to protect and preserve the soap bar freshness. </p>
+				</div>
+				<div>
+					<ul>
+						<li><span class="fancy-bullet">&#9679;</span> Approximate Weight Per Bar: 6.0 oz</li>
+						<li>
+							<span class="fancy-bullet">&#9679;</span> Ingredients:
+							<ul>
+								<li><span class="fancy-bullet">&#9679;</span> Coconut Oil</li>
+								<li><span class="fancy-bullet">&#9679;</span> Palm Oil Organic</li>
+								<li><span class="fancy-bullet">&#9679;</span> Extra Virgin Olive Oil</li>
+								<li><span class="fancy-bullet">&#9679;</span> Castor Oil</li>
+								<li><span class="fancy-bullet">&#9679;</span> Eucalyptus Essential Oil</li>
+								<li><span class="fancy-bullet">&#9679;</span> Green Oxide Pigment Powder</li>
+								<li><span class="fancy-bullet">&#9679;</span> Titanium Dioxide Pigment Powder</li>
+							</ul>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div class="item4">Right</div>
+			<div class="item5">Footer</div>
 		</div>
 
-		<div class="img-gallery">
-			<img src="SOAP_PICS\MARINE_GREEN_JPG\MARINE_GREEN_new_23.jpeg" onclick="openFullImg(this.src)" />
-
-			<img src="SOAP_PICS\MARINE_GREEN_JPG\MARINE_GREEN_new_3.jpeg" onclick="openFullImg(this.src)" />
-
-			<img src="SOAP_PICS\MARINE_GREEN_JPG\MARINE_GREEN_new_8.jpeg" onclick="openFullImg(this.src)" />
-
-			<img src="SOAP_PICS\MARINE_GREEN_JPG\MARINE_GREEN_new_10.jpeg" onclick="openFullImg(this.src)" />
-
-			<img src="SOAP_PICS\MARINE_GREEN_JPG\MARINE_GREEN_new_41.jpeg" onclick="openFullImg(this.src)" />
-		</div>
+		Marine Green Sea Salt Soap is a luxurious soap made with Himalayan Sea Salt, Shea Butter, and Eucalyptus Essential Oil. Marine Green Himalayan
+		Sea Salt Soap is loaded with Himalayan Sea Salt. We use one cup of Himalayan Sea Salt per pound of cold process soap. Large size granules of
+		Himalayan Sea Salt are added to induce a creamy lather that soothes and softens the skin. The sea salts create a solid, dense bar of soap that
+		is gentle for sensitive skin types.  Unrefined Yellow Shea butter is added at 10% of the total base oils. Shea butter creates a moisturizing
+		layer of protection for the skin and covers the body with all-natural vitamins and skin loving fatty acids.  All Scrublands Apothecary Soap is
+		cold process soap made in the backcountry of North Carolina. Scrublands Apothecary will guarantee you are %100 satisfied with your purchase or
+		your money back.  ** Allergy Warning: People with skin sensitivities or allergies should test the soap on a small spot of the skin and stop
+		using it if any irritation occurs.  **No Detergents, No Sodium Lauryl Sulfate, No Harsh Chemicals, No Sulfates  ** Soap is shrink wrapped to
+		protect and preserve the soap bar freshness.  Approximate Weight Per Bar: 6.0 oz  Ingredients:  Coconut Oil  Palm Oil Organic  Extra Virgin
+		Olive Oil  Castor Oil  Eucalyptus Essential Oil  Green Oxide Pigment Powder  Titanium Dioxide Pigment Powder 
 
 		<script>
 			var fullImgBox = document.getElementById("fullImgBox");

@@ -62,7 +62,7 @@ div#seconds {
 div#alert {
 	line-height: normal;
 	text-align: center;
-	color: yellow;
+	/* color: yellow; */
 }
 
 div.dateA {
@@ -136,12 +136,12 @@ article.flex-container-body-01 > div {
 
 .flexContainerBody-BarSoap > article > div > a > img {
 	width: auto;
-	max-height: 600px;
+	max-height: 800px;
 	/* margin-top:100px; */
 
 	border-radius: 25px;
 	box-shadow: inset 0px 0px 3px teal, inset 0px 0px 10px teal, inset 0px 0px 20px teal, 0px 0px 25px 1px black;
-	border: 10px yellow solid;
+	/* border: 10px yellow solid; */
 }
 
 /* -------------------------------- */
