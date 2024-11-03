@@ -93,6 +93,7 @@
 
 			.grid-container {
 				display: grid;
+				line-height: 3rem;
 				grid-template-areas:
 					"header header header header header header"
 					"menu main main main main main"
@@ -102,11 +103,87 @@
 				padding: 10px;
 			}
 
-			.grid-container > div {
-				/* background-color: rgba(255, 255, 255, 0.8); */
+			div > p {
+				margin: 2rem;
+			}
+			div.soap-details > div > h2 {
+				text-align: left;
+				letter-spacing: 5px; /* Adjust the value as needed */
+
 				text-align: center;
-				padding: 20px 0;
-				font-size: 30px;
+				font-family: TwoShotsCleanFull;
+				text-shadow: 2px 2px 2px #201f1f;
+				font-size: 3rem;
+				-webkit-text-stroke-width: 1.5px;
+				-webkit-text-stroke-color: white;
+				text-shadow: 8px 8px 20px black;
+				font-weight: normal;
+				color: #ffffff;
+				line-height: normal;
+				min-width: 100%;
+				margin: 1rem;
+			}
+			div.soap-details > div.ingredients-list > h2 {
+				/* border: solid 5px yellow; */
+				text-align: left;
+
+				letter-spacing: 5px; /* Adjust the value as needed */
+
+				text-align: center;
+				font-family: TwoShotsCleanFull;
+				text-shadow: 2px 2px 2px #201f1f;
+				font-size: 3rem;
+				-webkit-text-stroke-width: 1.5px;
+				-webkit-text-stroke-color: white;
+				text-shadow: 8px 8px 20px black;
+				font-weight: normal;
+				color: #ffffff;
+				line-height: normal;
+				min-width: 100%;
+				/* margin: 1rem; */
+			}
+
+			div.item1 h1 {
+				letter-spacing: 5px; /* Adjust the value as needed */
+
+				text-align: center;
+				font-family: TwoShotsCleanFull;
+				text-shadow: 5px 5px 10px #201f1f;
+				font-size: 8rem;
+				-webkit-text-stroke-width: 1.5px;
+				-webkit-text-stroke-color: white;
+				text-shadow: 8px 8px 20px black;
+				font-weight: normal;
+				color: #ffffff;
+				line-height: normal;
+				min-width: 100%;
+				margin-top: 5rem;
+			}
+
+			div.ingredients-list {
+				margin: 2rem;
+				text-align: left;
+			}
+
+			div.ingredients-list ul {
+				display: flex;
+				justify-content: left;
+				flex-direction: column;
+			}
+
+			div.ingredients-list ul li {
+				display: block;
+				flex: 1;
+				text-align: left;
+				/* border: solid 5px yellow; */
+			}
+			div.soap-details {
+				border: solid 5px white;
+				margin: 5rem;
+			}
+			div.soap-details div p {
+				/* border: solid 5px white; */
+				margin: 2rem;
 			}
 		</style>
 	</head>
@@ -187,26 +264,31 @@
 					<br />
 					<p>** Soap is shrink wrapped to protect and preserve the soap bar freshness. </p>
 				</div>
-				<div>
-					<ul>
-						<li><span class="fancy-bullet">&#9679;</span> Approximate Weight Per Bar: 6.0 oz</li>
-						<li>
-							<span class="fancy-bullet">&#9679;</span> Ingredients:
-							<ul>
-								<li><span class="fancy-bullet">&#9679;</span> Coconut Oil</li>
-								<li><span class="fancy-bullet">&#9679;</span> Palm Oil Organic</li>
-								<li><span class="fancy-bullet">&#9679;</span> Extra Virgin Olive Oil</li>
-								<li><span class="fancy-bullet">&#9679;</span> Castor Oil</li>
-								<li><span class="fancy-bullet">&#9679;</span> Eucalyptus Essential Oil</li>
-								<li><span class="fancy-bullet">&#9679;</span> Green Oxide Pigment Powder</li>
-								<li><span class="fancy-bullet">&#9679;</span> Titanium Dioxide Pigment Powder</li>
-							</ul>
-						</li>
-					</ul>
+
+				<div class="soap-details">
+					<div>
+						<h2>Soap Details</h2>
+						<p>Approximate Weight Per Bar: 6.0 oz</p>
+						<p>Soap Bar Dimensions: 2 x 3 x 4</p>
+					</div>
+
+					<div class="ingredients-list">
+						<h2>Ingredients</h2>
+
+						<ul>
+							<li><span class="fancy-bullet">&#9679;</span> Coconut Oil</li>
+							<li><span class="fancy-bullet">&#9679;</span> Palm Oil Organic</li>
+							<li><span class="fancy-bullet">&#9679;</span> Extra Virgin Olive Oil</li>
+							<li><span class="fancy-bullet">&#9679;</span> Castor Oil</li>
+							<li><span class="fancy-bullet">&#9679;</span> Eucalyptus Essential Oil</li>
+							<li><span class="fancy-bullet">&#9679;</span> Green Oxide Pigment Powder</li>
+							<li><span class="fancy-bullet">&#9679;</span> Titanium Dioxide Pigment Powder</li>
+						</ul>
+					</div>
 				</div>
 			</div>
-			<div class="item4">Right</div>
-			<div class="item5">Footer</div>
+			<!-- <div class="item4">Right</div>
+			<div class="item5">Footer</div> -->
 		</div>
 
 		<script>

@@ -17,8 +17,8 @@ Desktop Styles: 769px and greater
 
 	body {
 		width: 100%;
-		min-width: 769px;
-		font-size: 1.5em;
+
+		font-size: 20px;
 		background-color: rgb(73, 58, 49, 0.8);
 		box-shadow: rgb(51, 51, 51) 5px 0px 15px, rgb(51, 51, 51) -5px 0px 15px;
 		margin: auto auto;
@@ -27,7 +27,7 @@ Desktop Styles: 769px and greater
 		min-height: 100vh;
 
 		min-width: 900px;
-		max-width: 1500px;
+		max-width: 1200px;
 		/* border: solid 10px blue; */
 	}
 
@@ -158,6 +158,7 @@ Desktop Styles: 769px and greater
 	ul.horizontal-mainmenu-dropdown-dropdown-contents li a {
 		display: block;
 		position: relative;
+		padding: 2rem;
 		min-width: 100%;
 		min-height: 100%;
 
@@ -222,7 +223,7 @@ Desktop Styles: 769px and greater
 		color: white;
 
 		width: 100%;
-		font-size: 2.5em;
+		font-size: 3rem;
 
 		text-align: center;
 
@@ -300,11 +301,6 @@ Desktop Styles: 769px and greater
 		flex-direction: column;
 		justify-content: center;
 		align-items: center;
-	}
-	div {
-		padding: 5rem;
-		margin: 5px;
-		width: 100%;
 	}
 
 	section.flexContainerBody-BarSoap article div h2 {
@@ -523,6 +519,7 @@ Desktop Styles: 769px and greater
 		color: #b43b07;
 		line-height: normal;
 		min-width: 100%;
+		margin: auto;
 	}
 	div.figure-container-01 div.text-item h1 {
 		text-align: center;
@@ -561,7 +558,7 @@ Desktop Styles: 769px and greater
 		text-align: center;
 		font-family: TwoShotsCleanFull;
 		text-shadow: 5px 5px 10px #201f1f;
-		font-size: 15rem;
+		font-size: 10rem;
 		-webkit-text-stroke-width: 0.8px;
 		-webkit-text-stroke-color: white;
 		text-shadow: 8px 8px 20px black;
@@ -604,7 +601,7 @@ Desktop Styles: 769px and greater
 		min-width: 100%;
 	}
 
-	section.flex-container-body-01 > div h2 {
+	section.flex-container-body-01 > div > h2 {
 		text-align: center;
 		font-family: TwoShotsCleanFull;
 		text-shadow: 5px 5px 10px #201f1f;
@@ -615,8 +612,8 @@ Desktop Styles: 769px and greater
 		font-weight: normal;
 		color: #b43b07;
 		line-height: normal;
-		margin: 0px;
-		padding: 0px;
+
+		padding: 2rem;
 		min-width: 100%;
 	}
 
@@ -639,5 +636,11 @@ Desktop Styles: 769px and greater
 		height: auto;
 		border-radius: 1.5rem;
 		box-shadow: 0px 50px 100px -20px rgba(50, 50, 93, 0.25), 0px 30px 60px -30px rgba(0, 0, 0, 0.3), inset 0px -2px 6px 0px rgba(10, 37, 64, 0.35);
+	}
+
+	/* Product list */
+
+	section.flex-container-body-01 > div {
+		margin-top: 5rem;
 	}
 }

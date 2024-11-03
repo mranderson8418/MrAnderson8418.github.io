@@ -181,11 +181,6 @@ fieldset {
 	border: none;
 }
 
-div {
-	margin: 5px;
-	width: 100%;
-}
-
 legend {
 	color: rgb(63, 61, 61);
 	background-color: rgb(255, 255, 255);
