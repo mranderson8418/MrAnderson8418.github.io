@@ -68,8 +68,7 @@ html {
 	padding: auto;
 	background-image: url("background.jpg");
 
-	background-size: cover;
-	background-repeat: repeat-y;
+	height: 100vh;
 	/* background-attachment: fixed; */
 	background-position: center;
 	font-family: Verdana, Geneva, sans-serif;
