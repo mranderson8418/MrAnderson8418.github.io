@@ -16,23 +16,20 @@ Desktop Styles: 769px and greater
 	}
 
 	body {
-		width: 100%;
-
 		font-size: 20px;
 		background-color: rgb(73, 58, 49, 0.8);
-		box-shadow: rgb(51, 51, 51) 5px 0px 15px, rgb(51, 51, 51) -5px 0px 15px;
+
 		margin: auto auto;
 		color: white;
 		z-index: 1;
-		/* min-height: 100vh; */
+		min-width: 900;
+		max-width: 1500px;
 
-		min-width: 900px;
-		max-width: 1200px;
-		/* border: solid 10px blue; */
+		min-height: 6000px;
+		/* padding: 1.5rem; */
 	}
 
 	html {
-		/* display: flex; */
 		margin: auto;
 		padding: auto;
 		background-image: url("background.jpg");
@@ -43,6 +40,14 @@ Desktop Styles: 769px and greater
 		background-position: center;
 		font-family: Verdana, Geneva, sans-serif;
 		font-size: 15px;
+		width: 100%;
+	}
+
+	div.index-body {
+		width: auto;
+		height: 100%;
+
+		padding: 1rem;
 	}
 
 	/* ------------------------Home Page --------------------*/
@@ -375,8 +380,12 @@ Desktop Styles: 769px and greater
 		font-size: 5rem;
 	}
 
+	section.flex-container-body-02 {
+		height: 100vh;
+	}
 	section.flex-container-body-02 div.flex-container-body-02-title > p {
 		display: inline-block;
+
 		/* border: solid 5px yellow; */
 	}
 
