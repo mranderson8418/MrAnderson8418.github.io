@@ -212,15 +212,21 @@ Desktop Styles: 769px and greater
 		/* border: solid 10px red; */
 		line-height: normal;
 	}
-
-	section.flexContainerBody-BarSoap article div a img {
-		box-shadow: 0 10px 15px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	section.flexContainerBody-BarSoap article {
 		display: flex;
 		flex-direction: column;
 		justify-content: center;
 		align-items: center;
+		text-align: center;
+		/* border: solid 5px red; */
+	}
+	section.flexContainerBody-BarSoap article div a img {
+		box-shadow: 0 10px 15px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
 		/* border: solid 1px yellow; */
 		border-radius: 2.5rem;
+		min-width: 50%;
+		max-width: 50%;
 	}
 
 	section.flexContainerBody-BarSoap article div h2 {
@@ -276,6 +282,7 @@ Desktop Styles: 769px and greater
 		height: auto;
 		margin-top: 5rem;
 		text-align: center;
+		border-radius: 2.5rem;
 	}
 
 	section.flexContainerBody-LiquidSoap article div h2 {
@@ -535,7 +542,7 @@ Desktop Styles: 769px and greater
 		/* border: solid 10px red; */
 	}
 
-	div a img {
+	/* div a img {
 		max-width: 80%;
-	}
+	} */
 }
