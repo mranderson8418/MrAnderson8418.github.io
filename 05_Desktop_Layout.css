@@ -10,151 +10,103 @@ Desktop Styles: 769px and greater
 =================================
 */
 @media only screen and (min-width: 769px) {
-	* {
-		margin: 0px;
-		padding: 0px;
-	}
-
-	body {
-		font-size: 20px;
-		background-color: rgb(73, 58, 49, 0.8);
-
-		margin: auto auto;
-		color: white;
-		z-index: 1;
-		min-width: 900;
-		max-width: 1500px;
-
-		min-height: 6000px;
-		/* padding: 1.5rem; */
-	}
-
 	html {
 		margin: auto;
 		padding: auto;
-		background-image: url("background.jpg");
-
-		background-size: cover;
-		background-repeat: repeat-y;
+		/* background-image: url("background.jpg"); */
+		background-color: rgb(85, 147, 219);
+		/* background-color: rgb(73, 58, 49, 0.8); */
+		/* background-size: cover;
+		background-repeat: repeat-y; */
 		/* background-attachment: fixed; */
 		background-position: center;
 		font-family: Verdana, Geneva, sans-serif;
 		font-size: 15px;
 		width: 100%;
-	}
-
-	div.index-body {
-		width: auto;
-		height: 100%;
-
-		padding: 1rem;
-	}
-
-	/* ------------------------Home Page --------------------*/
-	section.flex-container-body-01 div a img {
-		display: block;
-		margin: auto;
-		min-width: 10%;
-		max-width: 20%;
 		height: auto;
-		border-radius: 1.5rem;
-		box-shadow: 0px 50px 100px -20px rgba(50, 50, 93, 0.25), 0px 30px 60px -30px rgba(0, 0, 0, 0.3), inset 0px -2px 6px 0px rgba(10, 37, 64, 0.35);
-		/* box-shadow: 0 26px 58px 0 rgba(0, 0, 0, 0.22), 0 5px 14px 0 rgba(0, 0, 0, 0.18); */
 	}
 
-	section.flex-container-body-02 {
-		display: flex;
-		flex-wrap: wrap;
-		justify-content: space-between;
+	body {
 		position: relative;
+		z-index: 1;
+		min-width: 900px;
+		max-width: 1500px;
+		height: auto;
+		margin: auto auto;
+		background-color: rgb(73, 58, 49, 0.8);
+		/* border: solid 10px blue; */
+		font-size: 1.5rem;
 		color: white;
 	}
 
-	section.flex-container-body-02 div {
-		/* border: solid 5px yellow; */
-		width: 100%;
-	}
+	/* Navigation Menu aka Header Menus*/
+	/* ---------------------------------------------------- */
 
-	/* Horizonal Navigation Styles */
 	nav.horizontal > ul > li > a {
-		color: blue;
-		border: none;
-		max-height: 200px;
 		min-height: 100%;
+		max-height: 200px;
+		margin: 0px;
+		padding: 0px;
+		border: none;
+		color: blue;
 	}
 
 	ul.horizontal-mainmenu > li > a {
+		box-shadow: rgba(50, 50, 93, 0.5) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
 		display: block;
-		text-align: center !important;
-		color: white;
-		/* font-size: large; */
-		text-transform: uppercase;
 		position: relative;
+		width: 100%;
+		min-height: 100%;
 		margin: auto;
 		padding: auto;
 		border-radius: 0.125rem;
-		box-shadow: rgba(50, 50, 93, 0.5) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
-		width: 100%;
-		min-height: 100%;
+		color: white;
+		text-align: center !important;
+		text-transform: uppercase;
 	}
 
 	a.horizontal-mainmenu-dropdown {
-		position: relative;
 		display: none;
-		text-align: center;
+		position: relative;
 		width: 100%;
 		height: 100%;
-
-		font-size: 5rem;
-		color: blue;
-		line-height: 2.5em;
 		margin: none;
 		padding: none;
+		font-size: 5rem;
+		line-height: 2.5em;
+		color: blue;
+		text-align: center;
 	}
 
 	nav.horizontal-mainmenu > dropdown:focus + ul.horizontal-mainmenu-dropdown-dropdown-contents {
 		display: block;
-		color: blue;
 		border: none;
+		color: blue;
 	}
 
 	ul.horizontal-mainmenu-dropdown-dropdown-contents {
-		display: none;
-		position: absolute;
-		min-width: 100%;
-		font-size: 1.5rem;
-		border: none;
-
-		background: transparent;
 		box-shadow: none;
-
 		display: none;
 		position: absolute;
-
-		min-width: 100%;
-		min-height: 500px;
 		z-index: 6;
+		min-width: 100%;
+		min-height: 800px;
+		max-height: 900px;
+		background: transparent;
+		border: none;
+		font-size: 1.5rem;
+		border: SOLID 5px RED;
 	}
 
 	ul.horizontal-mainmenu-dropdown-dropdown-contents li {
 		display: block;
 		position: relative;
-
-		/* margin: 15px 15px; */
-		padding: 20px 20px;
-
+		z-index: 6;
 		min-width: 100%;
 		min-height: 100%;
-
-		border-radius: 0.5rem;
-
-		display: block;
-
+		padding: 20px 20px;
 		background-color: rgb(73, 58, 49);
-
-		position: relative;
-
-		z-index: 6;
+		border-radius: 0.5rem;
 	}
 	.bannerImages {
 		box-shadow: rgba(50, 50, 93, 0.5) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
@@ -163,10 +115,9 @@ Desktop Styles: 769px and greater
 	ul.horizontal-mainmenu-dropdown-dropdown-contents li a {
 		display: block;
 		position: relative;
-		padding: 2rem;
 		min-width: 100%;
 		min-height: 100%;
-
+		padding: 2rem;
 		background-color: rgb(73, 58, 49);
 	}
 
@@ -175,107 +126,66 @@ Desktop Styles: 769px and greater
 	ul.horizontal-mainmenu-dropdown-dropdown-contents:hover,
 	ul:hover {
 		display: block;
-		/* position: relative; */
-		color: blue;
-		border: none;
 		width: 100%;
 		min-height: 100%;
-		padding: 0px;
 		margin: 0px;
+		padding: 0px;
+		border: none;
+		color: blue;
 	}
-
-	/* 
-	ul:hover {
-		display: block;
-		position: relative;
-		color: blue;
-		border: none;
-		width: 100%;
-		min-height: 100%;
-	} */
-
-	/*
-	ul.horizontal-mainmenu-dropdown-dropdown-contents {
-		display: block;
-		position: relative;
-		color: blue;
-		border: none;
-		width: 100%;
-		min-height: 100%;
-	}
-
-	a.horizontal-mainmenu-dropdown {
-		display: block;
-		position: relative;
-		color: blue;
-		border: none;
-		width: 100%;
-		min-height: 100%;
-	} */
 
 	a.horizontal-mainmenu-dropdown a:link {
-		background-color: rgb(73, 58, 49, 0.5);
-		color: white;
-		font-size: 2em;
-		padding: 50px;
-		text-align: center;
-		padding: 50px;
 		z-index: 2;
+		padding: 50px;
+		background-color: rgb(73, 58, 49, 0.5);
+		font-size: 2em;
+		color: white;
+		text-align: center;
 	}
 
 	nav.horizontal a:visited,
 	nav.horizontal a:link {
-		color: white;
-
+		z-index: 2;
 		width: 100%;
-		font-size: 3rem;
-
-		text-align: center;
-
+		min-height: 100%;
 		margin: 0px;
 		padding: 0px;
-
-		min-height: 100%;
-		z-index: 2;
+		font-size: 3rem;
+		color: white;
+		text-align: center;
 	}
 
 	nav.horizontal a:hover {
-		/* outline: solid 5px yellow; */
-		color: red;
-
-		padding: 0px;
 		margin: 0px;
+		padding: 0px;
+		color: red;
 	}
 
 	ul.horizontal-mainmenu li {
 		display: block;
+		z-index: 2;
 		width: 100%;
 		min-height: 100%;
-
-		display: block;
-
-		z-index: 2;
 	}
 
 	a.horizontal-mainmenu-dropdown {
+		display: block;
 		width: 100%;
 		min-height: 100%;
-
-		display: block;
 	}
 
 	img#inlineImage {
 		float: right;
-		padding: 25px;
 		width: 450px;
+		padding: 25px;
 	}
 
 	nav.horizontal {
 		display: flex;
-		background-color: none;
 		flex-direction: row;
 		flex-wrap: nowrap;
 		justify-content: space-between;
+		background-color: none;
 		text-align: center;
 	}
 
@@ -283,40 +193,42 @@ Desktop Styles: 769px and greater
 		display: flex;
 		flex-wrap: nowrap;
 		justify-content: center;
+		width: 100%;
 		min-height: 100%;
 		max-height: 100%;
 		text-align: center;
-		width: 100%;
 	}
 
+	/* ---------------------------------------------------- */
+	/* Bar Soap HTML PAGE */
 	section.flexContainerBody-BarSoap {
 		display: flex;
 		flex-direction: column;
-		align-items: center;
 		justify-content: center;
-		padding: 0px;
-		margin: 0px;
+		align-items: center;
 		flex-grow: 0;
+		margin: 0px;
+		padding: 0px;
+		/* border: solid 10px red; */
 		line-height: normal;
 	}
 
-	article > div > a img {
+	section.flexContainerBody-BarSoap article div a img {
+		box-shadow: 0 10px 15px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 		display: flex;
 		flex-direction: column;
 		justify-content: center;
 		align-items: center;
-		margin-left: 10rem;
-		margin-right: 10rem;
+		/* border: solid 1px yellow; */
 		border-radius: 2.5rem;
-		box-shadow: 0 10px 15px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 	}
 
 	section.flexContainerBody-BarSoap article div h2 {
-		text-align: center;
-		padding: 2rem;
-		margin: 0px;
 		flex-grow: 0;
+		margin: 0px;
+		padding: 2rem;
 		font-size: 5rem;
+		text-align: center;
 	}
 
 	div.flexContainerBody-BarSoap-Article h2 {
@@ -332,68 +244,48 @@ Desktop Styles: 769px and greater
 		display: flex;
 		flex-direction: column;
 		flex-wrap: wrap;
-		align-items: center;
 		justify-content: center;
-
-		padding: 0px;
-		margin: 0px;
+		align-items: center;
 		flex-grow: 0;
+		margin: 0px;
+		padding: 0px;
 		line-height: normal;
 	}
 
 	section.flexContainerBody-LiquidSoap article {
 		display: flex;
 		justify-content: center;
-		text-align: center;
-
 		flex-grow: 0;
+		text-align: center;
 	}
 
 	section.flexContainerBody-LiquidSoap article {
 		display: block;
-		text-align: center;
-
-		margin-top: 5rem;
-		margin: 0px;
 		flex-grow: 0;
+		position: relative;
 		min-width: 100%;
 		height: auto;
-
-		position: relative;
+		margin: 0px;
+		margin-top: 5rem;
+		text-align: center;
 	}
 
 	section.flexContainerBody-LiquidSoap article div a img {
-		/* display: block; */
-		margin-top: 5rem;
-		text-align: center;
-
 		flex-grow: 0;
 		max-width: 50%;
 		height: auto;
-		/* border: solid 10px yellow; */
+		margin-top: 5rem;
+		text-align: center;
 	}
 
 	section.flexContainerBody-LiquidSoap article div h2 {
-		/* display: block; */
-
 		font-size: 5rem;
 	}
 	section.flexContainerBody-LiquidSoap article div {
 		margin-top: 5rem;
 	}
 
-	section.flex-container-body-02 {
-		height: 100vh;
-	}
-	section.flex-container-body-02 div.flex-container-body-02-title > p {
-		display: inline-block;
-
-		/* border: solid 5px yellow; */
-	}
-
-	div.flex-container-body-02-title p {
-		display: inline-block;
-	}
+	/* HomePage */
 
 	div.text-item > p {
 		margin: 2rem;
@@ -403,89 +295,82 @@ Desktop Styles: 769px and greater
 	}
 
 	section.flex-container-body-02 > div > h1 {
-		letter-spacing: 5px; /* Adjust the value as needed */
-
-		text-align: center;
-		font-family: TwoShotsCleanFull;
-		text-shadow: 5px 5px 10px #201f1f;
-		font-size: 6rem;
 		-webkit-text-stroke-width: 1.5px;
 		-webkit-text-stroke-color: white;
-		text-shadow: 8px 8px 20px black;
-		font-weight: normal;
-		color: #ffffff;
-		line-height: normal;
 		min-width: 100%;
-		margin-top: 5rem;
+		margin: 5rem;
+		font-size: 6rem;
+		font-family: TwoShotsCleanFull;
+		font-weight: normal;
+		line-height: normal;
+		color: #ffffff;
+		text-align: center;
+		text-shadow: 5px 5px 10px #201f1f;
+		letter-spacing: 5px; /* Adjust the value as needed */
 	}
 	div.figure-container-01 {
 		display: flex;
-		justify-content: space-between;
 		flex-direction: row;
 		flex-wrap: nowrap;
+		justify-content: space-between;
 		align-items: stretch;
 	}
 	div.figure-container-01 > div.text-item {
-		text-align: left;
 		flex-grow: 1;
+		text-align: left;
 	}
 
 	div.figure-container-01 div.text-item p {
-		text-align: left;
 		min-height: 100%;
 		margin: 2rem;
 		line-height: 5rem;
+		text-align: left;
 	}
 
 	div.image-item {
 		flex-shrink: 5;
 	}
 	div.figure-container-01 > div.image-item > figure > img {
-		position: relative;
-		max-width: 600px;
-		min-width: 300px;
-		height: auto;
-		padding: none;
-
-		border-radius: 1em;
 		box-shadow: 0px 50px 100px -20px rgba(50, 50, 93, 0.25), 0px 30px 60px -30px rgba(0, 0, 0, 0.3), inset 0px -2px 6px 0px rgba(10, 37, 64, 0.35);
+		position: relative;
 		clear: both;
-		/* border: solid 15px red; */
+		min-width: 300px;
+		max-width: 600px;
+		height: auto;
 		margin: 0px;
-		padding: 0px;
+		padding: none;
+		border-radius: 1em;
 	}
 
 	div.figure-caption > figcaption {
 		position: relative;
-
+		clear: both;
 		margin: 0px;
 		padding: 25px;
-		border-radius: 0.5em;
-		padding: none;
-		clear: both;
 		background-color: rgba(88, 75, 75, 0.5); /* Optional: Add a background color */
+		border-radius: 0.5em;
 		text-align: center;
 	}
 
 	/* ------------------------------- */
 	div.figure-container-02 {
 		display: flex;
-		justify-content: space-between;
 		flex-direction: row;
 		flex-wrap: nowrap;
+		justify-content: space-between;
 		align-items: stretch;
 	}
 	div.figure-container-02 > div.text-item-02 {
-		text-align: left;
-		flex-grow: 1;
 		order: 2;
+		flex-grow: 1;
+		text-align: left;
 	}
 
 	div.figure-container-02 div.text-item-02 p {
-		text-align: left;
 		min-height: 100%;
 		margin: 2rem;
 		line-height: 5rem;
+		text-align: left;
 	}
 
 	div.image-item-02 {
@@ -493,160 +378,149 @@ Desktop Styles: 769px and greater
 		flex-shrink: 5;
 	}
 	div.figure-container-02 > div.image-item-02 > figure > img {
-		position: relative;
-		max-width: 600px;
-		min-width: 300px;
-		height: auto;
-		padding: none;
-
-		border-radius: 1em;
 		box-shadow: 0px 50px 100px -20px rgba(50, 50, 93, 0.25), 0px 30px 60px -30px rgba(0, 0, 0, 0.3), inset 0px -2px 6px 0px rgba(10, 37, 64, 0.35);
+		position: relative;
 		clear: both;
-
+		min-width: 300px;
+		max-width: 600px;
+		height: auto;
 		margin: 0px;
-		padding: 0px;
+		padding: none;
+		border-radius: 1em;
 	}
 
 	div.figure-caption > figcaption {
 		position: relative;
+		clear: both;
 		margin: 0px;
 		padding: 25px;
-		border-radius: 0.5em;
-
-		clear: both;
 		background-color: rgba(88, 75, 75, 0.5); /* Optional: Add a background color */
+		border-radius: 0.5em;
 		text-align: center;
 	}
 
 	div.figure-container-01 .page-title > div > h1 {
-		text-align: center;
-		font-family: TwoShotsCleanFull;
-		text-shadow: 5px 5px 10px #201f1f;
-		font-size: 12em;
 		-webkit-text-stroke-width: 0.8px;
 		-webkit-text-stroke-color: white;
-		text-shadow: 8px 8px 20px black;
-		font-weight: normal;
-		color: #b43b07;
-		line-height: normal;
 		min-width: 100%;
 		margin: auto;
+		font-size: 12em;
+		font-family: TwoShotsCleanFull;
+		font-weight: normal;
+		line-height: normal;
+		color: #b43b07;
+		text-align: center;
+		text-shadow: 5px 5px 10px #201f1f;
 	}
 	div.figure-container-01 div.text-item h1 {
-		text-align: center;
-		font-family: TwoShotsCleanFull;
-		text-shadow: 5px 5px 10px #201f1f;
-		font-size: 10rem;
 		-webkit-text-stroke-width: 0.3px;
 		-webkit-text-stroke-color: white;
-		text-shadow: 8px 8px 20px black;
-		font-weight: normal;
-		color: #b43b07;
-		line-height: normal;
 		min-width: 100%;
+		font-size: 10rem;
+		font-family: TwoShotsCleanFull;
+		font-weight: normal;
+		line-height: normal;
+		color: #b43b07;
+		text-align: center;
+		text-shadow: 5px 5px 10px #201f1f;
 	}
 	.page-title > div > h1 {
-		text-align: center;
-		font-family: TwoShotsCleanFull;
-		text-shadow: 5px 5px 10px #201f1f;
-		font-size: 12em;
 		-webkit-text-stroke-width: 0.8px;
 		-webkit-text-stroke-color: white;
-		text-shadow: 8px 8px 20px black;
-		font-weight: normal;
-		color: #b43b07;
-		line-height: normal;
 		min-width: 100%;
+		font-size: 12em;
+		font-family: TwoShotsCleanFull;
+		font-weight: normal;
+		line-height: normal;
+		color: #b43b07;
+		text-align: center;
+		text-shadow: 5px 5px 10px #201f1f;
 	}
 
 	div.text-item-footer > p {
+		font-size: 2.5rem;
 		text-align: center;
 	}
 
 	/* ------------------------Product Page --------------------*/
 
 	section.flex-container-body-01 > div > h1 {
-		text-align: center;
-		font-family: TwoShotsCleanFull;
-		text-shadow: 5px 5px 10px #201f1f;
-		font-size: 10rem;
 		-webkit-text-stroke-width: 0.8px;
 		-webkit-text-stroke-color: white;
-		text-shadow: 8px 8px 20px black;
-		font-weight: normal;
-		color: #b43b07;
-		line-height: normal;
-		min-width: 100%;
 		z-index: 10;
+		min-width: 100%;
+		font-size: 14rem;
+		font-family: TwoShotsCleanFull;
+		font-weight: normal;
+		line-height: normal;
+		color: #b43b07;
+		text-align: center;
+		text-shadow: 5px 5px 10px #201f1f;
 	}
 
 	section.flex-container-body-01 > div > h2 {
-		text-align: center;
-		font-family: TwoShotsCleanFull;
-		text-shadow: 5px 5px 10px #201f1f;
-		font-size: 7em;
 		-webkit-text-stroke-width: 0.8px;
 		-webkit-text-stroke-color: white;
-		text-shadow: 8px 8px 20px black;
-		font-weight: normal;
-		color: #ffffff;
-		line-height: normal;
+		min-width: 100%;
 		margin: 0px;
 		padding: 0px;
-		min-width: 100%;
+		font-size: 7rem;
+		font-family: TwoShotsCleanFull;
+		font-weight: normal;
+		line-height: normal;
+		color: #ffffff;
+		text-align: center;
+		text-shadow: 5px 5px 10px #201f1f;
 	}
 
 	section.flex-container-body-01 > div.slogan h2 {
-		text-align: center;
-		font-family: TwoShotsCleanFull;
-		text-shadow: 5px 5px 10px #201f1f;
-		font-size: 7rem;
 		-webkit-text-stroke-width: 0.5px;
 		-webkit-text-stroke-color: white;
-		text-shadow: 8px 8px 20px black;
-		font-weight: normal;
-		color: #b43b07;
-		line-height: normal;
+		min-width: 100%;
 		margin: 0px;
 		padding: 0px;
-		min-width: 100%;
-	}
-
-	section.flex-container-body-01 > div > h2 {
-		text-align: center;
+		font-size: 6rem;
 		font-family: TwoShotsCleanFull;
+		font-weight: normal;
+		line-height: normal;
+		color: #b43b07;
+		text-align: center;
 		text-shadow: 5px 5px 10px #201f1f;
-		font-size: 7rem;
+	}
+	section.flex-container-body-01 > div > h2 {
 		-webkit-text-stroke-width: 0.5px;
 		-webkit-text-stroke-color: white;
-		text-shadow: 8px 8px 20px black;
-		font-weight: normal;
-		color: #b43b07;
-		line-height: normal;
-
-		padding: 2rem;
 		min-width: 100%;
+		padding: 2rem;
+		font-size: 8rem;
+		font-family: TwoShotsCleanFull;
+		font-weight: normal;
+		line-height: normal;
+		color: #b43b07;
+		text-align: center;
+		text-shadow: 5px 5px 10px #201f1f;
 	}
 
+	/* The scrublands logo image */
 	section.flex-container-body-01 > div > a > img {
+		box-shadow: 0px 50px 100px -20px rgba(50, 50, 93, 0.25), 0px 30px 60px -30px rgba(0, 0, 0, 0.3), inset 0px -2px 6px 0px rgba(10, 37, 64, 0.35);
+
 		display: block;
-		margin: auto;
 		min-width: 200px;
 		max-width: 300px;
 		height: auto;
+		margin: auto;
 		border-radius: 1.5rem;
-		box-shadow: 0px 50px 100px -20px rgba(50, 50, 93, 0.25), 0px 30px 60px -30px rgba(0, 0, 0, 0.3), inset 0px -2px 6px 0px rgba(10, 37, 64, 0.35);
-		/* box-shadow: 0 26px 58px 0 rgba(0, 0, 0, 0.22), 0 5px 14px 0 rgba(0, 0, 0, 0.18); */
 	}
 
 	section.flex-container-body-01 div.product-page-image > a > img {
+		box-shadow: 0px 50px 100px -20px rgba(50, 50, 93, 0.25), 0px 30px 60px -30px rgba(0, 0, 0, 0.3), inset 0px -2px 6px 0px rgba(10, 37, 64, 0.35);
 		display: block;
-		margin: auto;
 		min-width: 500px;
 		max-width: 600px;
 		height: auto;
+		margin: auto;
 		border-radius: 1.5rem;
-		box-shadow: 0px 50px 100px -20px rgba(50, 50, 93, 0.25), 0px 30px 60px -30px rgba(0, 0, 0, 0.3), inset 0px -2px 6px 0px rgba(10, 37, 64, 0.35);
 	}
 
 	/* Product list */
@@ -655,9 +529,13 @@ Desktop Styles: 769px and greater
 		margin-top: 5rem;
 	}
 
+	div.container {
+		z-index: 2;
+		margin: 2rem;
+		/* border: solid 10px red; */
+	}
+
 	div a img {
-		min-width: 80%;
 		max-width: 80%;
-		height: auto;
 	}
 }
