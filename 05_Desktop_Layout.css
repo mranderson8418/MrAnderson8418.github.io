@@ -13,17 +13,18 @@ Desktop Styles: 769px and greater
 	html {
 		margin: auto;
 		padding: auto;
-		/* background-image: url("background.jpg"); */
-		background-color: rgb(85, 147, 219);
-		/* background-color: rgb(73, 58, 49, 0.8); */
-		/* background-size: cover;
-		background-repeat: repeat-y; */
-		/* background-attachment: fixed; */
+
 		background-position: center;
 		font-family: Verdana, Geneva, sans-serif;
 		font-size: 15px;
 		width: 100%;
 		height: auto;
+		display: flex;
+
+		margin: auto;
+		padding: auto;
+		background-image: url("SOAP_PICS/HTML_PICS/background.jpeg");
+		background-position: center;
 	}
 
 	body {
@@ -37,6 +38,9 @@ Desktop Styles: 769px and greater
 		/* border: solid 10px blue; */
 		font-size: 1.5rem;
 		color: white;
+		margin: auto;
+
+		background-size: cover;
 	}
 
 	/* Navigation Menu aka Header Menus*/
@@ -50,7 +54,13 @@ Desktop Styles: 769px and greater
 		border: none;
 		color: blue;
 	}
-
+	ul.horizontal-mainmenu > li {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		text-align: center;
+		border: solid 5px yellow;
+	}
 	ul.horizontal-mainmenu > li > a {
 		box-shadow: rgba(50, 50, 93, 0.5) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
 		display: block;
@@ -63,6 +73,10 @@ Desktop Styles: 769px and greater
 		color: white;
 		text-align: center !important;
 		text-transform: uppercase;
+	}
+
+	div.formGroup {
+		width: 75%;
 	}
 
 	a.horizontal-mainmenu-dropdown {
@@ -117,7 +131,7 @@ Desktop Styles: 769px and greater
 		position: relative;
 		min-width: 100%;
 		min-height: 100%;
-		padding: 2rem;
+		/* padding: 2rem; */
 		background-color: rgb(73, 58, 49);
 	}
 
@@ -131,7 +145,7 @@ Desktop Styles: 769px and greater
 		margin: 0px;
 		padding: 0px;
 		border: none;
-		color: blue;
+		/* color: blue; */
 	}
 
 	a.horizontal-mainmenu-dropdown a:link {
@@ -150,7 +164,7 @@ Desktop Styles: 769px and greater
 		min-height: 100%;
 		margin: 0px;
 		padding: 0px;
-		font-size: 3rem;
+		font-size: 4rem;
 		color: white;
 		text-align: center;
 	}
@@ -286,7 +300,7 @@ Desktop Styles: 769px and greater
 	}
 
 	section.flexContainerBody-LiquidSoap article div h2 {
-		font-size: 5rem;
+		font-size: 4rem;
 	}
 	section.flexContainerBody-LiquidSoap article div {
 		margin-top: 5rem;

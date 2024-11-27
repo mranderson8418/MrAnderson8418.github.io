@@ -52,17 +52,27 @@ select#creditCard {
 
 fieldset {
 	/* border: 2px solid black; */
-	display: inline-flex;
-	flex-direction: wrap;
-
+	display: flex;
+	flex-direction: column;
 	justify-content: center;
 	align-items: center;
-	border: none;
+	border: solid 10px yellow;
+
 	/* background-color: rgb(180, 59, 7); */
 	/* box-shadow:outset,inset/h-offset v-offset blur spread color; */
 	/* box-shadow: 10px -10px 35px rgb(189, 186, 186); */
 }
 
+fieldset form.formGroup {
+	min-width: 75%;
+	height: auto;
+}
+
+fieldset form.formGroup div input,
+fieldset form.formGroup div select {
+	min-height: 3rem;
+	font-size: 2rem;
+}
 form.formGroup {
 	display: flex;
 	flex-direction: column;
@@ -98,7 +108,7 @@ form.formGroup {
 }
 
 .formGroup > div label {
-	font-size: 2em;
+	font-size: 3em;
 	width: 500px;
 	/* color: rgb(180, 59, 7); */
 	line-height: 1em;
@@ -110,7 +120,7 @@ form.formGroup {
 
 .formGroup > div input,
 .formGroup > div select {
-	font-size: 1em;
+	font-size: 1rem;
 	height: auto;
 	padding: 1px;
 	margin: 1;
@@ -220,11 +230,14 @@ textarea {
 	height: 100px;
 }
 
-input[type="submit"] {
+div.submit-button input[type="submit"] {
 	height: 50px;
 	width: 200px;
+	/* color: #5e94b6; */
+	background-color: rgb(180, 59, 7);
+	box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+		rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
 }
-
-input#sizeBox {
+input input#sizeBox {
 	width: 240px;
 }
