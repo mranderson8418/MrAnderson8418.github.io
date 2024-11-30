@@ -7,7 +7,29 @@ Mobile Styles: 0px to 480px
 ===============================
 */
 
-@media only screen and (max-width: 480px) {
+@media only screen and (max-width: 780px) {
+
+
+
+body{
+  		/* border: solid 10px red; */
+}
+  	/* The scrublands logo image */
+	section.flex-container-body-01 > div > a > img {
+		box-shadow: 0px 50px 100px -20px rgba(50, 50, 93, 0.25), 0px 30px 60px -30px rgba(0, 0, 0, 0.3), inset 0px -2px 6px 0px rgba(10, 37, 64, 0.35);
+
+		display: block;
+
+		width: clamp(20%, 20%, 20%);
+    
+		margin: none;
+		padding: none;
+
+		height: auto;
+		margin: auto;
+		border-radius: 1.5rem;
+	}
+
     nav.horizontal a {
       display: block;
       text-align: center !important;
@@ -17,13 +39,16 @@ Mobile Styles: 0px to 480px
       position: relative;
       margin: auto;
       padding: auto;
+      min-width:100%;
     }
   
+    
     a.horizontal-mainmenu-dropdown a:link {
       background-color: rgb(73, 58, 49, 0.8);
       color: white;
       font-size: 2px;
       padding: 25px;
+      min-width: 100%;
     }
   
     /* Pulldown Menu Styles */
@@ -83,15 +108,21 @@ Mobile Styles: 0px to 480px
       border: yellow;
       width: 100%;
       font-size: 2em;
+      min-width:100%;
     }
   
     a.horizontal-mainmenu-dropdown {
       font-size: 1.5em;
-      line-height: 5em;
+      line-height: 3em;
       margin: 0px;
       padding: 0px;
+      min-width:100%;
     }
   
+     ul.horizontal-mainmenu{
+      min-width:100%;
+      height:auto;
+     }
     ul.horizontal-mainmenu li > a :active {
       display: block;
     }
@@ -113,6 +144,10 @@ Mobile Styles: 0px to 480px
   
     a.horizontal-mainmenu-dropdown-dropdown-contents {
       display: none;
+    }
+
+    li.bannerimages{
+      min-width:100%;
     }
   
     body {
@@ -242,6 +277,9 @@ Mobile Styles: 0px to 480px
       font-size: 1.5em;
       color: white !important;
     }
+
+
+   
   }
   
   /* 

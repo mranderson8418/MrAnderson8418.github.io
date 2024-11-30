@@ -41,6 +41,8 @@
 	cursor: pointer;
 	border-radius: 0.5rem;
 	max-width: 800px;
+	margin: none;
+	padding: none;
 }
 
 .full-img img {
@@ -95,7 +97,7 @@ div#fullImgBox.full-img {
 }
 
 div > p {
-	margin: 2rem;
+	margin: none;
 }
 div.soap-details > div > h2 {
 	text-align: left;
@@ -112,7 +114,7 @@ div.soap-details > div > h2 {
 	color: #ffffff;
 	line-height: normal;
 	min-width: 100%;
-	margin: 1rem;
+	/* margin: 1rem; */
 }
 div.soap-details > div.ingredients-list > h2 {
 	/* border: solid 5px yellow; */
@@ -131,7 +133,6 @@ div.soap-details > div.ingredients-list > h2 {
 	color: #ffffff;
 	line-height: normal;
 	min-width: 100%;
-	/* margin: 1rem; */
 }
 
 div.item1 h1 {
