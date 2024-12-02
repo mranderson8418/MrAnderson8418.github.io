@@ -23,7 +23,6 @@ Mobile Styles: 3000px to 480px
 	}
 
 	body {
-		/* border: solid 20px green; */
 		background-color: rgb(73, 58, 49, 0.8);
 		background-size: cover;
 		color: white;
@@ -35,6 +34,7 @@ Mobile Styles: 3000px to 480px
 		/* min-width: 900px; */
 		position: relative;
 		z-index: 1;
+		border: solid 10px yellow;
 	}
 
 	/* Navigation Menu aka Header Menus*/
@@ -77,6 +77,8 @@ Mobile Styles: 3000px to 480px
 	a.horizontal-mainmenu-dropdown {
 		color: blue;
 		display: none;
+		background-color: rgb(73, 58, 49, 0.8);
+
 		font-size: 5rem;
 		height: 100%;
 		line-height: 2.5em;
@@ -96,12 +98,12 @@ Mobile Styles: 3000px to 480px
 	ul.horizontal-mainmenu-dropdown-dropdown-contents {
 		box-shadow: none;
 		display: none;
+		background-color: rgb(73, 58, 49);
 		position: absolute;
 		z-index: 6;
 		min-width: 100%;
 		min-height: 400px;
 		max-height: 500px;
-		background: transparent;
 		border: none;
 		font-size: 2.5rem;
 		/* border: SOLID 5px RED; */
@@ -110,7 +112,7 @@ Mobile Styles: 3000px to 480px
 	ul.horizontal-mainmenu-dropdown-dropdown-contents li {
 		display: block;
 		position: relative;
-		z-index: 6;
+		z-index: 7;
 		min-width: 100%;
 		min-height: 100%;
 		/* padding: 20px 20px; */
@@ -127,19 +129,21 @@ Mobile Styles: 3000px to 480px
 		min-width: 100%;
 		min-height: 100%;
 		/* padding: 2rem; */
-		background-color: rgb(73, 58, 49);
+		color: white;
+		z-index: 8;
 		/* box-shadow: rgba(50, 50, 93, 0.5) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset; */
 	}
 
 	/* ADD :HOVER */
-	a.horizontal-mainmenu-dropdown:hover + ul.horizontal-mainmenu-dropdown-dropdown-contents,
-	ul.horizontal-mainmenu-dropdown-dropdown-contents:hover,
-	ul:hover {
+	a.horizontal-mainmenu-dropdown:active + ul.horizontal-mainmenu-dropdown-dropdown-contents,
+	ul.horizontal-mainmenu-dropdown-dropdown-contents:active,
+	ul:active {
 		display: block;
 		width: 100%;
 		min-height: 100%;
 		margin: 0px;
 		/* padding: 2rem; */
+
 		border: none;
 		/* line-height: 2.5rem; */
 		/* color: blue; */
@@ -207,7 +211,7 @@ Mobile Styles: 3000px to 480px
 
 	ul.horizontal-mainmenu li {
 		display: block;
-		z-index: 2;
+
 		width: 100%;
 		min-height: 2rem;
 		max-height: 100%;
@@ -344,7 +348,18 @@ Mobile Styles: 3000px to 480px
 	}
 
 	section.flexContainerBody-LiquidSoap article div h2 {
+		-webkit-text-stroke-width: 1.5px;
+		-webkit-text-stroke-color: white;
+		min-width: 100%;
 		font-size: 4rem;
+		font-family: TwoShotsCleanFull;
+		font-weight: normal;
+		line-height: normal;
+		color: #ffffff;
+		text-align: center;
+		text-shadow: 5px 5px 10px #201f1f;
+		letter-spacing: 5px;
+		margin: none;
 	}
 	section.flexContainerBody-LiquidSoap article div {
 		margin-top: 5rem;
@@ -563,26 +578,36 @@ Mobile Styles: 3000px to 480px
 		margin-bottom: 2rem;
 		padding: none;
 	}
+	section.flex-container-body-01 div a img {
+		border-radius: 1.5rem;
+		box-shadow: 0px 50px 100px -20px rgba(50, 50, 93, 0.25), 0px 30px 60px -30px rgba(0, 0, 0, 0.3), inset 0px -2px 6px 0px rgba(10, 37, 64, 0.35);
+		display: block;
+		height: auto;
+		margin: auto;
+		margin: none;
+		max-width: 30%;
+		padding: none;
+	}
 
-	/* The scrublands logo image */
+	/* The scrublands logo image
 	section.flex-container-body-01 > div > a > img {
 		box-shadow: 0px 50px 100px -20px rgba(50, 50, 93, 0.25), 0px 30px 60px -30px rgba(0, 0, 0, 0.3), inset 0px -2px 6px 0px rgba(10, 37, 64, 0.35);
 
 		display: block;
 
-		width: clamp(20%, 20%, 20%);
+		max-width: 20%;
 		margin: none;
 		padding: none;
 
 		height: auto;
 		margin: auto;
 		border-radius: 1.5rem;
-	}
+	} */
 
 	section.flex-container-body-01 div.product-page-image > a > img {
 		box-shadow: 0px 50px 100px -20px rgba(50, 50, 93, 0.25), 0px 30px 60px -30px rgba(0, 0, 0, 0.3), inset 0px -2px 6px 0px rgba(10, 37, 64, 0.35);
 		display: block;
-		width: clamp(200px 300px 400px);
+		max-width: 20%;
 		height: auto;
 		height: auto;
 		margin: auto;

@@ -5,7 +5,7 @@
 Tablet Styles: 481px and greater
 ================================
 */
-@media only screen and (min-width: 780px) {
+@media only screen and (min-width: 450px) {
 	html {
 		background-image: url("SOAP_PICS/HTML_PICS/background.jpeg");
 		background-position: center;
@@ -22,7 +22,7 @@ Tablet Styles: 481px and greater
 	}
 
 	body {
-		/* border: solid 20px green; */
+		border: solid 20px green;
 		background-color: rgb(73, 58, 49, 0.8);
 		background-size: cover;
 		color: white;
@@ -69,7 +69,7 @@ Tablet Styles: 481px and greater
 	a.horizontal-mainmenu-dropdown {
 		color: blue;
 		display: none;
-		font-size: 5rem;
+		font-size: 2.5rem;
 		height: 100%;
 		line-height: 2.5em;
 		margin: none;
@@ -153,20 +153,21 @@ Tablet Styles: 481px and greater
 		min-height: 100%;
 		max-height: 100%;
 		margin: none;
-		padding: 2rem;
+		padding-top: 2rem;
+		padding-bottom: 2rem;
 		font-size: 3rem;
 		color: white;
 		text-align: center;
 		line-height: normal;
 	}
 	li.bannerImages {
+		align-items: center;
 		display: flex;
 		flex-direction: column;
-		align-items: center;
 		font-size: 5rem;
-		min-height: 100%;
 		line-height: normal;
 		margin: none;
+		min-height: 100%;
 		padding: none;
 		position: relative;
 		text-align: center;
@@ -175,18 +176,15 @@ Tablet Styles: 481px and greater
 
 	li.bannerImages > a {
 		font-size: 5rem;
-		min-height: 100%;
 		line-height: normal;
 		margin: none;
-
+		min-height: 100%;
 		position: relative;
 		text-align: center;
 		width: 100%;
 	}
 
 	nav.horizontal a:hover {
-		margin: 0px;
-		padding: 0px;
 		color: red;
 		z-index: 2;
 		width: 100%;
@@ -336,7 +334,18 @@ Tablet Styles: 481px and greater
 	}
 
 	section.flexContainerBody-LiquidSoap article div h2 {
+		-webkit-text-stroke-width: 1.5px;
+		-webkit-text-stroke-color: white;
+		min-width: 100%;
 		font-size: 4rem;
+		font-family: TwoShotsCleanFull;
+		font-weight: normal;
+		line-height: normal;
+		color: #ffffff;
+		text-align: center;
+		text-shadow: 5px 5px 10px #201f1f;
+		letter-spacing: 5px;
+		margin: none;
 	}
 	section.flexContainerBody-LiquidSoap article div {
 		margin-top: 5rem;
@@ -348,7 +357,7 @@ Tablet Styles: 481px and greater
 		margin: 1rem;
 		margin-top: 0px;
 		margin-bottom: 0px;
-		line-height: 5rem;
+		line-height: 3rem;
 	}
 
 	section.flex-container-body-02 > div > h1 {
@@ -378,7 +387,7 @@ Tablet Styles: 481px and greater
 	div.figure-container-01 div.text-item p {
 		min-height: 100%;
 		margin: 2rem;
-		line-height: 5rem;
+		line-height: 3rem;
 		text-align: left;
 	}
 
@@ -438,7 +447,7 @@ Tablet Styles: 481px and greater
 	div.figure-container-02 div.text-item-02 p {
 		min-height: 100%;
 		margin-left: 2rem;
-		line-height: 5rem;
+		line-height: 3rem;
 		text-align: left;
 	}
 
@@ -502,7 +511,7 @@ Tablet Styles: 481px and greater
 		-webkit-text-stroke-color: white;
 		z-index: 3;
 		min-width: 100%;
-		font-size: 8rem;
+		font-size: 10rem;
 		font-family: TwoShotsCleanFull;
 		font-weight: normal;
 		line-height: normal;
@@ -533,9 +542,9 @@ Tablet Styles: 481px and greater
 		-webkit-text-stroke-color: white;
 		-webkit-text-stroke-width: 0.5px;
 		color: #b43b07;
-
+		/* color: white; */
 		font-family: TwoShotsCleanFull;
-		font-size: 5rem;
+		font-size: 8vw;
 		font-weight: normal;
 		line-height: normal;
 		min-width: 100%;
@@ -547,34 +556,31 @@ Tablet Styles: 481px and greater
 	}
 
 	/* The scrublands logo image */
-	section.flex-container-body-01 > div > a > img {
+	section.flex-container-body-01 div a img {
+		border-radius: 1.5rem;
 		box-shadow: 0px 50px 100px -20px rgba(50, 50, 93, 0.25), 0px 30px 60px -30px rgba(0, 0, 0, 0.3), inset 0px -2px 6px 0px rgba(10, 37, 64, 0.35);
-
 		display: block;
-
-		width: 20%;
-		margin: none;
-		padding: none;
-
 		height: auto;
 		margin: auto;
-		border-radius: 1.5rem;
+		margin: none;
+		max-width: 30%;
+		padding: none;
 	}
 
 	section.flex-container-body-01 div.product-page-image > a > img {
+		border-radius: 1.5rem;
 		box-shadow: 0px 50px 100px -20px rgba(50, 50, 93, 0.25), 0px 30px 60px -30px rgba(0, 0, 0, 0.3), inset 0px -2px 6px 0px rgba(10, 37, 64, 0.35);
 		display: block;
-		width: 300px;
-		height: auto;
 		height: auto;
 		margin: auto;
-		border-radius: 1.5rem;
+		max-width: 50%;
+		min-width: 50%;
 	}
 
 	/* Product list */
 
 	section.flex-container-body-01 > div {
-		margin-top: 2rem;
+		margin-top: 5rem;
 	}
 
 	div.grid-item {
@@ -613,7 +619,7 @@ Tablet Styles: 481px and greater
 		margin-top: 2rem;
 		margin-bottom: 1rem;
 		padding: none;
-		font-size: 3rem;
+		font-size: 4rem;
 		font-family: TwoShotsCleanFull;
 		font-weight: normal;
 		line-height: normal;
@@ -625,8 +631,8 @@ Tablet Styles: 481px and greater
 	div.grid-item a img {
 		margin: auto;
 		padding: none;
-		min-width: 200px;
-		max-width: 200px;
+		min-width: 70%;
+		max-width: 70%;
 		border-radius: 1.5rem;
 		box-shadow: 0 29px 52px rgba(0, 0, 0, 0.4), 0 25px 16px rgba(0, 0, 0, 0.2);
 	}
