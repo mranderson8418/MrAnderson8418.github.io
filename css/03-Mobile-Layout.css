@@ -34,7 +34,7 @@ Mobile Styles: 3000px to 480px
 		/* min-width: 900px; */
 		position: relative;
 		z-index: 1;
-		border: solid 10px yellow;
+		/* border: solid 10px yellow; */
 	}
 
 	/* Navigation Menu aka Header Menus*/
