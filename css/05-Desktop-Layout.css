@@ -538,39 +538,36 @@ Desktop Styles: 769px and greater
 	}
 
 	section.flex-container-body-01 > div.slogan h2 {
-		-webkit-text-stroke-width: 0.5px;
 		-webkit-text-stroke-color: white;
-		min-width: 100%;
-		margin: 0px;
-		padding: 0px;
-		font-size: 6rem;
+		-webkit-text-stroke-width: 0.5px;
+		color: #b43b07;
 		font-family: TwoShotsCleanFull;
+		font-size: 6rem;
 		font-weight: normal;
 		line-height: normal;
-		color: #b43b07;
+		line-height: normal;
+		margin: none;
+		min-width: 100%;
+		padding: none;
 		text-align: center;
 		text-shadow: 5px 5px 10px #201f1f;
-		padding: none;
-		margin: none;
-		line-height: normal;
 	}
+
 	section.flex-container-body-01 > div > h2 {
 		-webkit-text-stroke-color: white;
 		-webkit-text-stroke-width: 0.5px;
 		color: #b43b07;
-		/* color: white; */
 		font-family: TwoShotsCleanFull;
 		font-size: 8rem;
 		font-weight: normal;
+		line-height: 10rem;
 		line-height: normal;
+		line-height: normal;
+		margin-top: 5rem;
 		min-width: 100%;
-		/* padding: 2rem; */
+		padding: none;
 		text-align: center;
 		text-shadow: 5px 5px 10px #201f1f;
-		padding: none;
-		margin-top: 5rem;
-		line-height: normal;
-		line-height: 10rem;
 	}
 
 	/* The scrublands logo image */

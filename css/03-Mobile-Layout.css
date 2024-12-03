@@ -31,10 +31,8 @@ Mobile Styles: 3000px to 480px
 		margin: auto auto;
 		margin: auto;
 		max-width: 1500px;
-		/* min-width: 900px; */
 		position: relative;
 		z-index: 1;
-		/* border: solid 10px yellow; */
 	}
 
 	/* Navigation Menu aka Header Menus*/
