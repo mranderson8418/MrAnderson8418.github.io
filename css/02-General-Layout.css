@@ -24,7 +24,7 @@ img#banner {
 	display: block;
 	position: relative;
 	max-width: 100%;
-	min-width: 300px;
+	min-width: 100%;
 }
 
 /* Navigation */

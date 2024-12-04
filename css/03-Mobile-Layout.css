@@ -2,13 +2,13 @@
 
 /* ===============================
 
-Mobile Styles: 3000px to 480px
+Mobile Styles: 0px to 480px
 ===============================
 */
 
 @media only screen and (max-width: 450px) {
 	html {
-		background-image: url("SOAP_PICS/HTML_PICS/background.jpeg");
+		background-image: url("../SOAP_PICS/HTML_PICS/background.jpeg");
 		background-position: center;
 		background-position: center;
 		display: flex;
@@ -16,8 +16,6 @@ Mobile Styles: 3000px to 480px
 		font-size: 15px;
 		height: auto;
 		margin: auto;
-		margin: auto;
-		padding: auto;
 		padding: auto;
 		width: 100%;
 	}
@@ -41,10 +39,13 @@ Mobile Styles: 3000px to 480px
 	nav.horizontal > ul > li > a {
 		border: none;
 		color: blue;
-		margin: 0px;
+		margin: none;
 		max-height: 100%;
-		min-height: 3rem;
-		padding: 0px;
+		max-width: 100%;
+		min-height: 5rem;
+		min-width: 100%;
+
+		padding: none;
 	}
 
 	ul.horizontal-mainmenu {
@@ -52,6 +53,10 @@ Mobile Styles: 3000px to 480px
 		flex-direction: column;
 		align-items: center;
 		justify-content: center;
+		max-height: 100%;
+		max-width: 100%;
+		min-height: 5rem;
+		min-width: 100%;
 	}
 
 	ul.horizontal-mainmenu > li > a {
@@ -60,12 +65,15 @@ Mobile Styles: 3000px to 480px
 		color: white;
 		display: block;
 		margin: auto;
-		min-height: 100%;
+
 		padding: auto;
 		position: relative;
 		text-align: center !important;
 		text-transform: uppercase;
-		width: 100%;
+		max-height: 100%;
+		max-width: 100%;
+		min-height: 5rem;
+		min-width: 100%;
 	}
 
 	div.formGroup {
@@ -73,18 +81,20 @@ Mobile Styles: 3000px to 480px
 	}
 
 	a.horizontal-mainmenu-dropdown {
+		background-color: rgb(73, 58, 49, 0.8);
 		color: blue;
 		display: none;
-		background-color: rgb(73, 58, 49, 0.8);
-
 		font-size: 5rem;
-		height: 100%;
+
 		line-height: 2.5em;
 		margin: none;
+		max-height: 100%;
+		max-width: 100%;
+		min-height: 5rem;
+		min-width: 100%;
 		padding: none;
 		position: relative;
 		text-align: center;
-		width: 100%;
 	}
 
 	nav.horizontal-mainmenu > dropdown:focus + ul.horizontal-mainmenu-dropdown-dropdown-contents {
@@ -94,146 +104,154 @@ Mobile Styles: 3000px to 480px
 	}
 
 	ul.horizontal-mainmenu-dropdown-dropdown-contents {
+		background-color: rgb(73, 58, 49);
+		border: none;
 		box-shadow: none;
 		display: none;
-		background-color: rgb(73, 58, 49);
+		font-size: 2.5rem;
+		max-height: 100%;
+		max-width: 100%;
+		min-height: 5rem;
+		min-width: 100%;
 		position: absolute;
 		z-index: 6;
-		min-width: 100%;
-		min-height: 400px;
-		max-height: 500px;
-		border: none;
-		font-size: 2.5rem;
-		/* border: SOLID 5px RED; */
 	}
 
 	ul.horizontal-mainmenu-dropdown-dropdown-contents li {
 		display: block;
 		position: relative;
 		z-index: 7;
+		max-height: 100%;
+		max-width: 100%;
+		min-height: 5rem;
 		min-width: 100%;
-		min-height: 100%;
-		/* padding: 20px 20px; */
+
 		background-color: rgb(73, 58, 49);
 		border-radius: 0.5rem;
 	}
-	/* .bannerImages {
-		box-shadow: rgba(50, 50, 93, 0.5) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
-	} */
 
 	ul.horizontal-mainmenu-dropdown-dropdown-contents li a {
-		display: block;
-		position: relative;
-		min-width: 100%;
-		min-height: 100%;
-		/* padding: 2rem; */
 		color: white;
+		display: block;
+		max-height: 100%;
+		max-width: 100%;
+		min-height: 5rem;
+		min-width: 100%;
+		position: relative;
 		z-index: 8;
-		/* box-shadow: rgba(50, 50, 93, 0.5) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset; */
 	}
 
 	/* ADD :HOVER */
 	a.horizontal-mainmenu-dropdown:active + ul.horizontal-mainmenu-dropdown-dropdown-contents,
 	ul.horizontal-mainmenu-dropdown-dropdown-contents:active,
 	ul:active {
-		display: block;
-		width: 100%;
-		min-height: 100%;
-		margin: 0px;
-		/* padding: 2rem; */
-
 		border: none;
-		/* line-height: 2.5rem; */
-		/* color: blue; */
+		display: block;
+		margin: none;
+		max-height: 100%;
+		max-width: 100%;
+		min-height: 5rem;
+		min-width: 100%;
 	}
 
 	a.horizontal-mainmenu-dropdown a:link {
-		z-index: 2;
-		padding: 0px;
 		background-color: rgb(73, 58, 49, 0.5);
-		font-size: 2em;
 		color: white;
+		font-size: 2em;
+		padding: none;
 		text-align: center;
+		z-index: 2;
+		max-height: 100%;
+		max-width: 100%;
+		min-height: 5rem;
+		min-width: 100%;
 	}
 
 	nav.horizontal a:visited,
 	nav.horizontal a:link {
-		z-index: 2;
-		width: 100%;
-		min-height: 5rem;
-		max-height: 100%;
-		margin: none;
-		padding: 2rem;
-		font-size: 3rem;
 		color: white;
-		text-align: center;
+		font-size: 3rem;
 		line-height: normal;
+		margin: none;
+		max-height: 100%;
+		max-width: 100%;
+		min-height: 5rem;
+		min-width: 100%;
+		padding: 2rem;
+		text-align: center;
+		z-index: 2;
 	}
 	li.bannerImages {
+		align-items: center;
 		display: flex;
 		flex-direction: column;
-		align-items: center;
 		font-size: 2rem;
-		min-height: 3rem;
 		line-height: normal;
 		margin: none;
+		max-width: 100%;
+		min-height: 3rem;
 		padding: none;
 		position: relative;
 		text-align: center;
-		width: 100%;
+		min-width: 100%;
 	}
 
 	li.bannerImages > a {
 		font-size: 5rem;
-		min-height: 100%;
 		line-height: normal;
 		margin: none;
-
+		min-height: 100%;
 		position: relative;
 		text-align: center;
-		width: 100%;
+		min-width: 100%;
+		max-width: 100%;
 	}
 
 	nav.horizontal a:hover {
 		color: red;
-		z-index: 2;
-		width: 100%;
-		min-height: 100%;
-		max-height: 100%;
-		margin: none;
-		padding: none;
-
 		color: white;
+		margin: none;
+		max-height: 100%;
+		min-height: 100%;
+		padding: none;
 		text-align: center;
+		width: 100%;
+		z-index: 2;
 	}
 
 	ul.horizontal-mainmenu li {
 		display: block;
 
-		width: 100%;
-		min-height: 2rem;
 		max-height: 100%;
+		max-width: 100%;
+		min-height: 5rem;
+		min-width: 100%;
 	}
 
 	a.horizontal-mainmenu-dropdown {
 		display: block;
-		width: 100%;
-		min-height: 2rem;
+
 		max-height: 100%;
+		max-width: 100%;
+		min-height: 5rem;
+		min-width: 100%;
 	}
 
 	img#inlineImage {
 		float: right;
-		width: 450px;
 		padding: 25px;
+		max-height: 100%;
+		max-width: 100%;
+		min-height: 5rem;
+		min-width: 100%;
 	}
 
 	nav.horizontal {
+		background-color: none;
 		display: flex;
 		flex-direction: row;
 		flex-wrap: nowrap;
 		justify-content: space-between;
-		background-color: none;
 		text-align: center;
 	}
 
@@ -241,9 +259,10 @@ Mobile Styles: 3000px to 480px
 		display: flex;
 		flex-wrap: nowrap;
 		justify-content: center;
-		width: 100%;
-		min-height: 100%;
 		max-height: 100%;
+		max-width: 100%;
+		min-height: 5rem;
+		min-width: 100%;
 		text-align: center;
 	}
 	/* a.horizontal-mainmenu-dropdown {
@@ -262,15 +281,15 @@ Mobile Styles: 3000px to 480px
 	/* ---------------------------------------------------- */
 	/* Bar Soap HTML PAGE */
 	section.flexContainerBody-BarSoap {
+		/* border: solid 10px red; */
+		align-items: center;
 		display: flex;
 		flex-direction: column;
-		justify-content: center;
-		align-items: center;
 		flex-grow: 0;
-		margin: 0px;
-		padding: 0px;
-		/* border: solid 10px red; */
+		justify-content: center;
 		line-height: normal;
+		margin: none;
+		padding: 0px;
 	}
 	section.flexContainerBody-BarSoap article {
 		display: flex;
@@ -522,28 +541,28 @@ Mobile Styles: 3000px to 480px
 	}
 
 	div.text-item-footer > p {
-		font-size: 0.675rem;
+		font-size: 1rem;
 		text-align: center;
 	}
 
 	/* ------------------------Product Page --------------------*/
 
 	section.flex-container-body-01 > div > h1 {
-		margin: none;
-		padding: none;
-		-webkit-text-stroke-width: 0.8px;
 		-webkit-text-stroke-color: white;
-		z-index: 3;
-		min-width: 100%;
-		font-size: 3rem;
+		-webkit-text-stroke-width: 0.8px;
+		color: white;
 		font-family: TwoShotsCleanFull;
+		font-size: 3.5rem;
 		font-weight: normal;
 		line-height: normal;
-		color: white;
+		margin: none;
+		margin: none;
+		min-width: 100%;
+		padding: none;
+		padding: none;
 		text-align: center;
 		text-shadow: 5px 5px 10px #201f1f;
-		padding: none;
-		margin: none;
+		z-index: 3;
 	}
 
 	section.flex-container-body-01 > div.slogan h2 {
@@ -552,7 +571,7 @@ Mobile Styles: 3000px to 480px
 		min-width: 100%;
 		margin: none;
 		padding: none;
-		font-size: 2rem;
+		font-size: 2.5rem;
 		font-family: TwoShotsCleanFull;
 		font-weight: normal;
 		line-height: normal;
@@ -566,7 +585,7 @@ Mobile Styles: 3000px to 480px
 		color: white;
 
 		font-family: TwoShotsCleanFull;
-		font-size: 2rem;
+		font-size: 3.5rem;
 		font-weight: normal;
 		line-height: normal;
 		min-width: 100%;
@@ -577,7 +596,7 @@ Mobile Styles: 3000px to 480px
 		padding: none;
 	}
 	section.flex-container-body-01 div a img {
-		border-radius: 1.5rem;
+		border-radius: 1rem;
 		box-shadow: 0px 50px 100px -20px rgba(50, 50, 93, 0.25), 0px 30px 60px -30px rgba(0, 0, 0, 0.3), inset 0px -2px 6px 0px rgba(10, 37, 64, 0.35);
 		display: block;
 		height: auto;
@@ -603,13 +622,13 @@ Mobile Styles: 3000px to 480px
 	} */
 
 	section.flex-container-body-01 div.product-page-image > a > img {
+		border-radius: 1rem;
 		box-shadow: 0px 50px 100px -20px rgba(50, 50, 93, 0.25), 0px 30px 60px -30px rgba(0, 0, 0, 0.3), inset 0px -2px 6px 0px rgba(10, 37, 64, 0.35);
 		display: block;
-		max-width: 20%;
-		height: auto;
 		height: auto;
 		margin: auto;
-		border-radius: 1.5rem;
+		max-width: 60%;
+		min-width: 60%;
 	}
 
 	/* Product list */
@@ -676,101 +695,12 @@ Mobile Styles: 3000px to 480px
 	/* Grid ELements */
 	/* ============================ */
 
-	* {
-		padding: 0px;
-		margin: 0px;
-	}
-	/* 
-	section.gridContainer {
-		display: grid;
+	img#banner {
+		display: block;
 		position: relative;
-		min-width: 320px;
-		max-width: 1024px;
-		min-height: 100%;
-		margin-left: auto;
-		margin-right: auto;
-		grid-template-columns: 200px 200px 200px 1fr;
-		grid-template-rows: 400px 1fr 1fr 1fr;
-		justify-content: space-around;
-		grid-gap: 5px;
-		position: relative;
-		z-index: 1;
-	}
-
-	article#sheaButterDescription {
-		grid-column: 1 / span 4;
-		grid-row: 1 span 4;
 		min-width: 100%;
-		min-height: 100%;
-		margin-left: auto;
-		margin-right: auto;
-		padding: 10px;
-		line-height: normal;
-	}
-
-	article#sheaButter {
-		grid-column: 3 / span 2;
-		grid-row: 1;
 		max-width: 100%;
-		height: auto;
-		padding: 10px;
-		margin-left: auto;
-		margin-right: auto;
-		line-height: normal;
+		min-height: 5rem;
+		max-height: 100%;
 	}
-
-	article#sheaButterImage img {
-		max-width: 100%;
-		max-height: 250px;
-		margin-left: auto;
-		margin-right: auto;
-		line-height: normal;
-	}
-
-	article.greenTeaSoapDescription {
-		grid-column: 1 / span 4;
-		grid-row: 3;
-		max-width: 100%;
-		max-height: 400px;
-		margin-left: auto;
-		margin-right: auto;
-		padding: 10px;
-		overflow: scroll;
-		line-height: normal;
-	}
-
-	img#greenTeaImage {
-		grid-column: 1 / span 4;
-		grid-row: 3;
-		max-width: 300px;
-		line-height: normal;
-	}
-
-	article#seaGreenSoapDescription {
-		grid-column: 1 / span 2;
-		grid-row: 4;
-		max-width: 100%;
-
-		margin-left: auto;
-		margin-right: auto;
-		text-align: left;
-		line-height: normal;
-	} */
-
-	/* article#seaGreenImage {
-		grid-column: 1 / span 2;
-		grid-row: 4;
-
-		max-width: 100%;
-		max-height: auto;
-
-		padding: 20px;
-		margin-left: auto;
-		margin-right: auto;
-	}
-
-	article#seaGreenImage img {
-		max-width: 100%;
-		max-height: 350px;
-	} */
 }
