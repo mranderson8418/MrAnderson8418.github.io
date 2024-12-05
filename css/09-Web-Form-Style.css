@@ -159,7 +159,7 @@ select#cardMonth {
 	font-size: 30px;
 	margin: 25px;
 	width: auto;
-	height: 5rem;
+	height: 100px;
 	border-radius: 20px;
 	text-align: center;
 }
