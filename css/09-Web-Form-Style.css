@@ -41,6 +41,8 @@ input[type="email"]:focus,
 select#creditCard {
 	background-color: pink;
 	border: 5px solid red;
+	max-width: 100%;
+	min-height: 100%;
 }
 
 select#creditCard {
@@ -48,6 +50,8 @@ select#creditCard {
 	border: none;
 	/* display: block; */
 	outline: none;
+	max-width: 100%;
+	min-height: 100%;
 }
 
 fieldset {
@@ -57,6 +61,8 @@ fieldset {
 	justify-content: center;
 	align-items: center;
 	border: solid 10px yellow;
+	max-width: 100%;
+	min-height: 100%;
 
 	/* background-color: rgb(180, 59, 7); */
 	/* box-shadow:outset,inset/h-offset v-offset blur spread color; */
@@ -64,13 +70,14 @@ fieldset {
 }
 
 fieldset form.formGroup {
-	min-width: 75%;
-	height: auto;
+	max-width: 100%;
+	min-height: 100%;
 }
 
 fieldset form.formGroup div input,
 fieldset form.formGroup div select {
-	min-height: 3rem;
+	max-width: 100%;
+	min-height: 100%;
 	font-size: 2rem;
 }
 form.formGroup {
@@ -78,19 +85,14 @@ form.formGroup {
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
-	max-width: 70%;
-	min-width: 30%;
-	height: 75%;
+
+	max-width: 100%;
+	min-height: 100%;
 	margin: 10%;
-	padding: 20px;
-	/* color: #5e94b6; */
+	padding: 1rem;
 	background-color: rgb(180, 59, 7);
-
 	opacity: 0.8;
-
-	/* box-shadow: none|h-offset v-offset blur spread color |inset|initial|inherit; */
 	border-radius: 20px;
-
 	box-shadow: 10px 10px 35px 0px rgba(0, 0, 0, 0.5), 10px 10px 30px 0px rgba(255, 255, 255, 0.347) inset;
 }
 
@@ -98,19 +100,17 @@ form.formGroup {
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
-
 	line-height: 1em;
-	width: 90%;
-	height: auto;
-	maring: none;
-	padding: 20px;
-	/* border: 5px solid black; */
+	max-width: 100%;
+	min-height: 100%;
+	margin: none;
+	padding: 1rem;
 }
 
 .formGroup > div label {
 	font-size: 3em;
-	width: 500px;
-	/* color: rgb(180, 59, 7); */
+	max-width: 100%;
+	min-height: 100%;
 	line-height: 1em;
 	text-align: left;
 	color: rgb(255, 255, 255);
@@ -122,12 +122,11 @@ form.formGroup {
 .formGroup > div select {
 	font-size: 1rem;
 	height: auto;
-	padding: 1px;
-	margin: 1;
-	line-height: 1em;
+	padding: 1rem;
+	margin: 1rem;
+	line-height: 1rem;
 	text-align: left;
 	color: rgb(180, 59, 7);
-	/* font-family: TwoShotsCleanFull, Courier, monospace; */
 	font-weight: normal;
 }
 
@@ -150,16 +149,16 @@ input#cscNumber,
 select#cardYear,
 select#cardMonth {
 	border-radius: 5px;
-	height: 25px;
-	width: 100%;
+	max-width: 100%;
+	min-height: 100%;
 }
 
 .submitButton input[type="submit"] {
 	color: rgb(25, 25, 25);
 	font-size: 30px;
 	margin: 25px;
-	width: auto;
-	height: 5rem;
+	max-width: 100%;
+	min-height: 100%;
 	border-radius: 20px;
 	text-align: center;
 }
@@ -201,13 +200,15 @@ legend {
 
 label {
 	display: inline-block;
-	width: 120px;
+	max-width: 100%;
+	min-height: 100%;
 }
 
 div.labelA img {
 	display: flex;
 	flex-direction: row;
-	width: 10px;
+	max-width: 100%;
+	min-height: 100%;
 }
 
 img[src="dozen.png"] {
@@ -231,13 +232,14 @@ textarea {
 }
 
 div.submit-button input[type="submit"] {
-	height: 50px;
-	width: 200px;
+	max-width: 100%;
+	min-height: 100%;
 	/* color: #5e94b6; */
 	background-color: rgb(180, 59, 7);
 	box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
 		rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
 }
 input input#sizeBox {
-	width: 240px;
+	max-width: 100%;
+	min-height: 100%;
 }

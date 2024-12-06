@@ -4,7 +4,7 @@
 Desktop Styles: 769px and greater
 =================================
 */
-@media only screen and (min-width: 1270px) {
+@media only screen and (min-width: 1024px) {
 	* {
 		padding: none;
 		margin: none;
@@ -40,7 +40,7 @@ Desktop Styles: 769px and greater
 		border: none;
 		color: blue;
 		margin: none;
-		max-height: 200px;
+		max-width: 100%;
 		min-height: 100%;
 	}
 
@@ -68,7 +68,6 @@ Desktop Styles: 769px and greater
 		font-size: 3rem;
 		max-height: 100%;
 		min-height: 100%;
-		min-width: 100%;
 		position: absolute;
 		z-index: 5;
 	}
@@ -203,23 +202,29 @@ Desktop Styles: 769px and greater
 		display: flex;
 		flex-wrap: nowrap;
 		justify-content: center;
+		flex-direction: row;
 		width: 100%;
 		min-height: 100%;
 		max-height: 100%;
 		text-align: center;
 	}
-	/* a.horizontal-mainmenu-dropdown {
+
+	nav.horizontal ul.horizontal-mainmenu li {
+		display: block;
+		min-width: 20%;
+		max-width: 20%;
+	}
+	a.horizontal-mainmenu-dropdown {
 		text-align: center;
 		font-size: 10rem;
-	} */
-	/* li.bannerimages {
+	}
+	li.bannerimages {
 		display: flex;
 		flex-direction: column;
 		align-items: center;
 		justify-content: center;
 		text-align: center;
-		
-	} */
+	}
 
 	/* ---------------------------------------------------- */
 	/* Bar Soap HTML PAGE */
@@ -348,6 +353,7 @@ Desktop Styles: 769px and greater
 		text-align: center;
 		text-shadow: 5px 5px 10px #201f1f;
 	}
+
 	div.figure-container-01 {
 		align-items: stretch;
 		display: flex;
@@ -355,6 +361,7 @@ Desktop Styles: 769px and greater
 		flex-wrap: nowrap;
 		justify-content: space-between;
 	}
+
 	div.figure-container-01 > div.text-item {
 		flex-grow: 1;
 		text-align: left;
@@ -371,10 +378,11 @@ Desktop Styles: 769px and greater
 	div.figure-container-01 div.image-item figure {
 		display: inline-block;
 		flex-shrink: 5;
+		min-width: 40rem;
 		max-width: 100%;
 		min-height: 100%;
 	}
-	div.figure-container-01 div.image-item > figure > img {
+	div.figure-container-01 div.image-item figure a img {
 		border-radius: 1em;
 		box-shadow: 0px 50px 100px -20px rgba(50, 50, 93, 0.25), 0px 30px 60px -30px rgba(0, 0, 0, 0.3), inset 0px -2px 6px 0px rgba(10, 37, 64, 0.35);
 		clear: both;
@@ -422,7 +430,8 @@ Desktop Styles: 769px and greater
 	div.image-item-02 {
 		display: block;
 		margin: none;
-		min-width: 35rem;
+		min-width: 40rem;
+		max-width: 100%;
 		min-height: 100%;
 		padding: none;
 	}

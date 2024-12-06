@@ -6,7 +6,7 @@ Mobile Styles: 0px to 480px
 ===============================
 */
 
-@media only screen and (max-width: 450px) {
+@media only screen and (min-width: 0px) {
 	html {
 		background-image: url("../SOAP_PICS/HTML_PICS/background.jpeg");
 		background-position: center;
@@ -40,10 +40,8 @@ Mobile Styles: 0px to 480px
 		border: none;
 		color: blue;
 		margin: none;
-		max-height: 100%;
 		max-width: 100%;
-		min-height: 5rem;
-		min-width: 100%;
+		min-height: 100%;
 
 		padding: none;
 	}
@@ -53,10 +51,8 @@ Mobile Styles: 0px to 480px
 		flex-direction: column;
 		align-items: center;
 		justify-content: center;
-		max-height: 100%;
 		max-width: 100%;
-		min-height: 5rem;
-		min-width: 100%;
+		min-height: 100%;
 	}
 
 	ul.horizontal-mainmenu > li > a {
@@ -70,10 +66,8 @@ Mobile Styles: 0px to 480px
 		position: relative;
 		text-align: center !important;
 		text-transform: uppercase;
-		max-height: 100%;
 		max-width: 100%;
-		min-height: 5rem;
-		min-width: 100%;
+		min-height: 100%;
 	}
 
 	div.formGroup {
@@ -88,10 +82,8 @@ Mobile Styles: 0px to 480px
 
 		line-height: 2.5em;
 		margin: none;
-		max-height: 100%;
 		max-width: 100%;
-		min-height: 5rem;
-		min-width: 100%;
+		min-height: 100%;
 		padding: none;
 		position: relative;
 		text-align: center;
@@ -109,10 +101,8 @@ Mobile Styles: 0px to 480px
 		box-shadow: none;
 		display: none;
 		font-size: 2.5rem;
-		max-height: 100%;
 		max-width: 100%;
-		min-height: 5rem;
-		min-width: 100%;
+		min-height: 100%;
 		position: absolute;
 		z-index: 6;
 	}
@@ -121,10 +111,8 @@ Mobile Styles: 0px to 480px
 		display: block;
 		position: relative;
 		z-index: 7;
-		max-height: 100%;
 		max-width: 100%;
-		min-height: 5rem;
-		min-width: 100%;
+		min-height: 100%;
 
 		background-color: rgb(73, 58, 49);
 		border-radius: 0.5rem;
@@ -133,12 +121,11 @@ Mobile Styles: 0px to 480px
 	ul.horizontal-mainmenu-dropdown-dropdown-contents li a {
 		color: white;
 		display: block;
-		max-height: 100%;
-		max-width: 100%;
-		min-height: 5rem;
-		min-width: 100%;
+
 		position: relative;
 		z-index: 8;
+		max-width: 100%;
+		min-height: 100%;
 	}
 
 	/* ADD :HOVER */
@@ -148,10 +135,8 @@ Mobile Styles: 0px to 480px
 		border: none;
 		display: block;
 		margin: none;
-		max-height: 100%;
 		max-width: 100%;
-		min-height: 5rem;
-		min-width: 100%;
+		min-height: 100%;
 	}
 
 	a.horizontal-mainmenu-dropdown a:link {
@@ -161,10 +146,9 @@ Mobile Styles: 0px to 480px
 		padding: none;
 		text-align: center;
 		z-index: 2;
-		max-height: 100%;
+
 		max-width: 100%;
-		min-height: 5rem;
-		min-width: 100%;
+		min-height: 100%;
 	}
 
 	nav.horizontal a:visited,
@@ -173,13 +157,12 @@ Mobile Styles: 0px to 480px
 		font-size: 3rem;
 		line-height: normal;
 		margin: none;
-		max-height: 100%;
-		max-width: 100%;
-		min-height: 5rem;
-		min-width: 100%;
+
 		padding: 2rem;
 		text-align: center;
 		z-index: 2;
+		max-width: 100%;
+		min-height: 100%;
 	}
 	li.bannerImages {
 		align-items: center;
@@ -189,22 +172,23 @@ Mobile Styles: 0px to 480px
 		line-height: normal;
 		margin: none;
 		max-width: 100%;
-		min-height: 3rem;
+		min-height: 100%;
+
 		padding: none;
 		position: relative;
 		text-align: center;
-		min-width: 100%;
 	}
 
 	li.bannerImages > a {
 		font-size: 5rem;
 		line-height: normal;
 		margin: none;
-		min-height: 100%;
+
 		position: relative;
 		text-align: center;
-		min-width: 100%;
+
 		max-width: 100%;
+		min-height: 100%;
 	}
 
 	nav.horizontal a:hover {
@@ -568,7 +552,7 @@ Mobile Styles: 0px to 480px
 	section.flex-container-body-01 > div.slogan h2 {
 		-webkit-text-stroke-width: 0.5px;
 		-webkit-text-stroke-color: white;
-		min-width: 100%;
+
 		margin: none;
 		padding: none;
 		font-size: 2.5rem;
@@ -578,6 +562,8 @@ Mobile Styles: 0px to 480px
 		color: white;
 		text-align: center;
 		text-shadow: 5px 5px 10px #201f1f;
+		max-width: 100%;
+		min-height: 100%;
 	}
 	section.flex-container-body-01 > div > h2 {
 		-webkit-text-stroke-color: white;
@@ -588,7 +574,8 @@ Mobile Styles: 0px to 480px
 		font-size: 3.5rem;
 		font-weight: normal;
 		line-height: normal;
-		min-width: 100%;
+		max-width: 100%;
+		min-height: 100%;
 
 		text-align: center;
 		text-shadow: 5px 5px 10px #201f1f;
@@ -605,21 +592,6 @@ Mobile Styles: 0px to 480px
 		max-width: 30%;
 		padding: none;
 	}
-
-	/* The scrublands logo image
-	section.flex-container-body-01 > div > a > img {
-		box-shadow: 0px 50px 100px -20px rgba(50, 50, 93, 0.25), 0px 30px 60px -30px rgba(0, 0, 0, 0.3), inset 0px -2px 6px 0px rgba(10, 37, 64, 0.35);
-
-		display: block;
-
-		max-width: 20%;
-		margin: none;
-		padding: none;
-
-		height: auto;
-		margin: auto;
-		border-radius: 1.5rem;
-	} */
 
 	section.flex-container-body-01 div.product-page-image > a > img {
 		border-radius: 1rem;
@@ -638,13 +610,15 @@ Mobile Styles: 0px to 480px
 	}
 
 	div.grid-item {
-		width: 200px;
-		height: auto;
+		max-width: 100%;
+		min-height: 100%;
 	}
 
 	div.container {
 		z-index: 2;
 		margin: 1rem;
+		max-width: 100%;
+		min-height: 100%;
 	}
 
 	/* Bar Soap Page */
@@ -652,9 +626,11 @@ Mobile Styles: 0px to 480px
 		display: grid;
 		align-content: center;
 		gap: 0px;
-		grid-template-columns: auto auto;
+		grid-template-columns: auto;
 		justify-content: space-evenly;
 		padding: none;
+		max-width: 100%;
+		min-height: 100%;
 	}
 
 	div.grid-item {
@@ -662,8 +638,16 @@ Mobile Styles: 0px to 480px
 		padding: none;
 		margin: none;
 		font-size: 1.5rem;
-		width: 100%;
-		height: auto;
+		max-width: 100%;
+		min-height: 100%;
+	}
+	div.grid-item div a img {
+		text-align: center;
+		padding: none;
+		margin: none;
+		font-size: 1.5rem;
+		max-width: 80%;
+		min-height: 100%;
 	}
 
 	div.grid-item h2 {
@@ -698,9 +682,8 @@ Mobile Styles: 0px to 480px
 	img#banner {
 		display: block;
 		position: relative;
-		min-width: 100%;
+
 		max-width: 100%;
-		min-height: 5rem;
-		max-height: 100%;
+		min-height: 100%;
 	}
 }
