@@ -192,7 +192,6 @@ div.ingredients-list ul {
 }
 
 div.ingredients-list ul li {
-	display: block;
 	flex: 1;
 	text-align: left;
 	/* border: solid 5px yellow; */

@@ -45,6 +45,7 @@ Desktop Styles: 769px and greater
 	}
 
 	ul.horizontal-mainmenu > li > a {
+		max-width: 100%;
 		border-radius: 0.125rem;
 		box-shadow: rgba(50, 50, 93, 0.5) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
 		color: white;
@@ -54,7 +55,6 @@ Desktop Styles: 769px and greater
 		position: relative;
 		text-align: center !important;
 		text-transform: uppercase;
-		width: 100%;
 	}
 	/* Web form webpage  */
 	div.formGroup {
@@ -65,7 +65,7 @@ Desktop Styles: 769px and greater
 		background: transparent;
 		box-shadow: none;
 		display: none;
-		font-size: 3rem;
+		font-size: 3vw;
 		min-width: 100%;
 		max-width: 100%;
 		min-height: 100%;
@@ -86,6 +86,8 @@ Desktop Styles: 769px and greater
 		padding: none;
 		margin: none;
 		line-height: normal;
+		max-width: 100%;
+		min-height: 100%;
 	}
 
 	ul.horizontal-mainmenu-dropdown-dropdown-contents li a {
@@ -99,62 +101,51 @@ Desktop Styles: 769px and greater
 	a.horizontal-mainmenu-dropdown a:link {
 		background-color: rgb(73, 58, 49, 0.5);
 		color: white;
-		font-size: 2em;
-		padding-top: 2rem;
+		font-size: 3vw;
 		padding-bottom: 2rem;
+		padding-top: 2rem;
 		text-align: center;
 		z-index: 2;
+		max-width: 100%;
+		min-height: 100%;
 	}
 
 	nav.horizontal a:visited,
 	nav.horizontal a:link {
 		color: white;
-		font-size: 3rem;
+		font-size: 3vw;
 		line-height: normal;
 		margin: none;
 		max-width: 100%;
 		min-height: 100%;
+		/* padding-bottom: 2rem; */
+		/* padding-top: 2rem; */
 		padding: none;
 		text-align: center;
-
 		z-index: 2;
-		padding-top: 2rem;
-		padding-bottom: 2rem;
 	}
 
-	ul.horizontal-mainmenu-dropdown-dropdown-contents li {
-		/* background-color: lightblue; */
-		line-height: normal;
-	}
 	ul.horizontal-mainmenu-dropdown-dropdown-contents li.bannerImages {
 		align-items: center;
-		line-height: normal;
+		box-shadow: rgba(16, 16, 16, 0.5) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(43, 45, 46, 0.35) 0px -2px 6px 0px inset;
 		display: flex;
 		flex-direction: column;
-		/* background-color: green; */
-		padding: none;
+		font-size: 3vw;
+		line-height: normal;
 		margin: none;
-
-		font-size: 3rem;
-
-		max-height: 100%;
-
+		padding: none;
 		text-align: center;
-		width: 100%;
-		padding: none;
-		margin: none;
-		box-shadow: rgba(16, 16, 16, 0.5) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(43, 45, 46, 0.35) 0px -2px 6px 0px inset;
+		max-width: 100%;
+		min-height: 100%;
 	}
 
 	nav.horizontal a:hover {
-		/* z-index: 2; */
-		padding: 2rem;
 		color: #b43b07;
-		max-height: 100%;
-		min-height: 100%;
-		text-align: center;
-		width: 100%;
 		line-height: normal;
+		max-width: 100%;
+		min-height: 100%;
+		padding: 2rem;
+		text-align: center;
 	}
 
 	/* ADD :HOVER */
@@ -162,12 +153,12 @@ Desktop Styles: 769px and greater
 	ul.horizontal-mainmenu-dropdown-dropdown-contents:hover,
 	ul:hover {
 		display: block;
-		/* position: relative; */
+
 		max-width: 100%;
 		min-height: 100%;
 		border: none;
 		color: white;
-		font-size: 5rem;
+		font-size: 3vw;
 		line-height: normal;
 	}
 
@@ -180,12 +171,7 @@ Desktop Styles: 769px and greater
 
 	a.horizontal-mainmenu-dropdown {
 		display: block;
-		max-width: 100%;
-		min-height: 100%;
-	}
-
-	img#inlineImage {
-		float: right;
+		min-width: 100;
 		max-width: 100%;
 		min-height: 100%;
 	}
@@ -197,8 +183,14 @@ Desktop Styles: 769px and greater
 		justify-content: space-between;
 		background-color: none;
 		text-align: center;
+		min-width: 100%;
+		max-width: 100%;
+		min-height: 100%;
 	}
-
+	ul.horizontal-mainmenu {
+		max-width: 100%;
+		min-height: 100%;
+	}
 	nav.horizontal ul.horizontal-mainmenu {
 		display: flex;
 		flex-wrap: nowrap;
@@ -211,12 +203,21 @@ Desktop Styles: 769px and greater
 
 	nav.horizontal ul.horizontal-mainmenu li {
 		display: block;
-		max-width: 100%;
-		min-height: 100%;
+		min-width: 20%;
+		max-width: 20%;
 	}
 	a.horizontal-mainmenu-dropdown {
 		text-align: center;
-		font-size: 10rem;
+		font-size: 3vw;
+		max-width: 100%;
+		min-height: 100%;
+	}
+
+	nav.horizontal ul.horizontal-mainmenu ul.horizontal-mainmenu-dropdown-dropdown-contents li {
+		display: block;
+		min-width: 100%;
+		max-width: 100%;
+		min-height: 100%;
 	}
 	li.bannerimages {
 		display: flex;
@@ -224,6 +225,8 @@ Desktop Styles: 769px and greater
 		align-items: center;
 		justify-content: center;
 		text-align: center;
+		max-width: 100%;
+		min-height: 30rem;
 	}
 
 	/* ---------------------------------------------------- */
@@ -255,7 +258,7 @@ Desktop Styles: 769px and greater
 
 	section.flexContainerBody-BarSoap article div h2 {
 		flex-grow: 0;
-		font-size: 5rem;
+		font-size: 3vw;
 		margin: none;
 		padding: 2rem;
 		text-align: center;
@@ -337,6 +340,7 @@ Desktop Styles: 769px and greater
 		line-height: 5rem;
 		margin-bottom: 0px;
 		margin-top: 0px;
+		font-size: 1.5rem;
 	}
 
 	section.flex-container-body-02 > div > h1 {
@@ -427,6 +431,7 @@ Desktop Styles: 769px and greater
 		margin: none;
 		max-width: 100%;
 		text-align: left;
+		font-size: 1.5rem;
 	}
 
 	div.image-item-02 {
@@ -621,51 +626,51 @@ Desktop Styles: 769px and greater
 		min-height: 100%;
 	}
 
+	/* Bar Soap Page */
+
+	div.container div.grid-container-bar-soap {
+		display: grid;
+		grid-template-columns: auto auto auto;
+		margin: none;
+		gap: 1rem;
+		max-width: 100%;
+		min-height: 100%;
+		padding: none;
+		margin: none;
+	}
+
 	div.grid-item {
-		height: auto;
 		margin-top: 4rem;
-		width: 600px;
+		max-width: 100%;
+		min-height: 100%;
+
+		text-align: center;
 	}
 
 	div.container {
 		z-index: 2;
 		margin: 2rem;
-	}
-
-	/* Bar Soap Page */
-	.grid-container {
-		display: grid;
-		grid-template-columns: auto auto;
-		margin: none;
 		max-width: 100%;
-		padding: none;
+		min-height: 100%;
 	}
 
-	.grid-item {
-		text-align: center;
-	}
-
-	div.grid-item h2 {
+	div.grid-item div h2 {
 		font-size: 6rem;
 		margin-bottom: 1rem;
 		margin-top: 2rem;
 		margin: none;
 		padding: none;
 		text-align: center;
+		max-width: 100%;
+		min-height: 100%;
 	}
 
 	div.grid-item a img {
 		border-radius: 2.5rem;
 		box-shadow: 0 29px 52px rgba(0, 0, 0, 0.4), 0 25px 16px rgba(0, 0, 0, 0.2);
-
 		margin: none;
-
 		padding: none;
 		max-width: 100%;
 		min-height: 100%;
-	}
-	* {
-		padding: none;
-		margin: none;
 	}
 }

@@ -39,7 +39,7 @@ Desktop Styles: 769px and greater
 	nav.horizontal > ul > li > a {
 		border: none;
 		color: blue;
-		maring: none;
+		margin: none;
 		max-height: 200px;
 		min-height: 100%;
 	}
@@ -232,7 +232,7 @@ Desktop Styles: 769px and greater
 		justify-content: center;
 		align-items: center;
 		flex-grow: 0;
-		maring: none;
+		margin: none;
 		padding: none;
 
 		line-height: normal;
@@ -256,7 +256,7 @@ Desktop Styles: 769px and greater
 
 	section.flexContainerBody-BarSoap article div h2 {
 		flex-grow: 0;
-		maring: none;
+		margin: none;
 		padding: 2rem;
 		font-size: 5rem;
 		text-align: center;
@@ -278,7 +278,7 @@ Desktop Styles: 769px and greater
 		justify-content: center;
 		align-items: center;
 		flex-grow: 0;
-		maring: none;
+		margin: none;
 		padding: none;
 		line-height: normal;
 	}
@@ -296,7 +296,7 @@ Desktop Styles: 769px and greater
 		position: relative;
 		min-width: 100%;
 		height: auto;
-		maring: none;
+		margin: none;
 		margin-top: 5rem;
 		text-align: center;
 	}
@@ -395,7 +395,7 @@ Desktop Styles: 769px and greater
 	div.figure-caption > figcaption {
 		position: relative;
 		clear: both;
-		maring: none;
+		margin: none;
 		padding: 25px;
 		background-color: rgba(88, 75, 75, 0.5); /* Optional: Add a background color */
 		border-radius: 0.5em;
@@ -450,7 +450,7 @@ Desktop Styles: 769px and greater
 		position: relative;
 		max-width: 100%;
 		clear: both;
-		maring: none;
+		margin: none;
 		padding: 25px;
 		background-color: rgba(88, 75, 75, 0.5); /* Optional: Add a background color */
 		border-radius: 0.5em;
@@ -523,7 +523,7 @@ Desktop Styles: 769px and greater
 		-webkit-text-stroke-width: 0.8px;
 		-webkit-text-stroke-color: white;
 		min-width: 100%;
-		maring: none;
+		margin: none;
 		padding: none;
 		font-size: 7rem;
 		font-family: TwoShotsCleanFull;
@@ -542,7 +542,7 @@ Desktop Styles: 769px and greater
 		-webkit-text-stroke-width: 0.5px;
 		-webkit-text-stroke-color: white;
 		min-width: 100%;
-		maring: none;
+		margin: none;
 		padding: none;
 		font-size: 6rem;
 		font-family: TwoShotsCleanFull;
@@ -636,6 +636,7 @@ Desktop Styles: 769px and greater
 		grid-template-columns: auto auto;
 		padding: none;
 		max-width: 100%;
+		min-height: 100%;
 		margin: none;
 	}
 

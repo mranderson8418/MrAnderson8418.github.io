@@ -294,7 +294,7 @@ Mobile Styles: 0px to 480px
 
 	section.flexContainerBody-BarSoap article div h2 {
 		flex-grow: 0;
-		maring: none;
+		margin: none;
 		padding: 2rem;
 		font-size: 5rem;
 		text-align: center;
@@ -316,7 +316,7 @@ Mobile Styles: 0px to 480px
 		justify-content: center;
 		align-items: center;
 		flex-grow: 0;
-		maring: none;
+		margin: none;
 		padding: none;
 		line-height: normal;
 	}
@@ -334,7 +334,7 @@ Mobile Styles: 0px to 480px
 		position: relative;
 		min-width: 100%;
 		height: auto;
-		maring: none;
+		margin: none;
 		margin-top: 5rem;
 		text-align: center;
 	}
@@ -432,7 +432,7 @@ Mobile Styles: 0px to 480px
 	div.figure-caption > figcaption {
 		position: relative;
 		clear: both;
-		maring: none;
+		margin: none;
 		padding: 25px;
 		background-color: rgba(88, 75, 75, 0.5); /* Optional: Add a background color */
 		border-radius: 0.5em;
@@ -471,7 +471,7 @@ Mobile Styles: 0px to 480px
 		clear: both;
 		width: 100%;
 		height: auto;
-		maring: none;
+		margin: none;
 		padding: none;
 		border-radius: 1em;
 	}
@@ -479,7 +479,7 @@ Mobile Styles: 0px to 480px
 	div.figure-caption > figcaption {
 		position: relative;
 		clear: both;
-		maring: none;
+		margin: none;
 		padding: 25px;
 		background-color: rgba(88, 75, 75, 0.5); /* Optional: Add a background color */
 		border-radius: 0.5em;
@@ -622,15 +622,15 @@ Mobile Styles: 0px to 480px
 	}
 
 	/* Bar Soap Page */
-	div.grid-container {
+	div.container div.grid-container-bar-soap {
 		display: grid;
-		align-content: center;
-		gap: 0px;
 		grid-template-columns: auto;
-		justify-content: space-evenly;
-		padding: none;
+		margin: none;
+		gap: 1rem;
 		max-width: 100%;
 		min-height: 100%;
+		padding: none;
+		margin: none;
 	}
 
 	div.grid-item {
