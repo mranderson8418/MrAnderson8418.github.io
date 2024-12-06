@@ -7,7 +7,7 @@ Tablet Styles: 481px and greater
 */
 @media only screen and (min-width: 450px) {
 	html {
-		background-image: url("SOAP_PICS/HTML_PICS/background.jpeg");
+		background-image: url("../SOAP_PICS/HTML_PICS/background.jpeg");
 		background-position: center;
 		background-position: center;
 		display: flex;
@@ -30,8 +30,9 @@ Tablet Styles: 481px and greater
 		height: auto;
 		margin: auto auto;
 		margin: auto;
-		max-width: 1500px;
-		/* min-width: 900px; */
+
+		max-width: 100%;
+		min-width: 100%;
 		position: relative;
 		z-index: 1;
 	}
@@ -42,10 +43,10 @@ Tablet Styles: 481px and greater
 	nav.horizontal > ul > li > a {
 		border: none;
 		color: blue;
-		margin: 0px;
+		margin: none;
 		max-height: 200px;
 		min-height: 100%;
-		padding: 0px;
+		padding: none;
 	}
 
 	ul.horizontal-mainmenu > li > a {
@@ -54,12 +55,13 @@ Tablet Styles: 481px and greater
 		color: white;
 		display: block;
 		margin: auto;
-		min-height: 100%;
+
 		padding: auto;
 		position: relative;
 		text-align: center !important;
 		text-transform: uppercase;
-		width: 100%;
+		max-width: 100%;
+		min-height: 100%;
 	}
 
 	div.formGroup {
@@ -69,14 +71,15 @@ Tablet Styles: 481px and greater
 	a.horizontal-mainmenu-dropdown {
 		color: blue;
 		display: none;
-		font-size: 2.5rem;
-		height: 100%;
-		line-height: 2.5em;
+		font-size: 2rem;
+
+		line-height: 1.5em;
 		margin: none;
 		padding: none;
 		position: relative;
 		text-align: center;
-		width: 100%;
+		max-width: 100%;
+		min-height: 100%;
 	}
 
 	nav.horizontal-mainmenu > dropdown:focus + ul.horizontal-mainmenu-dropdown-dropdown-contents {
@@ -90,9 +93,8 @@ Tablet Styles: 481px and greater
 		display: none;
 		position: absolute;
 		z-index: 6;
-		min-width: 100%;
-		min-height: 800px;
-		max-height: 900px;
+		max-width: 100%;
+		min-height: 100%;
 		background: transparent;
 		border: none;
 		font-size: 1.5rem;
@@ -103,7 +105,7 @@ Tablet Styles: 481px and greater
 		display: block;
 		position: relative;
 		z-index: 6;
-		min-width: 100%;
+		max-width: 100%;
 		min-height: 100%;
 		/* padding: 20px 20px; */
 		background-color: rgb(73, 58, 49);
@@ -129,19 +131,17 @@ Tablet Styles: 481px and greater
 	ul:hover {
 		display: block;
 		width: 100%;
+		margin: none;
+		max-width: 100%;
 		min-height: 100%;
-		margin: 0px;
-		/* padding: 2rem; */
 		border: none;
-		/* line-height: 2.5rem; */
-		/* color: blue; */
 	}
 
 	a.horizontal-mainmenu-dropdown a:link {
 		z-index: 2;
-		padding: 0px;
+		padding: none;
 		background-color: rgb(73, 58, 49, 0.5);
-		font-size: 2em;
+		font-size: 1rem;
 		color: white;
 		text-align: center;
 	}
@@ -153,9 +153,8 @@ Tablet Styles: 481px and greater
 		min-height: 100%;
 		max-height: 100%;
 		margin: none;
-		padding-top: 2rem;
-		padding-bottom: 2rem;
-		font-size: 3rem;
+		padding: 2rem 1rem 2rem 1rem;
+		font-size: 2rem;
 		color: white;
 		text-align: center;
 		line-height: normal;
@@ -210,12 +209,6 @@ Tablet Styles: 481px and greater
 		min-height: 100%;
 	}
 
-	img#inlineImage {
-		float: right;
-		width: 450px;
-		padding: 25px;
-	}
-
 	nav.horizontal {
 		display: flex;
 		flex-direction: row;
@@ -255,9 +248,9 @@ Tablet Styles: 481px and greater
 		justify-content: center;
 		align-items: center;
 		flex-grow: 0;
-		margin: 0px;
-		padding: 0px;
-		/* border: solid 10px red; */
+		margin: none;
+		padding: none;
+
 		line-height: normal;
 	}
 	section.flexContainerBody-BarSoap article {
@@ -266,12 +259,9 @@ Tablet Styles: 481px and greater
 		justify-content: center;
 		align-items: center;
 		text-align: center;
-		/* border: solid 5px red; */
 	}
 	section.flexContainerBody-BarSoap article div a img {
 		box-shadow: 0 10px 15px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-		/* width: clamp(30%, 50%, 80%); */
-
 		border-radius: 2.5rem;
 		min-width: 50%;
 		max-width: 50%;
@@ -279,7 +269,7 @@ Tablet Styles: 481px and greater
 
 	section.flexContainerBody-BarSoap article div h2 {
 		flex-grow: 0;
-		margin: 0px;
+		margin: none;
 		padding: 2rem;
 		font-size: 5rem;
 		text-align: center;
@@ -293,7 +283,6 @@ Tablet Styles: 481px and greater
 	}
 
 	/* Liquid Soap */
-
 	section.flexContainerBody-LiquidSoap {
 		display: flex;
 		flex-direction: column;
@@ -301,8 +290,8 @@ Tablet Styles: 481px and greater
 		justify-content: center;
 		align-items: center;
 		flex-grow: 0;
-		margin: 0px;
-		padding: 0px;
+		margin: none;
+		padding: none;
 		line-height: normal;
 	}
 
@@ -319,16 +308,17 @@ Tablet Styles: 481px and greater
 		position: relative;
 		min-width: 100%;
 		height: auto;
-		margin: 0px;
+		margin: none;
 		margin-top: 5rem;
 		text-align: center;
 	}
 
 	section.flexContainerBody-LiquidSoap article div a img {
 		flex-grow: 0;
-		max-width: 50%;
+		max-width: 65%;
+		min-height: 100%;
 		height: auto;
-		margin-top: 5rem;
+		margin-top: 2rem;
 		text-align: center;
 		border-radius: 2.5rem;
 	}
@@ -337,7 +327,7 @@ Tablet Styles: 481px and greater
 		-webkit-text-stroke-width: 1.5px;
 		-webkit-text-stroke-color: white;
 		min-width: 100%;
-		font-size: 4rem;
+		font-size: 8vw;
 		font-family: TwoShotsCleanFull;
 		font-weight: normal;
 		line-height: normal;
@@ -364,7 +354,7 @@ Tablet Styles: 481px and greater
 		-webkit-text-stroke-width: 1.5px;
 		-webkit-text-stroke-color: white;
 		min-width: 100%;
-		font-size: 6rem;
+		font-size: 4rem;
 		font-family: TwoShotsCleanFull;
 		font-weight: normal;
 		line-height: normal;
@@ -372,6 +362,7 @@ Tablet Styles: 481px and greater
 		text-align: center;
 		text-shadow: 5px 5px 10px #201f1f;
 		letter-spacing: 5px; /* Adjust the value as needed */
+		margin-bottom: 2rem;
 	}
 	div.figure-container-01 {
 		display: flex;
@@ -403,9 +394,8 @@ Tablet Styles: 481px and greater
 		box-shadow: 0px 50px 100px -20px rgba(50, 50, 93, 0.25), 0px 30px 60px -30px rgba(0, 0, 0, 0.3), inset 0px -2px 6px 0px rgba(10, 37, 64, 0.35);
 		position: relative;
 		clear: both;
-		min-width: 500px;
-		max-width: 500px;
-		height: auto;
+		max-width: 100%;
+		min-height: 100%;
 		margin: auto;
 		padding: none;
 		border-radius: 1em;
@@ -416,8 +406,8 @@ Tablet Styles: 481px and greater
 		clear: both;
 		display: block;
 		position: relative;
-		min-width: 500px;
-		max-width: 500px;
+		max-width: 100%;
+		min-height: 100%;
 		text-align: center;
 		margin: auto;
 		padding: 2rem;
@@ -453,16 +443,16 @@ Tablet Styles: 481px and greater
 
 	div.image-item-02 figure img {
 		order: 1;
-		min-width: 50%;
-		min-width: 500px;
-		max-width: 500px;
+		max-width: 100%;
+		min-height: 100%;
 		border-radius: 2rem;
 	}
 
 	div.figure-container-01 .page-title > div > h1 {
 		-webkit-text-stroke-width: 0.8px;
 		-webkit-text-stroke-color: white;
-		min-width: 100%;
+		max-width: 100%;
+		min-height: 100%;
 		margin: auto;
 		font-size: 12rem;
 		font-family: TwoShotsCleanFull;
@@ -475,7 +465,8 @@ Tablet Styles: 481px and greater
 	div.figure-container-01 div.text-item h1 {
 		-webkit-text-stroke-width: 0.3px;
 		-webkit-text-stroke-color: white;
-		min-width: 100%;
+		max-width: 100%;
+		min-height: 100%;
 		font-size: 10rem;
 		font-family: TwoShotsCleanFull;
 		font-weight: normal;
@@ -487,7 +478,8 @@ Tablet Styles: 481px and greater
 	.page-title > div > h1 {
 		-webkit-text-stroke-width: 0.8px;
 		-webkit-text-stroke-color: white;
-		min-width: 100%;
+		max-width: 100%;
+		min-height: 100%;
 		font-size: 15rem;
 		font-family: TwoShotsCleanFull;
 		font-weight: normal;
@@ -505,38 +497,38 @@ Tablet Styles: 481px and greater
 	/* ------------------------Product Page --------------------*/
 
 	section.flex-container-body-01 > div > h1 {
-		margin: none;
-		padding: none;
-		-webkit-text-stroke-width: 0.8px;
 		-webkit-text-stroke-color: white;
-		z-index: 3;
-		min-width: 100%;
-		font-size: 10rem;
+		-webkit-text-stroke-width: 0.8px;
+		color: #b43b07;
 		font-family: TwoShotsCleanFull;
+		font-size: 15vw;
 		font-weight: normal;
 		line-height: normal;
-		color: #b43b07;
+		letter-spacing: 0.25rem;
+		margin: none;
+		max-width: 100%;
+		min-height: 100%;
+		padding: none;
 		text-align: center;
 		text-shadow: 5px 5px 10px #201f1f;
-		padding: none;
-		margin: none;
+		z-index: 3;
 	}
 
 	section.flex-container-body-01 > div.slogan h2 {
-		-webkit-text-stroke-width: 0.5px;
 		-webkit-text-stroke-color: white;
-		min-width: 100%;
-		margin: none;
-		padding: none;
-		font-size: 5rem;
-		font-family: TwoShotsCleanFull;
-		font-weight: normal;
-		line-height: normal;
+		-webkit-text-stroke-width: 0.5px;
 		color: #b43b07;
+		font-family: TwoShotsCleanFull;
+		font-size: 8vw;
+		font-weight: normal;
+		letter-spacing: 0.125rem;
+		line-height: normal;
+		margin-bottom: 5rem;
+		max-width: 100%;
+		min-height: 100%;
+		padding: none;
 		text-align: center;
 		text-shadow: 5px 5px 10px #201f1f;
-
-		margin-bottom: 5rem;
 	}
 	section.flex-container-body-01 > div > h2 {
 		-webkit-text-stroke-color: white;
@@ -544,10 +536,12 @@ Tablet Styles: 481px and greater
 		color: #b43b07;
 		/* color: white; */
 		font-family: TwoShotsCleanFull;
-		font-size: 8vw;
+		font-size: 10vw;
 		font-weight: normal;
 		line-height: normal;
-		min-width: 100%;
+		letter-spacing: 0.125rem;
+		max-width: 100%;
+		min-height: 100%;
 
 		text-align: center;
 		text-shadow: 5px 5px 10px #201f1f;
@@ -571,167 +565,71 @@ Tablet Styles: 481px and greater
 		border-radius: 1.5rem;
 		box-shadow: 0px 50px 100px -20px rgba(50, 50, 93, 0.25), 0px 30px 60px -30px rgba(0, 0, 0, 0.3), inset 0px -2px 6px 0px rgba(10, 37, 64, 0.35);
 		display: block;
-		height: auto;
 		margin: auto;
-		max-width: 50%;
-		min-width: 50%;
+		max-width: 65%;
+		min-height: 100%;
 	}
 
 	/* Product list */
 
 	section.flex-container-body-01 > div {
-		margin-top: 5rem;
+		margin-top: 3rem;
 	}
 
 	div.grid-item {
-		width: 200px;
-		height: auto;
+		max-width: 100%;
+		min-height: 100%;
 	}
 
 	div.container {
 		z-index: 2;
-		margin: 3rem;
+		margin: 2rem;
 	}
 
 	/* Bar Soap Page */
 	div.grid-container {
-		display: grid;
 		align-content: center;
-		gap: 0px;
+		display: grid;
+		gap: 2rem;
 		grid-template-columns: auto auto;
 		justify-content: space-evenly;
 		padding: none;
+		max-width: 100%;
+		min-height: 100%;
 	}
 
 	div.grid-item {
-		text-align: center;
-		padding: none;
-		margin: none;
+		display: block;
 		font-size: 1.5rem;
-		width: 100%;
-		height: auto;
+		max-width: 100%;
+		min-height: 100%;
+		margin: none;
+		padding: none;
+		text-align: center;
 	}
 
 	div.grid-item h2 {
-		-webkit-text-stroke-width: 0.5px;
 		-webkit-text-stroke-color: white;
-		min-width: 100%;
-		margin-top: 2rem;
-		margin-bottom: 1rem;
-		padding: none;
-		font-size: 4rem;
+		-webkit-text-stroke-width: 0.5px;
+		color: white;
 		font-family: TwoShotsCleanFull;
+		font-size: 6vw;
 		font-weight: normal;
 		line-height: normal;
-		color: white;
+		max-width: 100%;
+		max-height: 100%;
+		padding: none;
 		text-align: center;
 		text-shadow: 5px 5px 10px #201f1f;
+		position: relative;
+		margin-bottom: 1rem;
 	}
 
 	div.grid-item a img {
-		margin: auto;
-		padding: none;
-		min-width: 70%;
-		max-width: 70%;
+		position: relative;
+		max-width: 100%;
+		min-height: 100%;
 		border-radius: 1.5rem;
 		box-shadow: 0 29px 52px rgba(0, 0, 0, 0.4), 0 25px 16px rgba(0, 0, 0, 0.2);
 	}
-
-	/* ============================ */
-	/* Grid ELements */
-	/* ============================ */
-
-	/* 
-	section.gridContainer {
-		display: grid;
-		position: relative;
-		min-width: 320px;
-		max-width: 1024px;
-		min-height: 100%;
-		margin-left: auto;
-		margin-right: auto;
-		grid-template-columns: 200px 200px 200px 1fr;
-		grid-template-rows: 400px 1fr 1fr 1fr;
-		justify-content: space-around;
-		grid-gap: 5px;
-		position: relative;
-		z-index: 1;
-	}
-
-	article#sheaButterDescription {
-		grid-column: 1 / span 4;
-		grid-row: 1 span 4;
-		min-width: 100%;
-		min-height: 100%;
-		margin-left: auto;
-		margin-right: auto;
-		padding: 10px;
-		line-height: normal;
-	}
-
-	article#sheaButter {
-		grid-column: 3 / span 2;
-		grid-row: 1;
-		max-width: 100%;
-		height: auto;
-		padding: 10px;
-		margin-left: auto;
-		margin-right: auto;
-		line-height: normal;
-	}
-
-	article#sheaButterImage img {
-		max-width: 100%;
-		max-height: 250px;
-		margin-left: auto;
-		margin-right: auto;
-		line-height: normal;
-	}
-
-	article.greenTeaSoapDescription {
-		grid-column: 1 / span 4;
-		grid-row: 3;
-		max-width: 100%;
-		max-height: 400px;
-		margin-left: auto;
-		margin-right: auto;
-		padding: 10px;
-		overflow: scroll;
-		line-height: normal;
-	}
-
-	img#greenTeaImage {
-		grid-column: 1 / span 4;
-		grid-row: 3;
-		max-width: 300px;
-		line-height: normal;
-	}
-
-	article#seaGreenSoapDescription {
-		grid-column: 1 / span 2;
-		grid-row: 4;
-		max-width: 100%;
-
-		margin-left: auto;
-		margin-right: auto;
-		text-align: left;
-		line-height: normal;
-	} */
-
-	/* article#seaGreenImage {
-		grid-column: 1 / span 2;
-		grid-row: 4;
-
-		max-width: 100%;
-		max-height: auto;
-
-		padding: 20px;
-		margin-left: auto;
-		margin-right: auto;
-	}
-
-	article#seaGreenImage img {
-		max-width: 100%;
-		max-height: 350px;
-	} */
 }

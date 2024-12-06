@@ -2,31 +2,13 @@
 
 /* ===============================
 
-Mobile Styles: 300px to 480px
+Mobile Styles: 0px to 480px
 ===============================
 */
 
-@media only screen and (min-width: 250px) {
-	/* Reset */
-	* {
-		margin: 0;
-		padding: 0;
-	}
-	/* Fonts */
-	@font-face {
-		font-family: "TwoShotsCleanFull";
-		src: url("../Vozzy - Two Shots Clean Full.WOFF2") format("woff2");
-	}
-	@font-face {
-		font-family: "TwoShotsCleanFullOTF";
-		src: url("../Vozzy - Two Shots Clean Full.otf") format("oft");
-	}
-
-	/* Typography */
-
+@media only screen and (max-width: 450px) {
 	html {
 		background-image: url("../SOAP_PICS/HTML_PICS/background.jpeg");
-		/* background-color: rgba(73, 58, 49, 0.8); */
 		background-position: center;
 		background-position: center;
 		display: flex;
@@ -34,8 +16,6 @@ Mobile Styles: 300px to 480px
 		font-size: 15px;
 		height: auto;
 		margin: auto;
-		margin: auto;
-		padding: auto;
 		padding: auto;
 		width: 100%;
 	}
@@ -45,77 +25,12 @@ Mobile Styles: 300px to 480px
 		background-size: cover;
 		color: white;
 		font-size: 1.5rem;
-		min-height: 100vh;
+		height: auto;
 		margin: auto auto;
+		margin: auto;
 		max-width: 1500px;
 		position: relative;
 		z-index: 1;
-	}
-
-	.flex-container-body-01 > div > h1,
-	.flexContainerBody-BarSoap > article > div > h2 {
-		font-family: Arial, Helvetica, sans-serif;
-		text-shadow: 8px 8px 20px black;
-	}
-
-	/* Links */
-	a[target="_blank"],
-	a[href="#"] {
-		background-color: red;
-	}
-	a:first-child {
-		color: white;
-	}
-
-	/* Button Styling */
-	button {
-		display: block;
-		margin: auto;
-		border: 5px solid red;
-	}
-
-	img#banner {
-		display: block;
-		position: relative;
-		max-width: 100%;
-		min-height: 100%;
-	}
-
-	ul.horizontal-mainmenu {
-		font-family: TwoShotsCleanFull;
-		font-size: 1.5rem;
-		color: white;
-		text-align: center;
-		background-color: rgba(73, 58, 49, 0.8);
-		display: block;
-	}
-
-	/* Flex Containers */
-	.flexContainerBody0,
-	.flex-container-body-01,
-	.flexContainerBody-BarSoap {
-		display: flex;
-		flex-direction: column;
-		align-items: center;
-		justify-content: center;
-		max-width: 100%;
-		min-height: 100%;
-		margin: none;
-		padding: none;
-	}
-
-	/* Header */
-	body > header > a > img {
-		display: block;
-		max-width: 100%;
-		min-height: 100%;
-		margin: auto;
-	}
-
-	/* About Us */
-	.genericText1 > h1,
-	.genericText1 > p {
-		text-align: center;
 	}
 
 	/* Navigation Menu aka Header Menus*/
@@ -124,10 +39,13 @@ Mobile Styles: 300px to 480px
 	nav.horizontal > ul > li > a {
 		border: none;
 		color: blue;
-		margin: 0px;
+		margin: none;
 		max-height: 100%;
-		min-height: 3rem;
-		padding: 0px;
+		max-width: 100%;
+		min-height: 5rem;
+		min-width: 100%;
+
+		padding: none;
 	}
 
 	ul.horizontal-mainmenu {
@@ -135,6 +53,10 @@ Mobile Styles: 300px to 480px
 		flex-direction: column;
 		align-items: center;
 		justify-content: center;
+		max-height: 100%;
+		max-width: 100%;
+		min-height: 5rem;
+		min-width: 100%;
 	}
 
 	ul.horizontal-mainmenu > li > a {
@@ -148,9 +70,10 @@ Mobile Styles: 300px to 480px
 		position: relative;
 		text-align: center !important;
 		text-transform: uppercase;
+		max-height: 100%;
 		max-width: 100%;
-
-		min-height: 100%;
+		min-height: 5rem;
+		min-width: 100%;
 	}
 
 	div.formGroup {
@@ -158,20 +81,20 @@ Mobile Styles: 300px to 480px
 	}
 
 	a.horizontal-mainmenu-dropdown {
+		background-color: rgb(73, 58, 49, 0.8);
 		color: blue;
 		display: none;
-		background-color: rgb(73, 58, 49, 0.8);
 		font-size: 5rem;
-		height: 100%;
+
 		line-height: 2.5em;
 		margin: none;
+		max-height: 100%;
+		max-width: 100%;
+		min-height: 5rem;
+		min-width: 100%;
 		padding: none;
 		position: relative;
 		text-align: center;
-		width: 100%;
-		max-width: 100%;
-
-		min-height: 100%;
 	}
 
 	nav.horizontal-mainmenu > dropdown:focus + ul.horizontal-mainmenu-dropdown-dropdown-contents {
@@ -181,36 +104,40 @@ Mobile Styles: 300px to 480px
 	}
 
 	ul.horizontal-mainmenu-dropdown-dropdown-contents {
+		background-color: rgb(73, 58, 49);
+		border: none;
 		box-shadow: none;
 		display: none;
-		background-color: rgb(73, 58, 49);
+		font-size: 2.5rem;
+		max-height: 100%;
+		max-width: 100%;
+		min-height: 5rem;
+		min-width: 100%;
 		position: absolute;
 		z-index: 6;
-		max-width: 100%;
-		min-height: 100%;
-
-		border: none;
-		font-size: 2.5rem;
 	}
 
 	ul.horizontal-mainmenu-dropdown-dropdown-contents li {
 		display: block;
 		position: relative;
 		z-index: 7;
+		max-height: 100%;
 		max-width: 100%;
-		min-height: 100%;
+		min-height: 5rem;
+		min-width: 100%;
 
 		background-color: rgb(73, 58, 49);
 		border-radius: 0.5rem;
 	}
 
 	ul.horizontal-mainmenu-dropdown-dropdown-contents li a {
-		display: block;
-		position: relative;
-		max-width: 100%;
-		min-height: 100%;
-
 		color: white;
+		display: block;
+		max-height: 100%;
+		max-width: 100%;
+		min-height: 5rem;
+		min-width: 100%;
+		position: relative;
 		z-index: 8;
 	}
 
@@ -218,100 +145,113 @@ Mobile Styles: 300px to 480px
 	a.horizontal-mainmenu-dropdown:active + ul.horizontal-mainmenu-dropdown-dropdown-contents,
 	ul.horizontal-mainmenu-dropdown-dropdown-contents:active,
 	ul:active {
-		display: block;
-		max-width: 100%;
-
-		min-height: 100%;
-		margin: 0px;
-
 		border: none;
+		display: block;
+		margin: none;
+		max-height: 100%;
+		max-width: 100%;
+		min-height: 5rem;
+		min-width: 100%;
 	}
 
 	a.horizontal-mainmenu-dropdown a:link {
-		z-index: 2;
-		padding: 0px;
 		background-color: rgb(73, 58, 49, 0.5);
-		font-size: 2em;
 		color: white;
+		font-size: 2em;
+		padding: none;
 		text-align: center;
+		z-index: 2;
+		max-height: 100%;
+		max-width: 100%;
+		min-height: 5rem;
+		min-width: 100%;
 	}
 
 	nav.horizontal a:visited,
 	nav.horizontal a:link {
-		z-index: 2;
-		max-width: 100%;
-		min-height: 100%;
-		margin: none;
-		padding: 1rem;
-		font-size: 3rem;
 		color: white;
-		text-align: center;
+		font-size: 3rem;
 		line-height: normal;
+		margin: none;
+		max-height: 100%;
+		max-width: 100%;
+		min-height: 5rem;
+		min-width: 100%;
+		padding: 2rem;
+		text-align: center;
+		z-index: 2;
 	}
 	li.bannerImages {
+		align-items: center;
 		display: flex;
 		flex-direction: column;
-		align-items: center;
 		font-size: 2rem;
-		min-height: 3rem;
 		line-height: normal;
 		margin: none;
+		max-width: 100%;
+		min-height: 3rem;
 		padding: none;
 		position: relative;
 		text-align: center;
-		width: 100%;
+		min-width: 100%;
 	}
 
 	li.bannerImages > a {
 		font-size: 5rem;
-		min-height: 100%;
 		line-height: normal;
 		margin: none;
-
+		min-height: 100%;
 		position: relative;
 		text-align: center;
-		width: 100%;
+		min-width: 100%;
+		max-width: 100%;
 	}
 
 	nav.horizontal a:hover {
 		color: red;
-		z-index: 2;
-		max-width: 100%;
-		min-height: 100%;
-		max-height: 100%;
-		margin: none;
-		padding: none;
 		color: white;
+		margin: none;
+		max-height: 100%;
+		min-height: 100%;
+		padding: none;
 		text-align: center;
+		width: 100%;
+		z-index: 2;
 	}
 
 	ul.horizontal-mainmenu li {
 		display: block;
 
-		width: 100%;
-		min-height: 2rem;
 		max-height: 100%;
+		max-width: 100%;
+		min-height: 5rem;
+		min-width: 100%;
 	}
 
 	a.horizontal-mainmenu-dropdown {
 		display: block;
-		width: 100%;
-		min-height: 2rem;
+
 		max-height: 100%;
+		max-width: 100%;
+		min-height: 5rem;
+		min-width: 100%;
 	}
 
 	img#inlineImage {
 		float: right;
-		width: 450px;
 		padding: 25px;
+		max-height: 100%;
+		max-width: 100%;
+		min-height: 5rem;
+		min-width: 100%;
 	}
 
 	nav.horizontal {
+		background-color: none;
 		display: flex;
 		flex-direction: row;
 		flex-wrap: nowrap;
 		justify-content: space-between;
-		background-color: none;
 		text-align: center;
 	}
 
@@ -319,24 +259,37 @@ Mobile Styles: 300px to 480px
 		display: flex;
 		flex-wrap: nowrap;
 		justify-content: center;
-		width: 100%;
-		min-height: 100%;
 		max-height: 100%;
+		max-width: 100%;
+		min-height: 5rem;
+		min-width: 100%;
 		text-align: center;
 	}
+	/* a.horizontal-mainmenu-dropdown {
+		text-align: center;
+		font-size: 10rem;
+	} */
+	/* li.bannerimages {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		text-align: center;
+		
+	} */
 
 	/* ---------------------------------------------------- */
 	/* Bar Soap HTML PAGE */
 	section.flexContainerBody-BarSoap {
+		/* border: solid 10px red; */
+		align-items: center;
 		display: flex;
 		flex-direction: column;
-		justify-content: center;
-		align-items: center;
 		flex-grow: 0;
-		margin: 0px;
-		padding: 0px;
-		/* border: solid 10px red; */
+		justify-content: center;
 		line-height: normal;
+		margin: none;
+		padding: none;
 	}
 	section.flexContainerBody-BarSoap article {
 		display: flex;
@@ -357,12 +310,15 @@ Mobile Styles: 300px to 480px
 
 	section.flexContainerBody-BarSoap article div h2 {
 		flex-grow: 0;
-		margin: 0px;
+		maring: none;
 		padding: 2rem;
 		font-size: 5rem;
 		text-align: center;
 	}
 
+	div.flexContainerBody-BarSoap-Article h2 {
+		font-size: 0.5rem;
+	}
 	div.flexContainerBody-BarSoap-Article h2 {
 		font-size: 1rem;
 	}
@@ -376,6 +332,9 @@ Mobile Styles: 300px to 480px
 		justify-content: center;
 		align-items: center;
 		flex-grow: 0;
+		maring: none;
+		padding: none;
+		line-height: normal;
 	}
 
 	section.flexContainerBody-LiquidSoap article {
@@ -389,38 +348,41 @@ Mobile Styles: 300px to 480px
 		display: block;
 		flex-grow: 0;
 		position: relative;
-		max-width: 100%;
+		min-width: 100%;
 		height: auto;
-		margin: 0px;
-		margin-top: 2rem;
+		maring: none;
+		margin-top: 5rem;
 		text-align: center;
 	}
 
 	section.flexContainerBody-LiquidSoap article div a img {
 		flex-grow: 0;
-		max-width: 75%;
+		max-width: 50%;
 		height: auto;
-		margin-top: 2rem;
+		margin-top: 5rem;
 		text-align: center;
 		border-radius: 2.5rem;
+	}
+
+	section.flexContainerBody-LiquidSoap article div h2 {
+		-webkit-text-stroke-width: 1.5px;
+		-webkit-text-stroke-color: white;
+		min-width: 100%;
+		font-size: 4rem;
+		font-family: TwoShotsCleanFull;
+		font-weight: normal;
+		line-height: normal;
+		color: #ffffff;
+		text-align: center;
+		text-shadow: 5px 5px 10px #201f1f;
+		letter-spacing: 5px;
+		margin: none;
 	}
 	section.flexContainerBody-LiquidSoap article div {
 		margin-top: 5rem;
 	}
 
-	section.flexContainerBody-LiquidSoap article div h2 {
-		-webkit-text-stroke-color: white;
-		-webkit-text-stroke-width: 1.5px;
-		color: #ffffff;
-		font-family: TwoShotsCleanFull;
-		font-size: 2.5rem;
-		font-weight: normal;
-		letter-spacing: 0.125rem;
-		line-height: normal;
-		max-width: 100%;
-		text-align: center;
-		text-shadow: 5px 5px 10px #201f1f;
-	}
+	/* HomePage */
 
 	div.text-item > p {
 		margin-top: 1rem;
@@ -432,7 +394,7 @@ Mobile Styles: 300px to 480px
 	section.flex-container-body-02 > div > h1 {
 		-webkit-text-stroke-width: 1.5px;
 		-webkit-text-stroke-color: white;
-		max-width: 100%;
+		min-width: 100%;
 		font-size: 2rem;
 		font-family: TwoShotsCleanFull;
 		font-weight: normal;
@@ -463,13 +425,7 @@ Mobile Styles: 300px to 480px
 		padding: none;
 		text-align: left;
 	}
-	div.img-gallery img {
-		max-width: 100%;
-		min-width: 100%;
-		border-radius: 2rem;
-		margin-top: 1rem;
-		margin-bottom: 1rem;
-	}
+
 	div.image-item {
 		width: 100%;
 		height: auto;
@@ -477,50 +433,13 @@ Mobile Styles: 300px to 480px
 		margin: auto;
 		padding: auto;
 	}
-	div.item3 div p {
-		margin: 2rem;
-		line-height: normal;
-	}
-	div.soap-details {
-		margin: 2rem;
-		line-height: normal;
-	}
-	div.return-button {
-		display: flex;
-		justify-content: center;
-		align-items: center;
-		margin: 2rem;
-	}
-	div.return-button a {
-		color: white;
-		background-color: #b43b07;
-		padding: 2rem;
-		border-radius: 1rem;
-		margin: auto;
-		max-width: 100%;
-		min-height: 100%;
-		text-decoration: none;
-		-webkit-text-stroke-width: 1.5px;
-		-webkit-text-stroke-color: white;
-		max-width: 100%;
-		font-size: 3rem;
-		font-family: TwoShotsCleanFull;
-		font-weight: normal;
-		line-height: normal;
-		color: #ffffff;
-		text-align: center;
-		text-shadow: 1px 1px 3px #201f1f;
-		letter-spacing: 5px; /* Adjust the value as needed */
-
-		box-shadow: 0px 50px 100px -20px rgba(50, 50, 93, 0.25), 0px 30px 60px -30px rgba(0, 0, 0, 0.3), inset 0px -2px 6px 0px rgba(10, 37, 64, 0.35);
-	}
 	div.figure-container-01 > div.image-item > figure > img {
 		box-shadow: 0px 50px 100px -20px rgba(50, 50, 93, 0.25), 0px 30px 60px -30px rgba(0, 0, 0, 0.3), inset 0px -2px 6px 0px rgba(10, 37, 64, 0.35);
 		position: relative;
 		clear: both;
 		max-width: 100%;
-		min-height: auto;
-		margin: auto;
+		height: auto;
+		margin: none;
 		padding: none;
 		border-radius: 1em;
 		display: block;
@@ -529,7 +448,7 @@ Mobile Styles: 300px to 480px
 	div.figure-caption > figcaption {
 		position: relative;
 		clear: both;
-		margin: 0px;
+		maring: none;
 		padding: 25px;
 		background-color: rgba(88, 75, 75, 0.5); /* Optional: Add a background color */
 		border-radius: 0.5em;
@@ -540,7 +459,8 @@ Mobile Styles: 300px to 480px
 	div.figure-container-02 {
 		display: flex;
 		flex-direction: column;
-		justify-content: center;
+
+		justify-content: space-between;
 		align-items: center;
 	}
 	div.figure-container-02 > div.text-item-02 {
@@ -551,6 +471,7 @@ Mobile Styles: 300px to 480px
 
 	div.figure-container-02 div.text-item-02 p {
 		min-height: 100%;
+		/* margin-left: 2rem; */
 		font-size: 1rem;
 		line-height: 3rem;
 		text-align: left;
@@ -558,49 +479,33 @@ Mobile Styles: 300px to 480px
 
 	div.image-item-02 {
 		order: 1;
-		max-width: 100%;
+		min-width: 50%;
 	}
 	div.figure-container-02 > div.image-item-02 > figure > img {
 		box-shadow: 0px 50px 100px -20px rgba(50, 50, 93, 0.25), 0px 30px 60px -30px rgba(0, 0, 0, 0.3), inset 0px -2px 6px 0px rgba(10, 37, 64, 0.35);
-
-		max-width: 100%;
-		min-height: 100%;
-
+		position: relative;
+		clear: both;
+		width: 100%;
+		height: auto;
+		maring: none;
+		padding: none;
 		border-radius: 1em;
 	}
 
 	div.figure-caption > figcaption {
-		background-color: rgb(65, 57, 57, 0.8); /* Optional: Add a background color */
-		border-radius: 0.5em;
-		box-shadow: 0px 50px 100px -20px rgba(50, 50, 93, 0.25), 0px 30px 60px -30px rgba(0, 0, 0, 0.3), inset 0px -2px 6px 0px rgba(10, 37, 64, 0.35);
-		clear: both;
-		margin: 1rem auto;
-		max-width: 100%;
-		min-height: auto;
-		padding: none;
-		position: relative;
-		text-align: center;
-		font-size: 1.125rem;
-	}
-
-	div.figure-caption-oatmeal > figcaption {
 		position: relative;
 		clear: both;
-		margin: auto;
-		padding: 1rem;
-		background-color: rgb(65, 57, 57, 0.8); /* Optional: Add a background color */
+		maring: none;
+		padding: 25px;
+		background-color: rgba(88, 75, 75, 0.5); /* Optional: Add a background color */
 		border-radius: 0.5em;
 		text-align: center;
-		max-width: 100%;
-		min-height: 100%;
-		font-size: 1.125rem;
-		box-shadow: 0px 50px 100px -20px rgba(50, 50, 93, 0.25), 0px 30px 60px -30px rgba(0, 0, 0, 0.3), inset 0px -2px 6px 0px rgba(10, 37, 64, 0.35);
 	}
 
 	div.figure-container-01 .page-title > div > h1 {
 		-webkit-text-stroke-width: 0.8px;
 		-webkit-text-stroke-color: white;
-		max-width: 100%;
+		min-width: 100%;
 		margin: auto;
 		font-size: 12rem;
 		font-family: TwoShotsCleanFull;
@@ -613,7 +518,7 @@ Mobile Styles: 300px to 480px
 	div.figure-container-01 div.text-item h1 {
 		-webkit-text-stroke-width: 0.3px;
 		-webkit-text-stroke-color: white;
-		max-width: 100%;
+		min-width: 100%;
 		font-size: 2rem;
 		font-family: TwoShotsCleanFull;
 		font-weight: normal;
@@ -625,7 +530,7 @@ Mobile Styles: 300px to 480px
 	.page-title > div > h1 {
 		-webkit-text-stroke-width: 0.8px;
 		-webkit-text-stroke-color: white;
-		max-width: 100%;
+		min-width: 100%;
 		font-size: 15rem;
 		font-family: TwoShotsCleanFull;
 		font-weight: normal;
@@ -634,22 +539,7 @@ Mobile Styles: 300px to 480px
 		text-align: center;
 		text-shadow: 5px 5px 10px #201f1f;
 	}
-	div#fullImgBox.full-img {
-		display: none;
-	}
-	div.item1 h1 {
-		-webkit-text-stroke-width: 0.8px;
-		-webkit-text-stroke-color: white;
-		max-width: 100%;
-		font-size: 4rem;
-		font-family: TwoShotsCleanFull;
-		font-weight: normal;
-		line-height: normal;
-		letter-spacing: 0.125rem;
-		color: white;
-		text-align: center;
-		text-shadow: 5px 5px 10px #201f1f;
-	}
+
 	div.text-item-footer > p {
 		font-size: 1rem;
 		text-align: center;
@@ -658,33 +548,34 @@ Mobile Styles: 300px to 480px
 	/* ------------------------Product Page --------------------*/
 
 	section.flex-container-body-01 > div > h1 {
-		margin: none;
-		padding: none;
-		-webkit-text-stroke-width: 0.8px;
 		-webkit-text-stroke-color: white;
-		z-index: 3;
-		max-width: 100%;
-		font-size: 5rem;
+		-webkit-text-stroke-width: 0.8px;
+		color: white;
 		font-family: TwoShotsCleanFull;
+		font-size: 3.5rem;
 		font-weight: normal;
 		line-height: normal;
-		color: #b43b07;
+		margin: none;
+		margin: none;
+		min-width: 100%;
+		padding: none;
+		padding: none;
 		text-align: center;
 		text-shadow: 5px 5px 10px #201f1f;
-		padding: none;
-		margin: none;
+		z-index: 3;
 	}
 
 	section.flex-container-body-01 > div.slogan h2 {
-		-webkit-text-stroke-color: white;
 		-webkit-text-stroke-width: 0.5px;
-		color: #b43b07;
-		font-family: TwoShotsCleanFull;
-		font-size: 2rem;
-		line-height: normal;
+		-webkit-text-stroke-color: white;
+		min-width: 100%;
 		margin: none;
-		max-width: 100%;
 		padding: none;
+		font-size: 2.5rem;
+		font-family: TwoShotsCleanFull;
+		font-weight: normal;
+		line-height: normal;
+		color: white;
 		text-align: center;
 		text-shadow: 5px 5px 10px #201f1f;
 	}
@@ -692,18 +583,20 @@ Mobile Styles: 300px to 480px
 		-webkit-text-stroke-color: white;
 		-webkit-text-stroke-width: 0.5px;
 		color: white;
+
 		font-family: TwoShotsCleanFull;
-		font-size: 4rem;
+		font-size: 3.5rem;
 		font-weight: normal;
 		line-height: normal;
-		margin-bottom: 2rem;
-		max-width: 100%;
-		padding: none;
+		min-width: 100%;
+
 		text-align: center;
 		text-shadow: 5px 5px 10px #201f1f;
+		margin-bottom: 2rem;
+		padding: none;
 	}
 	section.flex-container-body-01 div a img {
-		border-radius: 1.5rem;
+		border-radius: 1rem;
 		box-shadow: 0px 50px 100px -20px rgba(50, 50, 93, 0.25), 0px 30px 60px -30px rgba(0, 0, 0, 0.3), inset 0px -2px 6px 0px rgba(10, 37, 64, 0.35);
 		display: block;
 		height: auto;
@@ -713,12 +606,28 @@ Mobile Styles: 300px to 480px
 		padding: none;
 	}
 
-	div.product-page-image > a > img {
+	/* The scrublands logo image
+	section.flex-container-body-01 > div > a > img {
+		box-shadow: 0px 50px 100px -20px rgba(50, 50, 93, 0.25), 0px 30px 60px -30px rgba(0, 0, 0, 0.3), inset 0px -2px 6px 0px rgba(10, 37, 64, 0.35);
+
+		display: block;
+
+		max-width: 20%;
+		margin: none;
+		padding: none;
+
+		height: auto;
+		margin: auto;
 		border-radius: 1.5rem;
+	} */
+
+	section.flex-container-body-01 div.product-page-image > a > img {
+		border-radius: 1rem;
 		box-shadow: 0px 50px 100px -20px rgba(50, 50, 93, 0.25), 0px 30px 60px -30px rgba(0, 0, 0, 0.3), inset 0px -2px 6px 0px rgba(10, 37, 64, 0.35);
 		display: block;
 		height: auto;
 		margin: auto;
+		max-width: 60%;
 		min-width: 60%;
 	}
 
@@ -735,8 +644,7 @@ Mobile Styles: 300px to 480px
 
 	div.container {
 		z-index: 2;
-		margin: 0.5rem;
-		padding: none;
+		margin: 1rem;
 	}
 
 	/* Bar Soap Page */
@@ -744,10 +652,9 @@ Mobile Styles: 300px to 480px
 		display: grid;
 		align-content: center;
 		gap: 0px;
-		grid-template-columns: auto;
+		grid-template-columns: auto auto;
 		justify-content: space-evenly;
 		padding: none;
-		margin: 1rem;
 	}
 
 	div.grid-item {
@@ -762,7 +669,7 @@ Mobile Styles: 300px to 480px
 	div.grid-item h2 {
 		-webkit-text-stroke-width: 0.5px;
 		-webkit-text-stroke-color: white;
-		max-width: 100%;
+		min-width: 100%;
 		margin-top: 2rem;
 		margin-bottom: 1rem;
 		padding: none;
@@ -784,221 +691,16 @@ Mobile Styles: 300px to 480px
 		box-shadow: 0 29px 52px rgba(0, 0, 0, 0.4), 0 25px 16px rgba(0, 0, 0, 0.2);
 	}
 
-	input:invalid {
-		color: red;
-		border: red;
-		box-shadow: 0px 0px 5px red;
-	}
+	/* ============================ */
+	/* Grid ELements */
+	/* ============================ */
 
-	input[type="text"],
-	input[type="email"],
-	select#creditCard {
-		/* background-color: pink; */
-		color: black;
-	}
-
-	div.labelA > img {
-		display: inline-flex;
-		width: 50px;
-	}
-
-	img.inline-block {
-		display: inline-flex;
-	}
-
-	/* h1,
-label {
-	color: light red;
-	font-weight: bold;
-	text-align: center;
-	width: 100%;
-} */
-
-	input[type="text"]:focus,
-	select:active,
-	input[type="email"]:focus,
-	select#creditCard {
-		background-color: pink;
-		border: 5px solid red;
-	}
-
-	select#creditCard {
-		line-height: normal;
-		border: none;
-		/* display: block; */
-		outline: none;
-	}
-
-	fieldset {
-		/* border: 2px solid black; */
-		display: flex;
-		flex-direction: column;
-		justify-content: center;
-		align-items: center;
-
-		/* background-color: rgb(180, 59, 7); */
-		/* box-shadow:outset,inset/h-offset v-offset blur spread color; */
-		/* box-shadow: 10px -10px 35px rgb(189, 186, 186); */
-	}
-
-	fieldset form.formGroup {
-		max-width: 100%;
-		min-height: 100%;
-	}
-
-	fieldset form.formGroup div input,
-	fieldset form.formGroup div select {
-		min-height: 2rem;
-		min-width: 250px;
-		font-size: 1rem;
-	}
-	form.formGroup {
-		align-items: center;
-		background-color: rgb(180, 59, 7);
-		display: flex;
-		flex-direction: column;
-		justify-content: center;
-		margin: none;
-		max-width: 100%;
-		min-height: 100%;
-		opacity: 0.8;
-		padding: 1rem;
-		border-radius: 1rem;
-
-		box-shadow: 10px 10px 35px 0px rgba(0, 0, 0, 0.5), 10px 10px 30px 0px rgba(255, 255, 255, 0.347) inset;
-	}
-
-	.formGroup > div {
-		display: flex;
-		flex-direction: column;
-		justify-content: center;
-		line-height: 1em;
-		max-width: 100%;
-		min-height: 100%;
-		margin: none;
-		padding: none;
-	}
-
-	.formGroup > div label {
-		padding-top: 1rem;
-		font-size: 2rem;
-		max-width: 100%;
-		/* color: rgb(180, 59, 7); */
-		line-height: 1em;
-		text-align: left;
-		color: rgb(255, 255, 255);
-		font-family: TwoShotsCleanFull, Courier, monospace;
-		font-weight: normal;
-	}
-
-	.formGroup > div input,
-	.formGroup > div select {
-		font-size: 0.5rem;
-		height: auto;
-		padding: 1px;
-		margin: 1;
-		line-height: 1em;
-		text-align: left;
-		color: rgb(180, 59, 7);
-		/* font-family: TwoShotsCleanFull, Courier, monospace; */
-		font-weight: normal;
-	}
-
-	select#country,
-	select#credit-card,
-	input#email,
-	input#lname,
-	input#fname,
-	input#creditCardNumber,
-	input#cscNumber,
-	select#cardYear,
-	select#cardMonth {
-		border-radius: 0.5rem;
-		min-height: 2rem;
-		max-width: 100%;
-	}
-
-	.submitButton input[type="submit"] {
-		color: #b43b07;
-		font-weight: bold;
-		padding: 0.5rem;
-		font-size: 2rem;
-		margin-top: 2.5rem;
-		margin-bottom: 1rem;
+	img#banner {
+		display: block;
+		position: relative;
+		min-width: 100%;
 		max-width: 100%;
 		min-height: 5rem;
-		border-radius: 1rem;
-		text-align: center;
-		box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-	}
-
-	/* Customer Information Form Style Sheet */
-
-	/* Form Layout Styles */
-
-	form {
-		display: flex;
-		flex-flow: row wrap;
-	}
-
-	fieldset {
-		/* background-color: rgb(234, 189, 142); */
-		margin-top: 2rem;
-		display: flex;
-		flex-direction: row;
-		justify-content: center;
-		align-items: center;
-		border: none;
-	}
-
-	legend {
-		color: rgb(63, 61, 61);
-		background-color: rgb(255, 255, 255);
-		line-height: 2em;
-		font-size: 2em;
-		padding: 15px;
-	}
-
-	label {
-		display: inline-block;
-		width: 120px;
-	}
-
-	div.labelA img {
-		display: flex;
-		flex-direction: row;
-		width: 10px;
-	}
-
-	img[src="dozen.png"] {
-		display: inline-block;
-		margin-left: 135px;
-	}
-
-	fieldset#soapAmount label,
-	fieldset#deliveryInfo label {
-		margin-bottom: 10px;
-		flex: 1;
-		height: 50px;
-		line-height: 0.75em;
-		width: 100%;
-	}
-
-	textarea {
-		display: block;
-		width: 90%;
-		height: 100px;
-	}
-
-	div.submit-button input[type="submit"] {
-		height: 50px;
-		width: 200px;
-		/* color: #5e94b6; */
-		background-color: rgb(180, 59, 7);
-		box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
-			rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
-	}
-	input input#sizeBox {
-		width: 240px;
+		max-height: 100%;
 	}
 }

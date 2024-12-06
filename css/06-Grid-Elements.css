@@ -10,8 +10,8 @@ Tablet Styles: 481px and greater
 	/* ============================ */
 
 	* {
-		padding: 0px;
-		margin: 0px;
+		padding: none;
+		maring: none;
 	}
 
 	/* section.gridContainer {
