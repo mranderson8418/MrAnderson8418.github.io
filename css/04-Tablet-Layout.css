@@ -108,7 +108,6 @@ Tablet Styles: 481px and greater
 		padding-bottom: 2rem;
 		padding-top: 2rem;
 		text-align: center;
-		z-index: 2;
 		max-width: 100%;
 		min-height: 100%;
 	}
@@ -121,11 +120,8 @@ Tablet Styles: 481px and greater
 		margin: none;
 		max-width: 100%;
 		min-height: 100%;
-		/* padding-bottom: 2rem; */
-		/* padding-top: 2rem; */
 		padding: none;
 		text-align: center;
-		z-index: 2;
 	}
 
 	ul.horizontal-mainmenu-dropdown-dropdown-contents li.bannerImages {
@@ -136,10 +132,10 @@ Tablet Styles: 481px and greater
 		font-size: 5vw;
 		line-height: normal;
 		margin: none;
-		padding: none;
-		text-align: center;
 		max-width: 100%;
 		min-height: 100%;
+		padding: none;
+		text-align: center;
 	}
 
 	nav.horizontal a:hover {
@@ -156,7 +152,6 @@ Tablet Styles: 481px and greater
 	ul.horizontal-mainmenu-dropdown-dropdown-contents:hover,
 	ul:hover {
 		display: block;
-
 		max-width: 100%;
 		min-height: 100%;
 		border: none;
@@ -165,6 +160,13 @@ Tablet Styles: 481px and greater
 		line-height: normal;
 	}
 
+	ul.horizontal-mainmenu {
+		display: block;
+		z-index: 2;
+		min-width: 100%;
+		max-width: 100%;
+		min-height: 100%;
+	}
 	ul.horizontal-mainmenu li {
 		display: block;
 		z-index: 2;
@@ -172,7 +174,7 @@ Tablet Styles: 481px and greater
 		min-height: 100%;
 	}
 
-	a.horizontal-mainmenu-dropdown {
+	ul.horizontal-mainmenu a.horizontal-mainmenu-dropdown {
 		display: block;
 		min-width: 100;
 		max-width: 100%;
@@ -189,10 +191,12 @@ Tablet Styles: 481px and greater
 		min-width: 100%;
 		max-width: 100%;
 		min-height: 100%;
+		max-height: 100%;
 	}
 	ul.horizontal-mainmenu {
 		max-width: 100%;
 		min-height: 100%;
+		max-height: 100%;
 	}
 	nav.horizontal ul.horizontal-mainmenu {
 		display: flex;
@@ -201,6 +205,7 @@ Tablet Styles: 481px and greater
 		flex-direction: row;
 		max-width: 100%;
 		min-height: 100%;
+		max-height: 100%;
 		text-align: center;
 	}
 
@@ -209,13 +214,14 @@ Tablet Styles: 481px and greater
 		min-width: 20%;
 		max-width: 20%;
 		min-height: 100%;
-		/* min-height: 30rem; */
+		max-height: 100%;
 	}
 	a.horizontal-mainmenu-dropdown {
 		text-align: center;
 		font-size: 5vw;
 		max-width: 100%;
 		min-height: 100%;
+		max-height: 100%;
 	}
 
 	nav.horizontal ul.horizontal-mainmenu ul.horizontal-mainmenu-dropdown-dropdown-contents li {
@@ -223,6 +229,7 @@ Tablet Styles: 481px and greater
 		min-width: 100%;
 		max-width: 100%;
 		min-height: 100%;
+		max-height: 100%;
 	}
 	li.bannerimages {
 		display: flex;
@@ -230,9 +237,10 @@ Tablet Styles: 481px and greater
 		align-items: center;
 		justify-content: center;
 		text-align: center;
+
 		max-width: 100%;
 		min-height: 100%;
-		min-height: 30rem;
+		max-height: 100%;
 	}
 	li.bannerimages a.horizontal-mainmenu-dropdown {
 		max-width: 100%;

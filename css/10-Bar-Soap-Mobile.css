@@ -1,0 +1,212 @@
+@charset "utf-8";
+@media only screen and (min-width: 0px) {
+	/* Fonts */
+	@font-face {
+		font-family: "TwoShotsCleanFull";
+		src: url("Vozzy - Two Shots Clean Full.WOFF2") format("woff2");
+	}
+	@font-face {
+		font-family: "TwoShotsCleanFullOTF";
+		src: url("Vozzy - Two Shots Clean Full.otf") format("oft");
+	}
+
+	* {
+		margin: none;
+		padding: none;
+	}
+
+	div.item2 {
+		min-width: 100%;
+		max-width: 100%;
+		min-height: 100%;
+		margin: 0rem 1rem 0rem 1rem;
+		flex-shrink: 1;
+	}
+	div.img-gallery {
+		margin: none;
+		padding: none;
+		min-width: 15%;
+		max-width: 15%;
+		min-height: 100%;
+		flex-grow: 1;
+		flex-shrink: 1;
+		flex-basis: 1rem;
+	}
+	div.item2 div.img-gallery {
+		display: flex;
+		flex-direction: row;
+		flex-wrap: nowrap;
+		align-items: center;
+		justify-content: space-between;
+	}
+	div.img-gallery img {
+		cursor: pointer;
+		border-radius: 0.5rem;
+		min-width: 100%;
+		max-width: 100%;
+		min-height: 100%;
+		margin: 0.25rem;
+		padding: none;
+		flex-grow: 1;
+		flex-shrink: 1;
+		flex-basis: 1rem;
+	}
+
+	div.full-img {
+		max-width: 100%;
+		min-height: 100%;
+		background-color: rgba(0, 0, 0, 0, 0.9);
+		position: fixed;
+		display: none;
+		margin: none;
+		padding: none;
+		align-items: center;
+		justify-content: center;
+	}
+
+	div.full-img img {
+		min-width: 80%;
+		max-width: 90%;
+		border-radius: 0.5rem;
+	}
+
+	.full-img span {
+		position: absolute;
+		top: 5%;
+		right: 5%;
+		font-size: 1.5rem;
+		color: #fff;
+		max-width: 100%;
+		min-height: 100%;
+	}
+
+	.img-gallery img:hover {
+		/* transform: scale(0.8) rotate(-15deg); */
+
+		box-shadow: 10px 10px 10px rgba(245, 245, 245, 0.5);
+	}
+
+	div#fullImgBox.full-img {
+		margin: none;
+		padding: none;
+		background-color: rgba(0, 0, 0, 0.9);
+		z-index: 2;
+	}
+
+	div.grid-container {
+		display: flex;
+		line-height: 3rem;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		max-width: 100%;
+		min-height: 100%;
+		margin: 0rem 2rem 0rem 2rem;
+	}
+	div.soap-details {
+		display: block;
+		max-width: 100%;
+		min-height: 100%;
+		padding: none;
+		margin: 1rem 0rem 1rem 0rem;
+		border-radius: 1rem;
+	}
+	div.soap-details div h2 {
+		-webkit-text-stroke-color: white;
+		-webkit-text-stroke-width: 1.5px;
+		color: #ffffff;
+		font-family: TwoShotsCleanFull;
+		font-size: 10vw;
+		font-weight: normal;
+		letter-spacing: 5px; /* Adjust the value as needed */
+		line-height: normal;
+		max-width: 100%;
+		min-height: 100%;
+		text-align: center;
+		text-shadow: 2px 2px 2px #201f1f;
+		text-shadow: 8px 8px 20px black;
+		padding: 1rem;
+	}
+
+	div.item1 h1 {
+		-webkit-text-stroke-color: white;
+		-webkit-text-stroke-width: 1.5px;
+		color: #ffffff;
+		font-family: TwoShotsCleanFull;
+		font-size: 8vw;
+		font-weight: normal;
+		letter-spacing: 5px; /* Adjust the value as needed */
+		line-height: normal;
+		margin-top: 5rem;
+		max-width: 100%;
+		min-height: 100%;
+		text-align: center;
+		text-shadow: 5px 5px 10px #201f1f;
+		text-shadow: 8px 8px 20px black;
+	}
+	div.return-button {
+		max-width: 100%;
+		align-items: center;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		min-height: 100%;
+		text-align: center;
+		padding: 1rem;
+	}
+	div.return-button a {
+		-webkit-text-stroke-color: white;
+		-webkit-text-stroke-width: 1.5px;
+		align-items: center;
+		background-color: rgba(73, 58, 49, 0.8);
+		border-radius: 1.5rem;
+		box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+		color: #ffffff;
+		display: flex;
+		flex-direction: column;
+		font-family: TwoShotsCleanFull;
+		font-size: 5rem;
+		font-weight: normal;
+		justify-content: center;
+		line-height: normal;
+		max-width: 100%;
+		min-height: 100%;
+		padding: 2rem;
+		text-align: center;
+		text-align: center;
+		text-decoration: none;
+		text-shadow: 2px 2px 20px rgb(78, 77, 77);
+	}
+	div.ingredients-list {
+		margin: 2rem;
+		text-align: left;
+		max-width: 100%;
+		min-height: 100%;
+	}
+
+	div.ingredients-list ul {
+		display: flex;
+		justify-content: left;
+		flex-direction: column;
+		max-width: 100%;
+		min-height: 100%;
+	}
+
+	div.ingredients-list ul li {
+		flex: 1;
+		text-align: left;
+		max-width: 100%;
+		min-height: 100%;
+	}
+	div.soap-details {
+		border: solid 5px white;
+		margin: none;
+		max-width: 100%;
+		min-height: 100%;
+	}
+	div.soap-details div p {
+		margin: 2rem;
+		max-width: 100%;
+		min-height: 100%;
+	}
+}
