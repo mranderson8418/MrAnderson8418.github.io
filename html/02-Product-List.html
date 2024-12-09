@@ -16,26 +16,26 @@
 	<link href="/css/08-Clock-Format.css" rel="stylesheet" />
 	<link href="/css/09-Web-Form-Style.css" rel="stylesheet" />
 	<link href="/css/10-Bar-Soap.css" rel="stylesheet" />
-
+	<script src="/js/DropDownContents.js" defer></script>
 </head>
 
 <body>
 	<header class="buttons">
-		<a id="banner1" href="index.html"><img id="banner" src="../SOAP_PICS/BANNERS_JPG/BANNERS_12.jpeg"
+		<a id="banner1" href="../index.html"><img id="banner" src="../SOAP_PICS/BANNERS_JPG/BANNERS_12.jpeg"
 				alt="Scrublands Apothecary" /></a>
 
 		<nav class='horizontal'>
 			<ul class='horizontal-mainmenu'>
 				<li>
-					<a href="index.html" class='horizontal-mainmenu-dropdown'>Home</a>
+					<a href="../index.html" class='horizontal-mainmenu-dropdown'>Home</a>
 				</li>
 
 				<li>
-					<a href="/html/02-Product-List.html" class='horizontal-mainmenu-dropdown'>Product List</a>
+					<a href="/html/02-Product-List.html" id='menuButton' class='horizontal-mainmenu-dropdown'>Product
+						List</a>
 
-					<ul class='horizontal-mainmenu-dropdown-dropdown-contents'>
+					<ul id='dropDownMenu' class='horizontal-mainmenu-dropdown-dropdown-contents'>
 						<li><a href="/html/03-Bar-Soap.html">Bar Soap</a></li>
-
 						<li><a href="/html/04-Liquid-Soap.html">Liquid Soap</a></li>
 						<li><a href="/html/05-Dog-Shampoo.html">Dog Shampoo</a></li>
 					</ul>
@@ -90,27 +90,6 @@
 		</section>
 
 	</div>
-	<script>
-		function myFunction()
-		{
-			document.getElementById("myDropdown").classList.toggle("show");
-		}
-
-		// Close the dropdown if the user clicks outside of it
-		window.onclick = function (event)
-		{
-			if (!event.target.matches('horizontal-mainmenu-dropdown-dropdown-contents')) {
-				var dropdowns = document.getElementsByClassName('horizontal-mainmenu-dropdown-dropdown-contents');
-				var i;
-				for (i = 0; i < dropdowns.length; i++) {
-					var openDropdown = dropdowns[i];
-					if (openDropdown.classList.contains('show')) {
-						openDropdown.classList.remove('show');
-					}
-				}
-			}
-		}
-	</script>
 	<br />
 
 	<br />

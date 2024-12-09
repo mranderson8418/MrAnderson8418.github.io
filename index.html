@@ -11,12 +11,13 @@
 	<link href="/css/01-Typography.css" rel="stylesheet" />
 	<link href="/css/02-General-Layout.css" rel="stylesheet" />
 	<link href="/css/03-Mobile-Layout.css" rel="stylesheet" />
-	<link href="/css/04-Tablet-Layout.css" rel="stylesheet" />
+	<!-- <link href="/css/04-Tablet-Layout.css" rel="stylesheet" />
 	<link href="/css/05-Desktop-Layout.css" rel="stylesheet" />
-	<link href="/css/06-Grid-Elements.css" rel="stylesheet" />
+	<link href="/css/06-Grid-Elements.css" rel="stylesheet" /> -->
 	<link href="/css/08-Clock-Format.css" rel="stylesheet" />
 	<link href="/css/09-Web-Form-Style.css" rel="stylesheet" />
 	<link href="/css/10-Bar-Soap.css" rel="stylesheet" />
+	<script src="/js/DropDownContents.js" defer></script>
 
 
 </head>
@@ -34,11 +35,11 @@
 				</li>
 
 				<li>
-					<a href="/html/02-Product-List.html" class='horizontal-mainmenu-dropdown'>Product List</a>
+					<a href="/html/02-Product-List.html" id='menuButton' class='horizontal-mainmenu-dropdown'>Product
+						List</a>
 
-					<ul class='horizontal-mainmenu-dropdown-dropdown-contents'>
+					<ul id='dropDownMenu' class='horizontal-mainmenu-dropdown-dropdown-contents'>
 						<li><a href="/html/03-Bar-Soap.html">Bar Soap</a></li>
-
 						<li><a href="/html/04-Liquid-Soap.html">Liquid Soap</a></li>
 						<li><a href="/html/05-Dog-Shampoo.html">Dog Shampoo</a></li>
 					</ul>
@@ -58,6 +59,8 @@
 			</ul>
 		</nav>
 	</header>
+
+
 
 
 	<div class="container">
@@ -209,9 +212,10 @@
 			<br>
 			<br>
 		</section>
+
+
 	</div>
 	</div>
 
-	<script src="js/DropDownContents.js"></script>
 
 </html>
