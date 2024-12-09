@@ -153,7 +153,7 @@ Desktop Styles: 769px and greater
 	ul.horizontal-mainmenu-dropdown-dropdown-contents:hover,
 	ul:hover {
 		display: block;
-
+		min-width: 100%;
 		max-width: 100%;
 		min-height: 100%;
 		border: none;
@@ -165,15 +165,17 @@ Desktop Styles: 769px and greater
 	ul.horizontal-mainmenu li {
 		display: block;
 		z-index: 2;
+		min-width: 100%;
 		max-width: 100%;
 		min-height: 100%;
 	}
 
-	a.horizontal-mainmenu-dropdown {
+	li.bannerImages a.horizontal-mainmenu-dropdown {
 		display: block;
 		min-width: 100;
 		max-width: 100%;
 		min-height: 100%;
+		font-size: 3vw;
 	}
 
 	nav.horizontal {
@@ -239,7 +241,6 @@ Desktop Styles: 769px and greater
 		flex-grow: 0;
 		margin: none;
 		padding: none;
-
 		line-height: normal;
 	}
 	section.flexContainerBody-BarSoap article {
@@ -640,7 +641,8 @@ Desktop Styles: 769px and greater
 	}
 
 	div.grid-item {
-		margin-top: 4rem;
+		margin: none;
+		min-height: 25rem;
 		max-width: 100%;
 		min-height: 100%;
 
@@ -655,10 +657,9 @@ Desktop Styles: 769px and greater
 	}
 
 	div.grid-item div h2 {
-		font-size: 6rem;
+		font-size: 4vw;
 		margin-bottom: 1rem;
-		margin-top: 2rem;
-		margin: none;
+		margin-top: none;
 		padding: none;
 		text-align: center;
 		max-width: 100%;

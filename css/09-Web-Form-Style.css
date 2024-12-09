@@ -183,13 +183,14 @@ form {
 }
 
 fieldset {
-	/* background-color: rgb(234, 189, 142); */
+	display: block;
+	align-items: center;
+	border: none;
 	display: flex;
 	flex-direction: row;
 	justify-content: center;
-	align-items: center;
-	border: none;
-	max-width: 100%;
+	min-width: 90%;
+	max-width: 90%;
 	min-height: 100%;
 }
 
