@@ -1,10 +1,23 @@
-const input = document.getElementById("menuButton");
-const dropdown = document.getElementById("dropDownMenu");
+// const input = document.getElementById("menuButton");
+// const dropdown = document.getElementById("dropDownMenu");
 
-input.addEventListener("input", () => {
-	dropdown.hidden = !dropdown.hidden;
+// input.addEventListener("input", () => {
+// 	dropdown.hidden = !dropdown.hidden;
+// });
+
+// input.addEventListener("touchstart", () => {
+// 	dropdown.hidden = !dropdown.hidden;
+// });
+
+const dropdown = document.getElementById("menuButton");
+const dropdownButton = document.getElementById("dropDownMenu");
+
+dropdownButton.addEventListener("click", () => {
+	dropdown.classList.toggle("show");
 });
 
-input.addEventListener("touchstart", () => {
-	dropdown.hidden = !dropdown.hidden;
+document.addEventListener("touchstart", (event) => {
+	if (!dropdown.contains(event.target) && dropdown.classList.contains("show")) {
+		dropdown.classList.remove("show");
+	}
 });
