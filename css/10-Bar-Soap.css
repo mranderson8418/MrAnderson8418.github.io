@@ -123,7 +123,7 @@
 		min-height: 100%;
 	}
 	div.soap-details > div.ingredients-list > h2 {
-		border: solid 5px yellow;
+		/* border: solid 5px yellow; */
 		text-align: left;
 
 		letter-spacing: 5px; /* Adjust the value as needed */
@@ -203,8 +203,8 @@
 		/* border: solid 5px yellow; */
 	}
 	div.soap-details {
+		margin: 10rem 2rem 0rem 2rem;
 		border: solid 5px white;
-		margin: 5rem;
 	}
 	div.soap-details div p {
 		/* border: solid 5px white; */

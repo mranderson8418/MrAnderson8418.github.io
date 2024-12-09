@@ -36,15 +36,32 @@ Desktop Styles: 769px and greater
 	/* Navigation Menu aka Header Menus*/
 	/* ---------------------------------------------------- */
 
-	nav.horizontal > ul > li > a {
+	/* nav.horizontal > ul > li > a {
 		border: none;
 		color: blue;
 		margin: none;
 		max-width: 100%;
 		min-height: 100%;
+	} */
+
+	ul.horizontal-mainmenu {
+		display: flex;
+		flex-direction: row;
+		flex-wrap: nowrap;
+		align-items: center;
+		justify-content: center;
 	}
 
-	ul.horizontal-mainmenu > li > a {
+	ul.horizontal-mainmenu li.bannerImages {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		text-align: center;
+	}
+	ul.horizontal-mainmenu li a {
+		margin: none;
+		padding: none;
 		max-width: 100%;
 		border-radius: 0.125rem;
 		box-shadow: rgba(50, 50, 93, 0.5) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
@@ -52,8 +69,6 @@ Desktop Styles: 769px and greater
 		display: block;
 		margin: auto;
 		min-height: 100%;
-		position: relative;
-		text-align: center !important;
 		text-transform: uppercase;
 	}
 	/* Web form webpage  */
@@ -66,6 +81,9 @@ Desktop Styles: 769px and greater
 		box-shadow: none;
 		display: none;
 		font-size: 3vw;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
 		min-width: 100%;
 		max-width: 100%;
 		min-height: 100%;
@@ -172,10 +190,10 @@ Desktop Styles: 769px and greater
 
 	li.bannerImages a.horizontal-mainmenu-dropdown {
 		display: block;
-		min-width: 100;
+		min-width: 100%;
 		max-width: 100%;
-		min-height: 100%;
-		font-size: 3vw;
+		min-height: 15rem;
+		font-size: 2.5vw;
 	}
 
 	nav.horizontal {

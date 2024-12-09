@@ -148,7 +148,7 @@ Tablet Styles: 481px and greater
 	}
 
 	/* ADD :HOVER */
-	a.horizontal-mainmenu-dropdown:hover + ul.horizontal-mainmenu-dropdown-dropdown-contents,
+	a.horizontal-mainmenu-dropdown:active + ul.horizontal-mainmenu-dropdown-dropdown-contents,
 	ul.horizontal-mainmenu-dropdown-dropdown-contents:hover,
 	ul:hover {
 		display: block;
