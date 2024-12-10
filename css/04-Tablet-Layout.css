@@ -39,14 +39,6 @@ Tablet Styles: 481px and greater
 	/* Navigation Menu aka Header Menus*/
 	/* ---------------------------------------------------- */
 
-	nav.horizontal > ul > li > a {
-		border: none;
-		color: blue;
-		margin: none;
-		max-width: 100%;
-		min-height: 100%;
-	}
-
 	ul.horizontal-mainmenu > li > a {
 		max-width: 100%;
 		border-radius: 0.125rem;
@@ -84,7 +76,7 @@ Tablet Styles: 481px and greater
 		min-height: 100%;
 	}
 
-	li.bannerImages {
+	ul.horizontal-mainmenu li {
 		box-shadow: rgba(11, 11, 11, 0.5) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(31, 31, 32, 0.35) 0px -2px 6px 0px inset;
 		padding: none;
 		margin: none;
@@ -94,7 +86,7 @@ Tablet Styles: 481px and greater
 	}
 
 	ul.horizontal-mainmenu-dropdown-dropdown-contents li a {
-		background-color: rgb(73, 58, 49);
+		/* background-color: rgb(73, 58, 49); */
 		display: block;
 		max-width: 100%;
 		min-height: 100%;
@@ -124,7 +116,7 @@ Tablet Styles: 481px and greater
 		text-align: center;
 	}
 
-	ul.horizontal-mainmenu-dropdown-dropdown-contents li.bannerImages {
+	ul.horizontal-mainmenu-dropdown-dropdown-contents ul.horizontal-mainmenu li {
 		align-items: center;
 		box-shadow: rgba(16, 16, 16, 0.5) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(43, 45, 46, 0.35) 0px -2px 6px 0px inset;
 		display: flex;
@@ -136,28 +128,6 @@ Tablet Styles: 481px and greater
 		min-height: 100%;
 		padding: none;
 		text-align: center;
-	}
-
-	nav.horizontal a:hover {
-		color: #b43b07;
-		line-height: normal;
-		max-width: 100%;
-		min-height: 100%;
-		padding: 2rem;
-		text-align: center;
-	}
-
-	/* ADD :HOVER */
-	a.horizontal-mainmenu-dropdown:active + ul.horizontal-mainmenu-dropdown-dropdown-contents,
-	ul.horizontal-mainmenu-dropdown-dropdown-contents:hover,
-	ul:hover {
-		display: block;
-		max-width: 100%;
-		min-height: 100%;
-		border: none;
-		color: white;
-		font-size: 5vw;
-		line-height: normal;
 	}
 
 	ul.horizontal-mainmenu {
@@ -191,12 +161,10 @@ Tablet Styles: 481px and greater
 		min-width: 100%;
 		max-width: 100%;
 		min-height: 100%;
-		max-height: 100%;
 	}
 	ul.horizontal-mainmenu {
 		max-width: 100%;
 		min-height: 100%;
-		max-height: 100%;
 	}
 	nav.horizontal ul.horizontal-mainmenu {
 		display: flex;
@@ -205,7 +173,7 @@ Tablet Styles: 481px and greater
 		flex-direction: row;
 		max-width: 100%;
 		min-height: 100%;
-		max-height: 100%;
+
 		text-align: center;
 	}
 
@@ -214,14 +182,12 @@ Tablet Styles: 481px and greater
 		min-width: 20%;
 		max-width: 20%;
 		min-height: 100%;
-		max-height: 100%;
 	}
 	a.horizontal-mainmenu-dropdown {
 		text-align: center;
-		font-size: 5vw;
+
 		max-width: 100%;
 		min-height: 100%;
-		max-height: 100%;
 	}
 
 	nav.horizontal ul.horizontal-mainmenu ul.horizontal-mainmenu-dropdown-dropdown-contents li {
@@ -229,37 +195,37 @@ Tablet Styles: 481px and greater
 		min-width: 100%;
 		max-width: 100%;
 		min-height: 100%;
-		max-height: 100%;
 	}
-	li.bannerimages {
+	ul.horizontal-mainmenu li {
 		display: flex;
 		flex-direction: column;
 		align-items: center;
 		justify-content: center;
 		text-align: center;
-
 		max-width: 100%;
 		min-height: 100%;
 		max-height: 100%;
 	}
-	li.bannerimages a.horizontal-mainmenu-dropdown {
+	ul.horizontal-mainmenu li a.horizontal-mainmenu-dropdown {
 		max-width: 100%;
 		min-height: 100%;
-		min-height: 30rem;
+		min-height: 100%;
 	}
 
-	/* a.horizontal-mainmenu-dropdown {
+	a.horizontal-mainmenu-dropdown:link,
+	a#menuButton.horizontal-mainmenu-dropdown {
+		background-color: rgb(73, 58, 49, 0.5);
+		color: white;
+		font-size: 3vw;
+
 		text-align: center;
-		font-size: 10rem;
-	} */
-	/* li.bannerimages {
-		display: flex;
-		flex-direction: column;
-		align-items: center;
-		justify-content: center;
-		text-align: center;
-		
-	} */
+		z-index: 2;
+		min-width: 100%;
+		max-width: 100%;
+		min-height: 100%;
+
+		display: block;
+	}
 
 	/* ---------------------------------------------------- */
 	/* Bar Soap HTML PAGE */

@@ -1,5 +1,5 @@
 @charset "utf-8";
-@media only screen and (min-width: 0px) {
+@media only screen and (max-width: 768px) {
 	/* Fonts */
 	@font-face {
 		font-family: "TwoShotsCleanFull";
@@ -38,6 +38,7 @@
 		flex-wrap: nowrap;
 		align-items: center;
 		justify-content: space-between;
+		z-index: 40;
 	}
 	div.img-gallery img {
 		cursor: pointer;
@@ -87,8 +88,10 @@
 	}
 
 	div#fullImgBox.full-img {
-		margin: none;
-		padding: none;
+		min-width: 100%;
+		min-height: 100%;
+		margin: 0;
+		padding: 0;
 		background-color: rgba(0, 0, 0, 0.9);
 		z-index: 2;
 	}

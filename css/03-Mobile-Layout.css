@@ -246,7 +246,6 @@ Mobile Styles: 0px to 480px
 	/* ---------------------------------------------------- */
 	/* Bar Soap HTML PAGE */
 	section.flexContainerBody-BarSoap {
-		/* border: solid 10px red; */
 		align-items: center;
 		display: flex;
 		flex-direction: column;

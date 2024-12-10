@@ -56,7 +56,6 @@ Desktop Styles: 769px and greater
 		padding: none;
 		max-width: 100%;
 		border-radius: 0.125rem;
-		box-shadow: rgba(50, 50, 93, 0.5) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
 		color: white;
 		display: block;
 		margin: auto;
@@ -70,7 +69,7 @@ Desktop Styles: 769px and greater
 
 	ul.horizontal-mainmenu li {
 		box-shadow: rgba(11, 11, 11, 0.5) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(31, 31, 32, 0.35) 0px -2px 6px 0px inset;
-		padding: none;
+		padding: 2rem;
 		margin: none;
 		line-height: normal;
 		max-width: 100%;
@@ -84,7 +83,6 @@ Desktop Styles: 769px and greater
 		padding-bottom: 2rem;
 		padding-top: 2rem;
 		text-align: center;
-		z-index: 2;
 		max-width: 100%;
 		min-height: 100%;
 	}
@@ -98,7 +96,6 @@ Desktop Styles: 769px and greater
 		min-height: 100%;
 		padding: 2rem 0rem 2rem 0rem;
 		text-align: center;
-		z-index: 2;
 	}
 
 	ul.horizontal-mainmenu-dropdown-dropdown-contents {
@@ -113,7 +110,8 @@ Desktop Styles: 769px and greater
 		max-width: 100%;
 		min-height: 100%;
 		position: absolute;
-		z-index: 5;
+		margin: 0;
+		padding: 0;
 	}
 
 	ul.horizontal-mainmenu-dropdown-dropdown-contents li {
@@ -142,19 +140,19 @@ Desktop Styles: 769px and greater
 		font-size: 3vw;
 		line-height: normal;
 	}
-	/* a.horizontal-mainmenu-dropdown:hover + ul.horizontal-mainmenu-dropdown-dropdown-contents,
+	a.horizontal-mainmenu-dropdown:hover + ul.horizontal-mainmenu-dropdown-dropdown-contents,
 	ul.horizontal-mainmenu-dropdown-dropdown-contents:hover,
 	ul:hover {
 		display: flex;
 		min-width: 100%;
 		max-width: 100%;
 		min-height: 100%;
-		
+
 		border: none;
 		color: white;
 		font-size: 3vw;
 		line-height: normal;
-	} */
+	}
 
 	ul.horizontal-mainmenu li {
 		display: block;
@@ -164,12 +162,14 @@ Desktop Styles: 769px and greater
 		min-height: 100%;
 	}
 
-	li.bannerImages a.horizontal-mainmenu-dropdown {
+	ul.horizontal-mainmenu li a.horizontal-mainmenu-dropdown,
+	a#menuButton.horizontal-mainmenu-dropdown {
 		display: block;
 		min-width: 100%;
 		max-width: 100%;
-		min-height: 15rem;
+		min-height: 100%;
 		font-size: 2.5vw;
+		/* max-height: 100%; */
 	}
 
 	nav.horizontal {
@@ -195,12 +195,16 @@ Desktop Styles: 769px and greater
 		max-width: 100%;
 		min-height: 100%;
 		text-align: center;
+		min-width: 100%;
+		padding: 0;
 	}
 
 	nav.horizontal ul.horizontal-mainmenu li {
 		display: block;
 		min-width: 20%;
 		max-width: 20%;
+		margin: 0;
+		padding: 0;
 	}
 	a.horizontal-mainmenu-dropdown {
 		text-align: center;
@@ -222,7 +226,7 @@ Desktop Styles: 769px and greater
 		justify-content: center;
 		text-align: center;
 		max-width: 100%;
-		min-height: 30rem;
+		min-height: 100%;
 	}
 
 	ul.horizontal-mainmenu-dropdown a:hover {
@@ -235,10 +239,10 @@ Desktop Styles: 769px and greater
 	}
 
 	a.horizontal-mainmenu-dropdown:link,
-	a#menuButton {
+	a#menuButton.horizontal-mainmenu-dropdown {
 		background-color: rgb(73, 58, 49, 0.5);
 		color: white;
-		font-size: 3vw;
+		font-size: 2.5vw;
 		padding: none;
 		text-align: center;
 		z-index: 2;
