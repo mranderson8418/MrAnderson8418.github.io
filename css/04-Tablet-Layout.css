@@ -22,7 +22,7 @@ Tablet Styles: 481px and greater
 	}
 
 	body {
-		border: solid 5px green;
+		/* border: solid 5px green; */
 		background-color: rgb(73, 58, 49, 0.8);
 		background-size: cover;
 		color: white;
