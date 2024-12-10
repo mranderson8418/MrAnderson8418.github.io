@@ -12,8 +12,8 @@
 const dropdown = document.getElementById("menuButton");
 const dropdownButton = document.getElementById("dropDownMenu");
 
-dropdownButton.addEventListener("click", () => {
-	dropdown.classList.toggle("show");
+dropdown.addEventListener("click", () => {
+	dropdownButton.classList.toggle("show");
 });
 
 document.addEventListener("touchstart", (event) => {

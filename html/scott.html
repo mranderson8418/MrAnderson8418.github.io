@@ -2,26 +2,116 @@
 <html>
 
 <head>
-    <title>Touch-Friendly Dropdown</title>
     <style>
-        datalist {
+        body {
+            font-size: 25px;
+        }
+
+        button {
+            display: block;
+            width: 100%;
+            /* Use width for better responsiveness */
+            height: auto;
+            /* Remove fixed height for better adaptability */
+            background-color: red;
+            padding: 2rem;
+            border-radius: 3rem;
+            font-size: 1.5rem;
+            /* Adjust font size for better readability */
+        }
+
+        .dropdown {
+            position: relative;
+            display: inline-block;
+        }
+
+        .dropdown-content {
+            display: none;
             position: absolute;
-            background-color: #fff;
-            border: 1px solid #ccc;
+            background-color: #f9f9f9;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
             z-index: 1;
+        }
+
+
+
+        .dropdown-content a {
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+        }
+
+        .dropdown-content a:hover {
+            background-color: #f1f1f1;
+            /* Use a lighter shade for hover */
+        }
+
+        .show {
+            display: block;
         }
     </style>
 </head>
 
 <body>
 
-    <input list="dropDownMenu" id="menuButton">
-    <datalist id="dropDownMenu">
-        <option value="Option 1">
-        <option value="Option 2">
-        <option value="Option 3">
-    </datalist>
+    <h2>My Dropdown</h2>
 
+    <div class="dropdown">
+        <button onclick="myFunction01()">Click me</button>
+        <div id="myDropDown01" class="dropdown-content">
+            <a href="#">Link 1</a>
+            <a href="#">Link 2</a>
+            <a href="#">Link 3</a>
+        </div>
+    </div>
+
+    <div class="dropdown">
+        <button onclick="myFunction02()">Click me</button>
+        <div id="myDropDown02" class="dropdown-content">
+            <a href="#">Link 1</a>
+            <a href="#">Link 2</a>
+            <a href="#">Link 3</a>
+        </div>
+    </div>
+
+    <script>
+
+        function myFunction01()
+        {
+
+
+            document.getElementById("myDropDown01").classList.toggle("show");
+
+        }
+
+        function myFunction02()
+        {
+            document.getElementById("myDropDown02").classList.toggle("show");
+        }
+
+
+
+
+
+
+
+        // Close the dropdown if the user clicks outside of it
+        window.onclick = function (event)
+        {
+            if (!event.target.matches('.dropdown *')) { // Check for clicks outside the dropdown
+                var dropdowns = document.getElementsByClassName("dropdown-content");
+                var i;
+                for (i = 0; i < dropdowns.length; i++) {
+                    var openDropdown = dropdowns[i];
+                    if (openDropdown.classList.contains('show')) {
+                        openDropdown.classList.remove('show');
+                    }
+                }
+            }
+        }
+    </script>
 
 </body>
 
