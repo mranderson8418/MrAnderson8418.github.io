@@ -11,7 +11,7 @@ Tablet Styles: 481px and greater
 
 	* {
 		padding: none;
-		margin: none;
+		padding: 0;
 	}
 
 	/* section.gridContainer {

@@ -1,4 +1,5 @@
 @charset "utf-8";
+/* scott changes */
 
 /* =================================
 Desktop Styles: 769px and greater
@@ -6,8 +7,8 @@ Desktop Styles: 769px and greater
 */
 @media only screen and (min-width: 1024px) {
 	* {
-		padding: none;
-		margin: none;
+		padding: 0;
+		padding: 0;
 	}
 	html {
 		background-image: url("../SOAP_PICS/HTML_PICS/background.jpeg");
@@ -51,26 +52,18 @@ Desktop Styles: 769px and greater
 		justify-content: center;
 		text-align: center;
 	}
+
 	ul.horizontal-mainmenu li a {
-		margin: none;
-		padding: none;
-		max-width: 100%;
-		border-radius: 0.125rem;
-		color: white;
-		display: block;
-		margin: auto;
-		min-height: 100%;
-		text-transform: uppercase;
-	}
-	/* Web form webpage  */
-	div.formGroup {
-		width: 75%;
+		box-shadow: rgba(50, 50, 93, 0.5) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
 	}
 
+	ul.horizontal-mainmenu li a {
+		font-size: 3rem;
+	}
 	ul.horizontal-mainmenu li {
 		box-shadow: rgba(11, 11, 11, 0.5) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(31, 31, 32, 0.35) 0px -2px 6px 0px inset;
 		padding: 2rem;
-		margin: none;
+		padding: 0;
 		line-height: normal;
 		max-width: 100%;
 		min-height: 100%;
@@ -79,7 +72,7 @@ Desktop Styles: 769px and greater
 	a.horizontal-mainmenu-dropdown a:link {
 		background-color: rgb(73, 58, 49, 0.5);
 		color: white;
-		font-size: 3vw;
+		font-size: 3rem;
 		padding-bottom: 2rem;
 		padding-top: 2rem;
 		text-align: center;
@@ -87,22 +80,22 @@ Desktop Styles: 769px and greater
 		min-height: 100%;
 	}
 
-	nav.horizontal a:visited {
+	/* nav.horizontal a:visited {
 		color: white;
-		font-size: 3vw;
+		font-size: 2rem;
 		line-height: normal;
-		margin: none;
+		padding: 2rem 0rem;
 		max-width: 100%;
 		min-height: 100%;
-		padding: 2rem 0rem 2rem 0rem;
+		padding: 1rem 0rem;
 		text-align: center;
-	}
+	} */
 
 	ul.horizontal-mainmenu-dropdown-dropdown-contents {
 		background-color: rgb(73, 58, 49);
 		box-shadow: none;
 		display: none;
-		font-size: 3vw;
+
 		flex-direction: column;
 		align-items: center;
 		justify-content: center;
@@ -111,7 +104,6 @@ Desktop Styles: 769px and greater
 		min-height: 100%;
 		position: absolute;
 		margin: 0;
-		padding: 0;
 	}
 
 	ul.horizontal-mainmenu-dropdown-dropdown-contents li {
@@ -122,22 +114,24 @@ Desktop Styles: 769px and greater
 		min-height: 100%;
 	}
 
-	ul.horizontal-mainmenu-dorptown-dropdown-contents li a {
+	ul.horizontal-mainmenu-dropdown-dropdown-contents li a {
 		background-color: rgb(73, 58, 49);
 		display: block;
 		max-width: 100%;
 		min-height: 100%;
 		position: relative;
+		font-size: 3rem;
+		padding: 1rem 0rem;
+		box-shadow: rgba(50, 50, 93, 0.5) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
 	}
 	a.horizontal-mainmenu-dropdown:hover + ul.horizontal-mainmenu-dropdown-dropdown-contents {
 		display: flex;
 		min-width: 100%;
 		max-width: 100%;
 		min-height: 100%;
-
 		border: none;
 		color: white;
-		font-size: 3vw;
+		font-size: 3rem;
 		line-height: normal;
 	}
 	a.horizontal-mainmenu-dropdown:hover + ul.horizontal-mainmenu-dropdown-dropdown-contents,
@@ -147,10 +141,9 @@ Desktop Styles: 769px and greater
 		min-width: 100%;
 		max-width: 100%;
 		min-height: 100%;
-
 		border: none;
 		color: white;
-		font-size: 3vw;
+		font-size: 3rem;
 		line-height: normal;
 	}
 
@@ -162,13 +155,13 @@ Desktop Styles: 769px and greater
 		min-height: 100%;
 	}
 
-	ul.horizontal-mainmenu li a.horizontal-mainmenu-dropdown,
-	a#menuButton.horizontal-mainmenu-dropdown {
+	ul.horizontal-mainmenu li a.horizontal-mainmenu-dropdown {
 		display: block;
 		min-width: 100%;
 		max-width: 100%;
 		min-height: 100%;
-		font-size: 2.5vw;
+		font-size: 3rem;
+		padding: 1rem 0rem;
 		/* max-height: 100%; */
 	}
 
@@ -203,6 +196,8 @@ Desktop Styles: 769px and greater
 		display: block;
 		min-width: 20%;
 		max-width: 20%;
+		min-height: 100%;
+		max-height: 100%;
 		margin: 0;
 		padding: 0;
 	}
@@ -237,13 +232,12 @@ Desktop Styles: 769px and greater
 		padding: 2rem;
 		text-align: center;
 	}
-
-	a.horizontal-mainmenu-dropdown:link,
-	a#menuButton.horizontal-mainmenu-dropdown {
+	/* a#menuButton.horizontal-mainmenu-dropdown  */
+	a.horizontal-mainmenu-dropdown:link {
 		background-color: rgb(73, 58, 49, 0.5);
 		color: white;
 		font-size: 2.5vw;
-		padding: none;
+		padding: 0;
 		text-align: center;
 		z-index: 2;
 		min-width: 100%;
@@ -251,6 +245,11 @@ Desktop Styles: 769px and greater
 		min-height: 100%;
 
 		display: block;
+	}
+
+	/* Web form webpage  */
+	div.formGroup {
+		width: 75%;
 	}
 
 	/* ---------------------------------------------------- */
@@ -261,8 +260,8 @@ Desktop Styles: 769px and greater
 		justify-content: center;
 		align-items: center;
 		flex-grow: 0;
-		margin: none;
-		padding: none;
+		padding: 0;
+		padding: 0;
 		line-height: normal;
 	}
 	section.flexContainerBody-BarSoap article {
@@ -282,7 +281,7 @@ Desktop Styles: 769px and greater
 	section.flexContainerBody-BarSoap article div h2 {
 		flex-grow: 0;
 		font-size: 3vw;
-		margin: none;
+		padding: 0;
 		padding: 2rem;
 		text-align: center;
 		max-width: 100%;
@@ -306,8 +305,8 @@ Desktop Styles: 769px and greater
 		flex-wrap: wrap;
 		justify-content: center;
 		line-height: normal;
-		margin: none;
-		padding: none;
+		padding: 0;
+		padding: 0;
 	}
 
 	section.flexContainerBody-LiquidSoap article {
@@ -322,7 +321,7 @@ Desktop Styles: 769px and greater
 		flex-grow: 0;
 
 		margin-top: 5rem;
-		margin: none;
+		padding: 0;
 		max-width: 100%;
 		min-height: 100%;
 		position: relative;
@@ -332,9 +331,9 @@ Desktop Styles: 769px and greater
 	section.flexContainerBody-LiquidSoap article div a img {
 		border-radius: 2.5rem;
 		flex-grow: 0;
-		height: auto;
+		min-height: 100%;
 		margin-top: 5rem;
-		max-width: 50%;
+		max-width: 100%;
 		text-align: center;
 	}
 
@@ -347,7 +346,7 @@ Desktop Styles: 769px and greater
 		font-weight: normal;
 		letter-spacing: 5px;
 		line-height: normal;
-		margin: none;
+		padding: 0;
 		max-width: 100%;
 		min-height: 100%;
 		text-align: center;
@@ -416,10 +415,10 @@ Desktop Styles: 769px and greater
 		box-shadow: 0px 50px 100px -20px rgba(50, 50, 93, 0.25), 0px 30px 60px -30px rgba(0, 0, 0, 0.3), inset 0px -2px 6px 0px rgba(10, 37, 64, 0.35);
 		clear: both;
 		float: right;
-		margin: none;
+		padding: 0;
 		max-width: 100%;
 		min-height: 100%;
-		padding: none;
+		padding: 0;
 		position: relative;
 		z-index: 5;
 	}
@@ -427,7 +426,7 @@ Desktop Styles: 769px and greater
 	div.figure-caption > figcaption {
 		position: relative;
 		clear: both;
-		margin: none;
+		padding: 0;
 		padding: 25px;
 		background-color: rgba(88, 75, 75, 0.5); /* Optional: Add a background color */
 		border-radius: 0.5em;
@@ -442,56 +441,60 @@ Desktop Styles: 769px and greater
 		flex-wrap: nowrap;
 		justify-content: space-between;
 	}
-	div.figure-container-02 > div.text-item-02 {
-		flex-grow: 1;
+	div.text-item-02 {
 		order: 2;
 		text-align: left;
+
+		max-width: 100%;
+		min-height: 100;
+
+		padding: 0;
+
+		max-width: 60%;
+		min-height: 100%;
+		padding: 0;
 	}
 
-	div.figure-container-02 div.text-item-02 p {
-		height: auto;
+	div.text-item-02 p {
+		min-height: 100%;
 		line-height: 5rem;
-		margin: none;
+		padding: 0;
 		max-width: 100%;
 		text-align: left;
 		font-size: 1.5rem;
+		margin-left: 2rem;
 	}
 
-	div.image-item-02 {
-		display: block;
-		margin: none;
-		min-width: 40rem;
-		max-width: 100%;
-		min-height: 100%;
-		padding: none;
-	}
 	div.image-item-02 figure {
+		min-width: 100%;
 		max-width: 100%;
 		min-height: 100%;
 	}
 
-	div.figure-container-02 > div.image-item-02 > figure > img {
+	div.figure-container-02 div.image-item-02 figure div a img {
 		border-radius: 1em;
 		box-shadow: 0px 50px 100px -20px rgba(50, 50, 93, 0.25), 0px 30px 60px -30px rgba(0, 0, 0, 0.3), inset 0px -2px 6px 0px rgba(10, 37, 64, 0.35);
 		clear: both;
-		margin: none;
+
 		max-width: 100%;
 		min-height: 100%;
-
-		padding: none;
+		min-width: 50%;
+		padding: 0;
 		position: relative;
 	}
 
-	div.figure-caption > figcaption {
+	div.figure-caption figcaption {
 		background-color: rgba(88, 75, 75, 0.5); /* Optional: Add a background color */
 		border-radius: 0.5em;
 		clear: both;
-		margin: none;
+		padding: 0;
 		max-width: 100%;
 		min-height: 100%;
 		padding: 2rem;
 		position: relative;
 		text-align: center;
+		margin-top: 1rem;
+		box-shadow: 0px 50px 100px -20px rgba(50, 50, 93, 0.25), 0px 30px 60px -30px rgba(0, 0, 0, 0.3), inset 0px -2px 6px 0px rgba(10, 37, 64, 0.35);
 	}
 
 	div.figure-container-01 .page-title > div > h1 {
@@ -529,10 +532,10 @@ Desktop Styles: 769px and greater
 		font-size: 12em;
 		font-weight: normal;
 		line-height: normal;
-		margin: none;
+		padding: 0;
 		max-width: 100%;
 		min-height: 100%;
-		padding: none;
+		padding: 0;
 		text-align: center;
 		text-shadow: 5px 5px 10px #201f1f;
 	}
@@ -561,7 +564,7 @@ Desktop Styles: 769px and greater
 		z-index: 10;
 	}
 
-	section.flex-container-body-01 > div > h2 {
+	section.flex-container-body-01 div h2 {
 		-webkit-text-stroke-color: white;
 		-webkit-text-stroke-width: 0.8px;
 		color: #ffffff;
@@ -571,10 +574,10 @@ Desktop Styles: 769px and greater
 		line-height: 10rem;
 		line-height: normal;
 		line-height: normal;
-		margin: none;
+		padding: 0;
 		max-width: 100%;
 		min-height: 100%;
-		padding: none;
+		padding: 0;
 		text-align: center;
 		text-shadow: 5px 5px 10px #201f1f;
 	}
@@ -589,15 +592,15 @@ Desktop Styles: 769px and greater
 		font-weight: normal;
 		line-height: normal;
 		line-height: normal;
-		margin: none;
+		padding: 0;
 		max-width: 100%;
 		min-height: 100%;
-		padding: none;
+		padding: 0;
 		text-align: center;
 		text-shadow: 5px 5px 10px #201f1f;
 	}
 
-	section.flex-container-body-01 > div > h2 {
+	section.flex-container-body-01 div h2 {
 		-webkit-text-stroke-color: white;
 		-webkit-text-stroke-width: 0.5px;
 		/* color: #b43b07; */
@@ -610,32 +613,32 @@ Desktop Styles: 769px and greater
 		margin-top: 5rem;
 		max-width: 100%;
 		min-height: 100%;
-		padding: none;
+		padding: 0;
 		text-align: center;
 		text-shadow: 5px 5px 10px #201f1f;
 	}
 
 	/* The scrublands logo image */
-	section.flex-container-body-01 > div > a > img {
+	section.flex-container-body-01 div a img {
 		border-radius: 1.5rem;
 		box-shadow: 0px 50px 100px -20px rgba(50, 50, 93, 0.25), 0px 30px 60px -30px rgba(0, 0, 0, 0.3), inset 0px -2px 6px 0px rgba(10, 37, 64, 0.35);
 		display: block;
 		line-height: 2rem;
 		line-height: normal;
-		margin: none;
+		padding: 0;
 		max-width: 25%;
 		min-height: 25%;
-		padding: none;
+		margin: auto;
 	}
 
 	section.flex-container-body-01 div.product-page-image > a > img {
 		border-radius: 1.5rem;
 		box-shadow: 0px 50px 100px -20px rgba(50, 50, 93, 0.25), 0px 30px 60px -30px rgba(0, 0, 0, 0.3), inset 0px -2px 6px 0px rgba(10, 37, 64, 0.35);
 		display: block;
-		margin: none;
+		padding: 0;
 		max-width: 65%;
 		min-height: 100%;
-		padding: none;
+		padding: 0;
 	}
 
 	/* Product list */
@@ -643,8 +646,8 @@ Desktop Styles: 769px and greater
 	section.flex-container-body-01 > div {
 		line-height: 2rem;
 		margin-top: 2rem;
-		margin: none;
-		padding: none;
+		padding: 0;
+		padding: 0;
 		max-width: 100%;
 		min-height: 100%;
 	}
@@ -654,16 +657,16 @@ Desktop Styles: 769px and greater
 	div.container div.grid-container-bar-soap {
 		display: grid;
 		grid-template-columns: auto auto auto;
-		margin: none;
+		padding: 0;
 		gap: 1rem;
 		max-width: 100%;
 		min-height: 100%;
-		padding: none;
-		margin: none;
+		padding: 0;
+		padding: 0;
 	}
 
 	div.grid-item {
-		margin: none;
+		padding: 0;
 		min-height: 25rem;
 		max-width: 100%;
 		min-height: 100%;
@@ -679,20 +682,33 @@ Desktop Styles: 769px and greater
 	}
 
 	div.grid-item div h2 {
-		font-size: 4vw;
+		-webkit-text-stroke-color: white;
+		-webkit-text-stroke-width: 0.5px;
+		/* color: #b43b07; */
+		color: white;
+		font-family: TwoShotsCleanFull;
+		font-size: 5rem;
+		font-weight: normal;
+		line-height: normal;
 		margin-bottom: 1rem;
+		margin-top: 4rem;
 		margin-top: none;
-		padding: none;
-		text-align: center;
+		max-width: 100%;
 		max-width: 100%;
 		min-height: 100%;
+		min-height: 100%;
+		padding: 0;
+		padding: 0;
+		text-align: center;
+		text-align: center;
+		text-shadow: 5px 5px 10px #201f1f;
 	}
 
 	div.grid-item a img {
 		border-radius: 2.5rem;
 		box-shadow: 0 29px 52px rgba(0, 0, 0, 0.4), 0 25px 16px rgba(0, 0, 0, 0.2);
-		margin: none;
-		padding: none;
+		padding: 0;
+		padding: 0;
 		max-width: 100%;
 		min-height: 100%;
 	}

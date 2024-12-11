@@ -7,7 +7,7 @@ Desktop Styles: 769px and greater
 @media only screen and (min-width: 1270px) {
 	* {
 		padding: none;
-		margin: none;
+		padding: 0;
 	}
 	html {
 		background-image: url("../SOAP_PICS/HTML_PICS/background.jpeg");
@@ -39,7 +39,7 @@ Desktop Styles: 769px and greater
 	nav.horizontal > ul > li > a {
 		border: none;
 		color: blue;
-		margin: none;
+		padding: 0;
 		max-height: 200px;
 		min-height: 100%;
 	}
@@ -85,7 +85,7 @@ Desktop Styles: 769px and greater
 	li.bannerImages {
 		box-shadow: rgba(11, 11, 11, 0.5) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(31, 31, 32, 0.35) 0px -2px 6px 0px inset;
 		padding: none;
-		margin: none;
+		padding: 0;
 		line-height: normal;
 	}
 
@@ -112,7 +112,7 @@ Desktop Styles: 769px and greater
 		color: white;
 		font-size: 3rem;
 		line-height: normal;
-		margin: none;
+		padding: 0;
 		max-height: 100%;
 		min-height: 100%;
 		padding: none;
@@ -134,7 +134,7 @@ Desktop Styles: 769px and greater
 		flex-direction: column;
 		/* background-color: green; */
 		padding: none;
-		margin: none;
+		padding: 0;
 	}
 	ul.horizontal-mainmenu-dropdown-dropdown-contents li.bannerImages a {
 		/* background-color: rgb(214, 117, 117); */
@@ -145,7 +145,7 @@ Desktop Styles: 769px and greater
 		text-align: center;
 		width: 100%;
 		padding: none;
-		margin: none;
+		padding: 0;
 		box-shadow: rgba(16, 16, 16, 0.5) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(43, 45, 46, 0.35) 0px -2px 6px 0px inset;
 	}
 
@@ -232,7 +232,7 @@ Desktop Styles: 769px and greater
 		justify-content: center;
 		align-items: center;
 		flex-grow: 0;
-		margin: none;
+		padding: 0;
 		padding: none;
 
 		line-height: normal;
@@ -256,7 +256,7 @@ Desktop Styles: 769px and greater
 
 	section.flexContainerBody-BarSoap article div h2 {
 		flex-grow: 0;
-		margin: none;
+		padding: 0;
 		padding: 2rem;
 		font-size: 5rem;
 		text-align: center;
@@ -278,7 +278,7 @@ Desktop Styles: 769px and greater
 		justify-content: center;
 		align-items: center;
 		flex-grow: 0;
-		margin: none;
+		padding: 0;
 		padding: none;
 		line-height: normal;
 	}
@@ -296,7 +296,7 @@ Desktop Styles: 769px and greater
 		position: relative;
 		min-width: 100%;
 		height: auto;
-		margin: none;
+		padding: 0;
 		margin-top: 5rem;
 		text-align: center;
 	}
@@ -322,7 +322,7 @@ Desktop Styles: 769px and greater
 		text-align: center;
 		text-shadow: 5px 5px 10px #201f1f;
 		letter-spacing: 5px;
-		margin: none;
+		padding: 0;
 	}
 	section.flexContainerBody-LiquidSoap article div {
 		margin-top: 5rem;
@@ -387,7 +387,7 @@ Desktop Styles: 769px and greater
 		clear: both;
 		max-width: 600px;
 		height: auto;
-		margin: none;
+		padding: 0;
 		padding: none;
 		border-radius: 1em;
 	}
@@ -395,7 +395,7 @@ Desktop Styles: 769px and greater
 	div.figure-caption > figcaption {
 		position: relative;
 		clear: both;
-		margin: none;
+		padding: 0;
 		padding: 25px;
 		background-color: rgba(88, 75, 75, 0.5); /* Optional: Add a background color */
 		border-radius: 0.5em;
@@ -420,14 +420,14 @@ Desktop Styles: 769px and greater
 		/* border: solid 5px yellow; */
 		height: auto;
 		max-width: 100%;
-		margin: none;
+		padding: 0;
 		line-height: 5rem;
 		text-align: left;
 	}
 
 	div.image-item-02 {
 		max-width: 50%;
-		margin: none;
+		padding: 0;
 		padding: none;
 	}
 	div.image-item-02 figure {
@@ -441,7 +441,7 @@ Desktop Styles: 769px and greater
 		clear: both;
 		max-width: 100%;
 		height: auto;
-		margin: none;
+		padding: 0;
 		padding: none;
 		border-radius: 1em;
 	}
@@ -450,7 +450,7 @@ Desktop Styles: 769px and greater
 		position: relative;
 		max-width: 100%;
 		clear: both;
-		margin: none;
+		padding: 0;
 		padding: 25px;
 		background-color: rgba(88, 75, 75, 0.5); /* Optional: Add a background color */
 		border-radius: 0.5em;
@@ -494,7 +494,7 @@ Desktop Styles: 769px and greater
 		text-align: center;
 		text-shadow: 5px 5px 10px #201f1f;
 		padding: none;
-		margin: none;
+		padding: 0;
 	}
 
 	div.text-item-footer > p {
@@ -523,7 +523,7 @@ Desktop Styles: 769px and greater
 		-webkit-text-stroke-width: 0.8px;
 		-webkit-text-stroke-color: white;
 		min-width: 100%;
-		margin: none;
+		padding: 0;
 		padding: none;
 		font-size: 7rem;
 		font-family: TwoShotsCleanFull;
@@ -533,7 +533,7 @@ Desktop Styles: 769px and greater
 		text-align: center;
 		text-shadow: 5px 5px 10px #201f1f;
 		padding: none;
-		margin: none;
+		padding: 0;
 		line-height: normal;
 		line-height: 10rem;
 	}
@@ -542,7 +542,7 @@ Desktop Styles: 769px and greater
 		-webkit-text-stroke-width: 0.5px;
 		-webkit-text-stroke-color: white;
 		min-width: 100%;
-		margin: none;
+		padding: 0;
 		padding: none;
 		font-size: 6rem;
 		font-family: TwoShotsCleanFull;
@@ -552,7 +552,7 @@ Desktop Styles: 769px and greater
 		text-align: center;
 		text-shadow: 5px 5px 10px #201f1f;
 		padding: none;
-		margin: none;
+		padding: 0;
 		line-height: normal;
 	}
 	section.flex-container-body-01 > div > h2 {
@@ -581,14 +581,14 @@ Desktop Styles: 769px and greater
 		display: block;
 
 		width: 600px;
-		margin: none;
+		padding: 0;
 		padding: none;
 
 		height: auto;
 		margin: auto;
 		border-radius: 1.5rem;
 		padding: none;
-		margin: none;
+		padding: 0;
 		line-height: normal;
 		line-height: 2rem;
 	}
@@ -603,7 +603,7 @@ Desktop Styles: 769px and greater
 		margin: auto;
 		border-radius: 1.5rem;
 		padding: none;
-		margin: none;
+		padding: 0;
 	}
 
 	/* Product list */
@@ -611,7 +611,7 @@ Desktop Styles: 769px and greater
 	section.flex-container-body-01 > div {
 		margin-top: 2rem;
 		padding: none;
-		margin: none;
+		padding: 0;
 		line-height: 2rem;
 	}
 
@@ -637,7 +637,7 @@ Desktop Styles: 769px and greater
 		padding: none;
 		max-width: 100%;
 		min-height: 100%;
-		margin: none;
+		padding: 0;
 	}
 
 	.grid-item {
@@ -648,7 +648,7 @@ Desktop Styles: 769px and greater
 		text-align: center;
 		font-size: 6rem;
 		margin-top: 2rem;
-		margin: none;
+		padding: 0;
 		padding: none;
 		margin-bottom: 1rem;
 	}
@@ -658,11 +658,11 @@ Desktop Styles: 769px and greater
 		height: auto;
 		border-radius: 2.5rem;
 		padding: none;
-		margin: none;
+		padding: 0;
 		box-shadow: 0 29px 52px rgba(0, 0, 0, 0.4), 0 25px 16px rgba(0, 0, 0, 0.2);
 	}
 	* {
 		padding: none;
-		margin: none;
+		padding: 0;
 	}
 }

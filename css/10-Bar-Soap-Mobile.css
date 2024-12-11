@@ -11,7 +11,7 @@
 	}
 
 	* {
-		margin: none;
+		padding: 0;
 		padding: none;
 	}
 
@@ -23,7 +23,7 @@
 		flex-shrink: 1;
 	}
 	div.img-gallery {
-		margin: none;
+		padding: 0;
 		padding: none;
 		min-width: 15%;
 		max-width: 15%;
@@ -59,7 +59,7 @@
 		background-color: rgba(0, 0, 0, 0, 0.9);
 		position: fixed;
 		display: none;
-		margin: none;
+		padding: 0;
 		padding: none;
 		align-items: center;
 		justify-content: center;
@@ -203,7 +203,7 @@
 	}
 	div.soap-details {
 		border: solid 5px white;
-		margin: none;
+		padding: 0;
 		max-width: 100%;
 		min-height: 100%;
 	}

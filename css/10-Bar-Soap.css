@@ -1,13 +1,15 @@
 @charset "utf-8";
+
 @media only screen and (min-width: 768px) {
 	/* Fonts */
 	@font-face {
 		font-family: "TwoShotsCleanFull";
-		src: url("Vozzy - Two Shots Clean Full.WOFF2") format("woff2");
+		src: url("/font-files/Vozzy - Two Shots Clean Full.otf") format("oft");
 	}
+
 	@font-face {
 		font-family: "TwoShotsCleanFullOTF";
-		src: url("Vozzy - Two Shots Clean Full.otf") format("oft");
+		src: url("/font-files/Vozzy - Two Shots Clean Full.otf") format("oft");
 	}
 
 	* {
@@ -41,7 +43,7 @@
 		border-radius: 0.5rem;
 		max-width: 100%;
 		min-height: 100%;
-		margin: none;
+		padding: 0;
 		padding: none;
 	}
 
@@ -101,7 +103,7 @@
 	}
 
 	div > p {
-		margin: none;
+		padding: 0;
 		max-width: 100%;
 		min-height: 100%;
 	}

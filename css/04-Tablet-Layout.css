@@ -5,7 +5,7 @@
 Tablet Styles: 481px and greater
 ================================
 */
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 481px) and (max-width: 1023px) {
 	html {
 		background-image: url("../SOAP_PICS/HTML_PICS/background.jpeg");
 		background-position: center;
@@ -60,7 +60,7 @@ Tablet Styles: 481px and greater
 		background: transparent;
 		box-shadow: none;
 		display: none;
-		font-size: 2vw;
+		font-size: 2rem;
 		min-width: 100%;
 		max-width: 100%;
 		min-height: 100%;
@@ -79,7 +79,7 @@ Tablet Styles: 481px and greater
 	ul.horizontal-mainmenu li {
 		box-shadow: rgba(11, 11, 11, 0.5) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(31, 31, 32, 0.35) 0px -2px 6px 0px inset;
 		padding: none;
-		margin: none;
+		padding: 0;
 		line-height: normal;
 		max-width: 100%;
 		min-height: 100%;
@@ -96,7 +96,7 @@ Tablet Styles: 481px and greater
 	a.horizontal-mainmenu-dropdown a:link {
 		background-color: rgb(73, 58, 49, 0.5);
 		color: white;
-		font-size: 2vw;
+		font-size: 2rem;
 		padding-bottom: 2rem;
 		padding-top: 2rem;
 		text-align: center;
@@ -107,9 +107,9 @@ Tablet Styles: 481px and greater
 	nav.horizontal a:visited,
 	nav.horizontal a:link {
 		color: white;
-		font-size: 3vw;
+		font-size: 2rem;
 		line-height: normal;
-		margin: none;
+		padding: 0;
 		max-width: 100%;
 		min-height: 100%;
 		padding: 2rem 0rem 2rem 0rem;
@@ -121,9 +121,9 @@ Tablet Styles: 481px and greater
 		box-shadow: rgba(16, 16, 16, 0.5) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(43, 45, 46, 0.35) 0px -2px 6px 0px inset;
 		display: flex;
 		flex-direction: column;
-		font-size: 5vw;
+		font-size: 2rem;
 		line-height: normal;
-		margin: none;
+		padding: 0;
 		max-width: 100%;
 		min-height: 100%;
 		padding: none;
@@ -216,7 +216,7 @@ Tablet Styles: 481px and greater
 	a#menuButton.horizontal-mainmenu-dropdown {
 		background-color: rgb(73, 58, 49, 0.5);
 		color: white;
-		font-size: 3vw;
+		font-size: 2rem;
 
 		text-align: center;
 		z-index: 2;
@@ -235,7 +235,7 @@ Tablet Styles: 481px and greater
 		justify-content: center;
 		align-items: center;
 		flex-grow: 0;
-		margin: none;
+		padding: 0;
 		padding: none;
 
 		line-height: normal;
@@ -256,9 +256,9 @@ Tablet Styles: 481px and greater
 
 	section.flexContainerBody-BarSoap article div h2 {
 		flex-grow: 0;
-		margin: none;
+		padding: 0;
 		padding: 2rem;
-		font-size: 5rem;
+		font-size: 2rem;
 		text-align: center;
 	}
 
@@ -277,7 +277,7 @@ Tablet Styles: 481px and greater
 		justify-content: center;
 		align-items: center;
 		flex-grow: 0;
-		margin: none;
+		padding: 0;
 		padding: none;
 		line-height: normal;
 	}
@@ -295,7 +295,7 @@ Tablet Styles: 481px and greater
 		position: relative;
 		min-width: 100%;
 		height: auto;
-		margin: none;
+		padding: 0;
 		margin-top: 5rem;
 		text-align: center;
 	}
@@ -314,7 +314,7 @@ Tablet Styles: 481px and greater
 		-webkit-text-stroke-width: 1.5px;
 		-webkit-text-stroke-color: white;
 		min-width: 100%;
-		font-size: 8vw;
+		font-size: 8rem;
 		font-family: TwoShotsCleanFull;
 		font-weight: normal;
 		line-height: normal;
@@ -322,7 +322,7 @@ Tablet Styles: 481px and greater
 		text-align: center;
 		text-shadow: 5px 5px 10px #201f1f;
 		letter-spacing: 5px;
-		margin: none;
+		padding: 0;
 	}
 	section.flexContainerBody-LiquidSoap article div {
 		margin-top: 5rem;
@@ -497,7 +497,7 @@ Tablet Styles: 481px and greater
 		font-weight: normal;
 		line-height: normal;
 		letter-spacing: 0.25rem;
-		margin: none;
+		padding: 0;
 		max-width: 100%;
 		min-height: 100%;
 		padding: none;
@@ -548,7 +548,7 @@ Tablet Styles: 481px and greater
 		display: block;
 		height: auto;
 		margin: auto;
-		margin: none;
+		padding: 0;
 		max-width: 30%;
 		padding: none;
 	}
@@ -582,12 +582,12 @@ Tablet Styles: 481px and greater
 	div.container div.grid-container-bar-soap {
 		display: grid;
 		grid-template-columns: auto auto;
-		margin: none;
+		padding: 0;
 		gap: 1rem;
 		max-width: 100%;
 		min-height: 100%;
 		padding: none;
-		margin: none;
+		padding: 0;
 	}
 
 	div.grid-item {
@@ -595,7 +595,7 @@ Tablet Styles: 481px and greater
 		font-size: 1.5rem;
 		max-width: 100%;
 		min-height: 100%;
-		margin: none;
+		padding: 0;
 		padding: none;
 		text-align: center;
 	}

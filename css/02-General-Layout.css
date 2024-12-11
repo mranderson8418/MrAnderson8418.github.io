@@ -43,7 +43,7 @@ ul.horizontal-mainmenu {
 	justify-content: center;
 	max-width: 100%;
 	height: auto;
-	margin: none;
+	padding: 0;
 	padding: none;
 }
 

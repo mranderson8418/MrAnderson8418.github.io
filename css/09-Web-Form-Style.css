@@ -63,13 +63,9 @@ fieldset {
 	min-height: 100%;
 }
 
-fieldset form.formGroup {
-	max-width: 100%;
-	min-height: 100%;
-}
-
 fieldset form.formGroup div input,
 fieldset form.formGroup div select {
+	min-width: 100%;
 	max-width: 100%;
 	min-height: 100%;
 	font-size: 2rem;
@@ -79,9 +75,10 @@ form.formGroup {
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
+	min-width: 80%;
 	max-width: 100%;
 	min-height: 100%;
-	margin: 10%;
+	margin: 1rem 0rem;
 	padding: 1rem;
 	background-color: rgb(180, 59, 7);
 	opacity: 0.8;
@@ -94,14 +91,16 @@ form.formGroup {
 	flex-direction: column;
 	justify-content: center;
 	line-height: 1em;
+	min-width: 80%;
 	max-width: 100%;
 	min-height: 100%;
-	margin: none;
+	padding: 0;
 	padding: 1rem;
 }
 
 .formGroup > div label {
 	font-size: 3em;
+	min-width: 80%;
 	max-width: 100%;
 	min-height: 100%;
 	line-height: 1em;
@@ -192,6 +191,7 @@ fieldset {
 	min-width: 90%;
 	max-width: 90%;
 	min-height: 100%;
+	margin: auto;
 }
 
 legend {
