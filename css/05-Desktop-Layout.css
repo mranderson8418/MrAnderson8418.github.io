@@ -123,8 +123,7 @@ Desktop Styles: 769px and greater
 		line-height: normal;
 	}
 	a.horizontal-mainmenu-dropdown:hover + ul.horizontal-mainmenu-dropdown-dropdown-contents,
-	ul.horizontal-mainmenu-dropdown-dropdown-contents:hover,
-	ul:hover {
+	ul.horizontal-mainmenu-dropdown-dropdown-contents:hover {
 		display: flex;
 		min-width: 100%;
 		max-width: 100%;
