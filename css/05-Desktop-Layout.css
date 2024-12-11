@@ -80,22 +80,10 @@ Desktop Styles: 769px and greater
 		min-height: 100%;
 	}
 
-	/* nav.horizontal a:visited {
-		color: white;
-		font-size: 2rem;
-		line-height: normal;
-		padding: 2rem 0rem;
-		max-width: 100%;
-		min-height: 100%;
-		padding: 1rem 0rem;
-		text-align: center;
-	} */
-
 	ul.horizontal-mainmenu-dropdown-dropdown-contents {
 		background-color: rgb(73, 58, 49);
 		box-shadow: none;
 		display: none;
-
 		flex-direction: column;
 		align-items: center;
 		justify-content: center;

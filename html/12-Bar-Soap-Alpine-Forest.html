@@ -18,6 +18,9 @@
 	<link href="/css/08-Clock-Format.css" rel="stylesheet" />
 	<link href="/css/09-Web-Form-Style.css" rel="stylesheet" />
 	<link href="/css/10-Bar-Soap.css" rel="stylesheet" />
+	<link href="/css/10-Bar-Soap-Mobile.css" rel="stylesheet" />
+	<script src="/js/DropDownContents.js" defer></script>
+	<script src="/js/BarSoapGallery.js" defer></script>
 	<script src="/js/DropDownContents.js" defer></script>
 
 
@@ -60,29 +63,60 @@
 			</ul>
 		</nav>
 	</header>
-	<div class="grid-container">
-		<div class="item1">
+
+	<div class='grid-container'>
+
+
+		<div class='item1'>
 			<h1>Alpine Forest Soap</h1>
 		</div>
-		<div class="item2">
-			<div class="full-img" id="fullImgBox">
+
+
+
+		<div class='item2'>
+
+			<div class='full-img' id="fullImgBox">
 				<img src="Picture" id="fullImg" alt="marine green 01" />
 				<span onclick="closeFullImg()">X</span>
 			</div>
 
-			<div class="img-gallery">
-				<img src="../SOAP_PICS/ALPINE_FOREST_JPG/ALPINE_FOREST_79.jpeg" onclick="openFullImg(this.src)" />
+			<div class='img-gallery'>
+				<div>
+					<img class='image-01' src="../SOAP_PICS/ALPINE_FOREST_JPG/ALPINE_FOREST_01_square.jpeg"
+						onclick=" openFullImg(this.src)" />
+				</div>
+				<div>
+					<img class='image-02' src="../SOAP_PICS/ALPINE_FOREST_JPG/ALPINE_FOREST_74_square.jpeg"
+						onclick=" openFullImg(this.src)" />
+				</div>
+				<div>
+					<img class='image-03' src="../SOAP_PICS/ALPINE_FOREST_JPG/ALPINE_FOREST_74_square.jpeg"
+						onclick="openFullImg(this.src)" />
+				</div>
 
-				<img src="../SOAP_PICS/ALPINE_FOREST_JPG/ALPINE_FOREST_74.jpeg" onclick="openFullImg(this.src)" />
+				<div>
+					<img class='image-05'
+						src="../SOAP_PICS/ALPINE_FOREST_ORIGINAL_JPG/ALPINE_FOREST_ORIGINAL_8_square.jpeg"
+						onclick="openFullImg(this.src)" />
+				</div>
+				<div>
+					<img class='image-05'
+						src="../SOAP_PICS/ALPINE_FOREST_ORIGINAL_JPG/ALPINE_FOREST_ORIGINAL_9_square.jpeg"
+						onclick="openFullImg(this.src)" />
+				</div>
+				<div>
+					<img class='image-05'
+						src="../SOAP_PICS/ALPINE_FOREST_ORIGINAL_JPG/ALPINE_FOREST_ORIGINAL_25_square.jpeg"
+						onclick="openFullImg(this.src)" />
+				</div>
 
-				<img src="../SOAP_PICS/ALPINE_FOREST_JPG/ALPINE_FOREST_76.jpeg" onclick="openFullImg(this.src)" />
-
-				<img src="../SOAP_PICS/ALPINE_FOREST_JPG/ALPINE_FOREST_78.jpeg" onclick="openFullImg(this.src)" />
-
-				<img src="../SOAP_PICS/ALPINE_FOREST_JPG/ALPINE_FOREST_76.jpeg" onclick="openFullImg(this.src)" />
 			</div>
+
 		</div>
-		<div class="item3">
+
+
+
+		<div class='item3'>
 			<div>
 				<p>
 					Marine Green Sea Salt Soap is a luxurious soap made with Himalayan Sea Salt, Shea Butter, and
@@ -102,53 +136,56 @@
 				<p>
 					All Scrublands Apothecary Soap is cold process soap made in the backcountry of North Carolina.
 					Scrublands Apothecary will
-					guarantee you are %100 satisfied with your purchase or your money back. 
+					guarantee you are %100 satisfied with your purchase or your money back.
 				</p>
 				<br />
 				<p>
 					** Allergy Warning: People with skin sensitivities or allergies should test the soap on a small spot
 					of the skin and stop
-					using it if any irritation occurs. 
+					using it if any irritation occurs.
 				</p>
 				<br />
 				<p>**No Detergents, No Sodium Lauryl Sulfate, No Harsh Chemicals, No Sulfates </p>
 				<br />
-				<p>** Soap is shrink wrapped to protect and preserve the soap bar freshness. </p>
+				<p>** Soap is shrink wrapped to protect and preserve the soap bar freshness.</p>
 			</div>
 
-			<div class="soap-details">
+			<div class='soap-details'>
 				<div>
 					<h2>Soap Details</h2>
-					<p>Approximate Weight Per Bar: 6.0 oz</p>
-					<p>Soap Bar Dimensions: 2 x 3 x 4</p>
+					<ul>
+						<li><span class='fancy-bullet'>&#9679;</span> Approximate Weight Per Bar: 6.0 oz</li>
+						<li><span class='fancy-bullet'>&#9679;</span> Soap Bar Dimensions: 2 x 3 x 4</li>
+					</ul>
+
+
 				</div>
 
-				<div class="ingredients-list">
+				<div class='ingredients-list'>
 					<h2>Ingredients</h2>
 
 					<ul>
-						<li><span class="fancy-bullet">&#9679;</span> Coconut Oil</li>
-						<li><span class="fancy-bullet">&#9679;</span> Palm Oil Organic</li>
-						<li><span class="fancy-bullet">&#9679;</span> Extra Virgin Olive Oil</li>
-						<li><span class="fancy-bullet">&#9679;</span> Castor Oil</li>
-						<li><span class="fancy-bullet">&#9679;</span> Eucalyptus Essential Oil</li>
-						<li><span class="fancy-bullet">&#9679;</span> Green Oxide Pigment Powder</li>
-						<li><span class="fancy-bullet">&#9679;</span> Titanium Dioxide Pigment Powder</li>
+						<li><span class='fancy-bullet'>&#9679;</span> Coconut Oil</li>
+						<li><span class='fancy-bullet'>&#9679;</span> Palm Oil Organic</li>
+						<li><span class='fancy-bullet'>&#9679;</span> Extra Virgin Olive Oil</li>
+						<li><span class='fancy-bullet'>&#9679;</span> Castor Oil</li>
+						<li><span class='fancy-bullet'>&#9679;</span> Eucalyptus Essential Oil</li>
+						<li><span class='fancy-bullet'>&#9679;</span> Green Oxide Pigment Powder</li>
+						<li><span class='fancy-bullet'>&#9679;</span> Titanium Dioxide Pigment Powder</li>
 					</ul>
 				</div>
 			</div>
 		</div>
-		<!-- <div class="item4">Right</div>
-			<div class="item5">Footer</div> -->
+
 	</div>
 
-	<div class="return-button">
+	<div class='return-button'>
 		<a href="03-Bar-Soap.html">Return to Bar Soap</a>
 	</div>
 
 	<br>
 	<br>
-	<div class="text-item-footer">
+	<div class='text-item-footer'>
 		<p>&copy; 2024 Scrublands Apothecary. All rights reserved.</p>
 	</div>
 	</section>
@@ -161,7 +198,8 @@
 	<br>
 	<br>
 	<br>
-	<script src="js/BarSoapGallery.js"></script>
+
+
 
 </body>
 
