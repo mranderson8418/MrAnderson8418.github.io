@@ -717,7 +717,6 @@ Mobile Styles: 0px to 480px
 		min-height: 100%;
 		min-width: 80%;
 		margin: 0;
-		padding: 1rem;
 	}
 
 	.formGroup div label {
@@ -763,17 +762,21 @@ Mobile Styles: 0px to 480px
 	}
 
 	.submitButton input[type="submit"] {
-		color: rgb(25, 25, 25);
-		font-size: 1.5rem;
-		/* margin: 1rem; */
-		min-width: 25%;
-		max-width: 100%;
-		min-height: 4rem;
-		border: none;
 		border-radius: 1rem;
+		border: none;
+		color: rgb(180, 59, 7);
+		font-family: TwoShotsCleanFull, Courier, monospace;
+		font-size: 3rem;
+		font-weight: normal;
+		line-height: 1em;
+
+		max-width: 100%;
+		min-height: 100%;
+
 		text-align: center;
-		box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
-			rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+
+		margin-top: 1rem;
+		padding: 1rem;
 	}
 
 	/*
