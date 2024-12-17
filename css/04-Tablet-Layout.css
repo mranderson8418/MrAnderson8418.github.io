@@ -58,7 +58,7 @@ Tablet Styles: 481px and greater
 		max-width: 100%;
 		min-height: 100%;
 		position: relative;
-		z-index: 20;
+		/* z-index: 20; */
 		display: block;
 	}
 

@@ -1,6 +1,6 @@
 @charset "utf-8";
 
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 769px) {
 	/* Fonts */
 	@font-face {
 		font-family: "TwoShotsCleanFull";
@@ -45,12 +45,13 @@
 		max-width: 100%;
 		min-height: 100%;
 		padding: 0;
-		margin: auto;
+		margin: 1rem 0rem 1rem 0rem;
 	}
 
 	.full-img img {
-		min-width: 65%;
-		max-width: 80%;
+		min-width: 90%;
+		max-width: 95%;
+
 		border-radius: 0.5rem;
 	}
 
@@ -71,10 +72,11 @@
 	}
 
 	div#fullImgBox.full-img {
-		background-color: rgba(0, 0, 0, 0.9);
+		background-color: rgba(0, 0, 0, 0.7);
 
 		z-index: 2;
 		min-width: 100%;
+
 		min-height: 100%;
 	}
 	.item1 {
