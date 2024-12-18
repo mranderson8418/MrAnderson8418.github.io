@@ -51,6 +51,15 @@
         .show {
             display: block;
         }
+
+        p {
+            display: block;
+            width: 500px;
+            height: 500px;
+            background-color: blue;
+            color: white;
+            text-align: center;
+        }
     </style>
 </head>
 
@@ -75,8 +84,32 @@
             <a href="#">Link 3</a>
         </div>
     </div>
+    <button onclick="window.print()">Print this page</button>
 
+    <p onclick="myFunctionScott01()" id="demo1"></p>
+    <p onclick="myFunctionScott02()" id="demo2"></p>
     <script>
+
+
+
+
+        let countA = 0;
+        let countB = 0;
+
+        function myFunctionScott01()
+        {
+
+            if (countA == 0) {
+                document.getElementById("demo1").innerHTML = "Hello Dolly!";
+                countA += 1;
+            } else {
+                countA--;
+                document.getElementById("demo1").innerHTML = "";
+            }
+
+        }
+
+
 
         function myFunction01()
         {
