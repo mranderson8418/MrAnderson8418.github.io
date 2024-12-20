@@ -69,17 +69,17 @@ div#fullImgBox.full-img {
 	/* background-color: black; */
 	z-index: 2;
 }
-.item1 {
+.title {
 	grid-area: header;
 }
-.item2 {
+.pictures {
 	grid-area: menu;
 }
-.item3 {
+.body {
 	grid-area: main;
 }
 
-.item5 {
+.footer {
 	grid-area: footer;
 }
 
@@ -135,7 +135,7 @@ div.soap-details > div.ingredients-list > h2 {
 	/* margin: 1rem; */
 }
 
-div.item1 h1 {
+div.title h1 {
 	letter-spacing: 5px; /* Adjust the value as needed */
 
 	text-align: center;

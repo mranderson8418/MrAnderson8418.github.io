@@ -18,18 +18,19 @@
             font-size: 30px;
         }
 
-        .item1 {
-            grid-column-start: 1;
+        .header {
+            grid-column-start: 2;
             grid-column-end: 4;
         }
 
-        .item2 {
-            grid-row-start: 2;
+        .pictures {
+            grid-row-start: 1;
             grid-row-end: 4;
+            padding: 20px;
         }
 
 
-        .item3 {
+        .body01 {
             grid-column-start: 2;
             grid-column-end: 4;
 
@@ -39,13 +40,24 @@
 
         }
 
-        .item7 {
+        .body02 {
+            grid-column-start: 1;
+            grid-column-end: 4;
+        }
+
+        .button {
             grid-column-start: 1;
             grid-column-end: 4;
         }
 
 
-        .item8 {
+        .button {
+            grid-column-start: 1;
+            grid-column-end: 4;
+        }
+
+
+        .footer {
             grid-column-start: 1;
             grid-column-end: 4;
         }
@@ -57,11 +69,11 @@
     <h1>Grid Lines</h1>
 
     <div class="grid-container">
-        <div class="item1">header</div>
-        <div class="item2">pictures</div>
-        <div class="item3">body</div>
-        <div class="item7">button</div>
-        <div class="item8">footer</div>
+        <div class="header">header</div>
+        <div class="pictures">pictures</div>
+        <div class="body">body</div>
+        <div class="button">button</div>
+        <div class="footer">footer</div>
     </div>
 
     <p>You can refer to line numbers when placing grid items.</p>
