@@ -16,7 +16,19 @@
 		margin: 0;
 		padding: 0;
 	}
+	.grid-container {
+		display: grid;
+		line-height: 3rem;
+		grid-template-areas:
+			"header header header header header header"
+			"menu menu main main main main"
+			"menu menu footer footer footer footer";
+		gap: 2rem;
 
+		margin: 2rem;
+		max-width: 100%;
+		min-height: 100%;
+	}
 	/* .img-gallery {
 		margin: 0rem 0rem 0rem 0rem;
 		display: grid;
@@ -36,6 +48,11 @@
 		display: none;
 		align-items: center;
 		justify-content: center;
+	}
+	div.item2 {
+		min-width: 100%;
+		max-width: 100%;
+		min-height: 100%;
 	}
 
 	div.img-gallery img {
@@ -88,23 +105,32 @@
 	.item3 {
 		grid-area: main;
 	}
-
+	.item4 {
+		grid-area: main;
+	}
 	.item5 {
+		grid-area: main;
+	}
+	.item6 {
+		grid-area: main;
+	}
+	.item7 {
+		grid-area: main;
+	}
+
+	.item10 {
 		grid-area: footer;
 	}
-	.grid-container {
+
+	/* .grid-container-pack {
 		display: grid;
 		line-height: 3rem;
-		grid-template-areas:
-			"header header header header header header"
-			"menu menu main main main main"
-			"menu menu footer footer footer footer";
+		grid-template-columns: auto auto;
 		gap: 10px;
-
-		padding: 10px;
+		padding: 0px;
 		max-width: 100%;
 		min-height: 100%;
-	}
+	} */
 
 	div.img-gallery {
 		margin: 0rem 0rem 0rem 0rem;
@@ -117,13 +143,10 @@
 	}
 
 	.img-gallery div.col-01 {
-		/* margin: 0rem 1rem 0rem 1rem; */
-
 		margin: 0;
 		padding: 0;
 	}
 	.img-gallery div.col-02 {
-		/* margin: 0rem 1rem 0rem 1rem; */
 		margin: 0;
 		padding: 0;
 	}
@@ -177,7 +200,6 @@
 
 	div.item1 h1 {
 		letter-spacing: 5px; /* Adjust the value as needed */
-
 		text-align: center;
 		font-family: TwoShotsCleanFull;
 		text-shadow: 5px 5px 10px #201f1f;
@@ -191,8 +213,25 @@
 		min-width: 100%;
 		margin-top: 5rem;
 	}
+
+	div.item2 h2 {
+		letter-spacing: 5px; /* Adjust the value as needed */
+
+		text-align: center;
+		font-family: TwoShotsCleanFull;
+		text-shadow: 5px 5px 10px #201f1f;
+		font-size: 5rem;
+		-webkit-text-stroke-width: 1.5px;
+		-webkit-text-stroke-color: white;
+		text-shadow: 8px 8px 20px black;
+		font-weight: normal;
+		color: #ffffff;
+		line-height: normal;
+		min-width: 100%;
+		margin-top: 5rem;
+	}
 	div.item3 div {
-		margin-left: 1rem;
+		margin-left: 212/20/2024rem;
 		margin-right: 1rem;
 	}
 	div.return-button {
