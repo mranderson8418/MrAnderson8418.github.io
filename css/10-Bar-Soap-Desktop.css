@@ -49,8 +49,8 @@
 	}
 
 	.full-img img {
-		min-width: 75%;
-		max-width: 85%;
+		min-width: 65%;
+		max-width: 65%;
 		border-radius: 0.5rem;
 	}
 
