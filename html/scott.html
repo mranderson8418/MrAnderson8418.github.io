@@ -1,24 +1,14 @@
 <!DOCTYPE html>
-
-<html lang="en">
+<html>
 
 <head>
-    <title>Form Page</title>
-    <!-- Metadata of the document -->
-
-    <!-- Metadata of the document -->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0" />
     <style>
         .grid-container {
             display: grid;
-            grid-template-columns: 3fr 3fr 3fr;
+            grid-template-columns: auto auto auto;
             gap: 10px;
             background-color: dodgerblue;
             padding: 10px;
-            min-width: 100%;
-            max-width: 100%;
-            min-height: 100%;
-            ;
         }
 
         .grid-container>div {
@@ -28,36 +18,36 @@
             font-size: 30px;
         }
 
-        .header {
-            grid-column: 1/7;
+        .item1 {
+            grid-column-start: 1;
+            grid-column-end: 4;
+        }
+
+        .item2 {
+            grid-row-start: 2;
+            grid-row-end: 4;
         }
 
 
-        .pictures {
-            grid-row: 2/5;
-        }
+        .item3 {
+            grid-column-start: 2;
+            grid-column-end: 4;
 
+            grid-row-start: 2;
+            grid-row-end: 4;
 
-
-        .menu {
-
-
-            grid-row: 2/4;
 
         }
 
-        .button {
-
-
-            grid-row: 1;
-
+        .item7 {
+            grid-column-start: 1;
+            grid-column-end: 4;
         }
 
-        .footer {
 
-
-            grid-row: 1;
-
+        .item8 {
+            grid-column-start: 1;
+            grid-column-end: 4;
         }
     </style>
 </head>
@@ -67,13 +57,11 @@
     <h1>Grid Lines</h1>
 
     <div class="grid-container">
-        <div class="header">header</div>
-        <div class="pictures">2</div>
-        <div class="menu">3</div>
-
-        <div class="button">4</div>
-
-        <div class="foooter">5</div>
+        <div class="item1">header</div>
+        <div class="item2">pictures</div>
+        <div class="item3">body</div>
+        <div class="item7">button</div>
+        <div class="item8">footer</div>
     </div>
 
     <p>You can refer to line numbers when placing grid items.</p>
