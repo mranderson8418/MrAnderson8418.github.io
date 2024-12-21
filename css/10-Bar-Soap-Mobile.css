@@ -135,7 +135,7 @@
 		margin: 1rem 0rem 1rem 0rem;
 		border-radius: 1rem;
 	}
-	div.soap-details div h2 {
+	div.soap-details h2 {
 		-webkit-text-stroke-color: white;
 		-webkit-text-stroke-width: 1.5px;
 		color: #ffffff;
@@ -148,7 +148,7 @@
 		min-height: 100%;
 		text-align: center;
 		text-shadow: 2px 2px 2px #201f1f;
-		text-shadow: 8px 8px 20px black;
+
 		padding: 1rem;
 	}
 	div.title {
@@ -160,7 +160,7 @@
 		-webkit-text-stroke-width: 1.5px;
 		color: #ffffff;
 		font-family: TwoShotsCleanFull;
-		font-size: 8vw;
+		font-size: 10vw;
 		font-weight: normal;
 		letter-spacing: 5px; /* Adjust the value as needed */
 		line-height: normal;
@@ -169,9 +169,8 @@
 		min-height: 100%;
 		text-align: center;
 		text-shadow: 5px 5px 10px #201f1f;
-		text-shadow: 8px 8px 20px black;
 	}
-	div.return-button {
+	div.button {
 		max-width: 100%;
 		align-items: center;
 		display: flex;
@@ -181,13 +180,13 @@
 		text-align: center;
 		padding: 1rem;
 	}
-	div.return-button a {
+	div.button a {
 		-webkit-text-stroke-color: white;
 		-webkit-text-stroke-width: 1.5px;
 		align-items: center;
 		background-color: rgba(73, 58, 49, 0.8);
 		border-radius: 1.5rem;
-		box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+		box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 		color: #ffffff;
 		display: flex;
 		flex-direction: column;
@@ -205,19 +204,34 @@
 		text-decoration: none;
 		text-shadow: 2px 2px 20px rgb(78, 77, 77);
 	}
-	div.ingredients-list {
+	/* div.ingredients-list {
 		margin: 2rem;
 		text-align: left;
 		max-width: 100%;
 		min-height: 100%;
-	}
+	} */
 
-	div.ingredients-list ul {
+	div.ingredients-list {
+		margin: 0;
+		padding: 0;
 		display: flex;
 		justify-content: left;
 		flex-direction: column;
 		max-width: 100%;
 		min-height: 100%;
+	}
+
+	div.soap-details {
+		display: flex;
+		flex-direction: column;
+		align-items: left;
+		justify-content: left;
+		max-width: 100%;
+		min-height: 100%;
+	}
+
+	div.soap-details ul li {
+		margin-left: 1rem;
 	}
 
 	div.ingredients-list ul li {
