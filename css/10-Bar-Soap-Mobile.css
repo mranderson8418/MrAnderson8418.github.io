@@ -1,5 +1,5 @@
 @charset "utf-8";
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 1024px) {
 	/* Fonts */
 	@font-face {
 		font-family: "TwoShotsCleanFull";
@@ -95,12 +95,14 @@
 
 	.full-img span {
 		position: absolute;
-		top: 5%;
-		right: 5%;
-		font-size: 1.5rem;
+		top: 10%;
+		right: 10%;
+		font-size: 5rem;
+		font-weight: bold;
 		color: #fff;
 		max-width: 100%;
 		min-height: 100%;
+		text-shadow: 5px 5px 5px #201f1f;
 	}
 	div.img-gallery div img {
 		min-width: 100%;

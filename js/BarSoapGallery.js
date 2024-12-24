@@ -10,6 +10,7 @@ var currentImageIndex = 0;
 
 function openFullImg(pic) {
 	fullImgBox.style.display = "flex";
+
 	fullImg.src = pic;
 }
 
