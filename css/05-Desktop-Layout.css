@@ -32,6 +32,7 @@ Desktop Styles: 769px and greater
 		min-width: 900px;
 		position: relative;
 		z-index: 1;
+		background-attachment: fixed;
 	}
 
 	/* Navigation Menu aka Header Menus*/
