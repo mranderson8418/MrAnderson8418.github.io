@@ -197,24 +197,22 @@
 		min-height: 100%;
 	}
 
-	div.soap-details {
+	div.bordered-details div {
 		margin-left: 0;
 		margin-right: 0;
 		font-size: 1.5rem;
 		align-items: left;
 	}
-	div.soap-details div ul {
+	div.bordered-details div ul {
 		margin: 3rem;
 		line-height: 5rem;
 	}
-	div.soap-details div h2,
-	div.body div h2 {
+	div.bordered-details div h2 {
 		margin-top: 2rem;
 		text-align: left;
 		letter-spacing: 5px;
 		text-align: center;
 		font-family: TwoShotsCleanFull;
-
 		font-size: 5rem;
 		-webkit-text-stroke-width: 1.5px;
 		-webkit-text-stroke-color: white;
@@ -225,7 +223,7 @@
 		max-width: 100%;
 		min-height: 100%;
 	}
-	div.soap-details div.ingredients-list h2 {
+	div.bordered-details div h2 {
 		text-align: left;
 		letter-spacing: 5px;
 		text-align: center;
@@ -240,20 +238,20 @@
 		min-width: 100%;
 	}
 
-	div.soap-details ul {
+	div.bordered-details div ul {
 		display: flex;
 		justify-content: left;
 		flex-direction: column;
 	}
 
-	div.soap-details ul li {
+	div.bordered-details div ul li {
 		flex: 1;
 		text-align: left;
 		position: relative;
 		left: 10%;
 	}
 
-	div.soap-details ul li span {
+	div.bordered-details div ul li span {
 		position: relative;
 		left: -25px;
 	}
@@ -319,22 +317,22 @@
 		border-radius: 1.5rem;
 		text-align: center;
 	}
-	div.ingredients-list {
+	div.bordered-details div {
 		text-align: left;
 	}
 
-	div.ingredients-list ul {
+	div.bordered-details div ul {
 		display: flex;
 		justify-content: left;
 		flex-direction: column;
 	}
 
-	div.ingredients-list ul li {
+	div.bordered-details div ul li {
 		flex: 1;
 		text-align: left;
 	}
 
-	div.soap-details {
+	div.bordered-details div {
 		margin: 8rem 0rem 0rem 0rem;
 		border: solid 5px white;
 		border-radius: 2rem;
