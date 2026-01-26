@@ -42,7 +42,10 @@ Tablet Styles: 481px and greater
 	ul.horizontal-mainmenu li a {
 		max-width: 100%;
 		border-radius: 0.125rem;
-		box-shadow: rgba(50, 50, 93, 0.5) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+		box-shadow:
+			rgba(50, 50, 93, 0.5) 0px 50px 100px -20px,
+			rgba(0, 0, 0, 0.3) 0px 30px 60px -30px,
+			rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
 		color: white;
 		display: block;
 		margin: auto;
@@ -131,7 +134,10 @@ Tablet Styles: 481px and greater
 
 	ul.horizontal-mainmenu li {
 		align-items: center;
-		box-shadow: rgba(11, 11, 11, 0.5) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(31, 31, 32, 0.35) 0px -2px 6px 0px inset;
+		box-shadow:
+			rgba(11, 11, 11, 0.5) 0px 50px 100px -20px,
+			rgba(0, 0, 0, 0.3) 0px 30px 60px -30px,
+			rgba(31, 31, 32, 0.35) 0px -2px 6px 0px inset;
 		display: flex;
 		flex-direction: column;
 		font-size: 2rem;
@@ -252,7 +258,9 @@ Tablet Styles: 481px and greater
 		text-align: center;
 	}
 	section.flexContainerBody-BarSoap article div a img {
-		box-shadow: 0 10px 15px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+		box-shadow:
+			0 10px 15px 0 rgba(0, 0, 0, 0.2),
+			0 6px 20px 0 rgba(0, 0, 0, 0.19);
 		border-radius: 2.5rem;
 		min-width: 50%;
 		max-width: 50%;
@@ -388,7 +396,10 @@ Tablet Styles: 481px and greater
 	}
 
 	div.figure-container-01 div.image-item figure a img {
-		box-shadow: 0px 50px 100px -20px rgba(50, 50, 93, 0.25), 0px 30px 60px -30px rgba(0, 0, 0, 0.3), inset 0px -2px 6px 0px rgba(10, 37, 64, 0.35);
+		box-shadow:
+			0px 50px 100px -20px rgba(50, 50, 93, 0.25),
+			0px 30px 60px -30px rgba(0, 0, 0, 0.3),
+			inset 0px -2px 6px 0px rgba(10, 37, 64, 0.35);
 		position: relative;
 		clear: both;
 		max-width: 100%;
@@ -409,7 +420,10 @@ Tablet Styles: 481px and greater
 		margin: auto;
 		padding: 2rem;
 		background-color: rgba(88, 75, 75);
-		box-shadow: 0px 50px 100px -20px rgba(50, 50, 93, 0.25), 0px 30px 60px -30px rgba(0, 0, 0, 0.3), inset 0px -2px 6px 0px rgba(10, 37, 64, 0.35);
+		box-shadow:
+			0px 50px 100px -20px rgba(50, 50, 93, 0.25),
+			0px 30px 60px -30px rgba(0, 0, 0, 0.3),
+			inset 0px -2px 6px 0px rgba(10, 37, 64, 0.35);
 		border-radius: 0.5em;
 		text-align: center;
 		margin-top: 0.5rem;
@@ -547,8 +561,8 @@ Tablet Styles: 481px and greater
 
 	/* The scrublands logo image */
 	section.flex-container-body-01 div a img {
-		border-radius: 1.5rem;
-		box-shadow: 0px 50px 100px -20px rgba(50, 50, 93, 0.25), 0px 30px 60px -30px rgba(0, 0, 0, 0.3), inset 0px -2px 6px 0px rgba(10, 37, 64, 0.35);
+		/* border-radius: 1.5rem;
+		box-shadow: 0px 50px 100px -20px rgba(50, 50, 93, 0.25), 0px 30px 60px -30px rgba(0, 0, 0, 0.3), inset 0px -2px 6px 0px rgba(10, 37, 64, 0.35); */
 		display: block;
 		height: auto;
 		margin: auto;
@@ -559,7 +573,10 @@ Tablet Styles: 481px and greater
 
 	section.flex-container-body-01 div.product-page-image > a > img {
 		border-radius: 1.5rem;
-		box-shadow: 0px 50px 100px -20px rgba(50, 50, 93, 0.25), 0px 30px 60px -30px rgba(0, 0, 0, 0.3), inset 0px -2px 6px 0px rgba(10, 37, 64, 0.35);
+		box-shadow:
+			0px 50px 100px -20px rgba(50, 50, 93, 0.25),
+			0px 30px 60px -30px rgba(0, 0, 0, 0.3),
+			inset 0px -2px 6px 0px rgba(10, 37, 64, 0.35);
 		display: block;
 		margin: auto;
 		max-width: 65%;
@@ -626,6 +643,8 @@ Tablet Styles: 481px and greater
 		max-width: 100%;
 		min-height: 100%;
 		border-radius: 1.5rem;
-		box-shadow: 0 29px 52px rgba(0, 0, 0, 0.4), 0 25px 16px rgba(0, 0, 0, 0.2);
+		box-shadow:
+			0 29px 52px rgba(0, 0, 0, 0.4),
+			0 25px 16px rgba(0, 0, 0, 0.2);
 	}
 }

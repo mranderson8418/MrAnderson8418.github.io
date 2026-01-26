@@ -1,228 +1,110 @@
-<!DOCTYPE html>
-
+<!doctype html>
 <html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Scott Michael Anderson | Links</title>
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;500;700&display=swap" rel="stylesheet" />
+		<style>
+			:root {
+				--bg-color: #0f172a;
+				--accent-color: #38bdf8;
+				--card-bg: rgba(255, 255, 255, 0.05);
+				--text-color: #f8fafc;
+			}
 
-<head>
-	<title>Scrublands Apothecary</title>
+			body {
+				background-color: var(--bg-color);
+				color: var(--text-color);
+				font-family: "Inter", sans-serif;
+				margin: 0;
+				display: flex;
+				flex-direction: column;
+				align-items: center;
+				padding: 4rem 1rem;
+				min-height: 100vh;
+			}
 
-	<!-- Metadata of the document -->
-	<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0" />
-	<link href="/css/tf-reset.css" rel="stylesheet" />
-	<link href="/css/01-Typography.css" rel="stylesheet" />
-	<link href="/css/02-General-Layout.css" rel="stylesheet" />
-	<link href="/css/03-Mobile-Layout.css" rel="stylesheet" />
-	<link href="/css/04-Tablet-Layout.css" rel="stylesheet" />
-	<link href="/css/05-Desktop-Layout.css" rel="stylesheet" />
-	<link href="/css/06-Grid-Elements.css" rel="stylesheet" />
-	<link href="/css/08-Clock-Format.css" rel="stylesheet" />
-	<link href="/css/09-Web-Form-Style.css" rel="stylesheet" />
-	<link href="/css/10-Bar-Soap-Desktop.css" rel="stylesheet" />
-	<link href="/css/10-Bar-Soap-Mobile.css" rel="stylesheet" />
-	<script src="/js/DropDownContents.js" defer></script>
-	<script src="/js/BarSoapGallery.js" defer></script>
-	<script src="/js/banner.js" defer></script>
+			header {
+				text-align: center;
+				margin-bottom: 3rem;
+			}
 
-</head>
+			h1 {
+				font-size: 2.5rem;
+				font-weight: 700;
+				letter-spacing: -0.05em;
+				margin-bottom: 0.5rem;
+				background: linear-gradient(to right, #38bdf8, #818cf8);
+				-webkit-background-clip: text;
+				-webkit-text-fill-color: transparent;
+			}
 
+			.subtitle {
+				font-weight: 300;
+				opacity: 0.7;
+				font-size: 1.1rem;
+			}
 
-<body>
+			.links-container {
+				width: 100%;
+				max-width: 600px;
+				display: flex;
+				flex-direction: column;
+				gap: 1rem;
+			}
 
-	<header class="buttons">
-		<a id="banner1" href="index.html"><img id="banner" src="/SOAP_PICS/BANNERS_JPG/BANNERS_12.jpeg"
-				alt="Scrublands Apothecary" /></a>
+			.link-card {
+				background: var(--card-bg);
+				border: 1px solid rgba(255, 255, 255, 0.1);
+				border-radius: 12px;
+				padding: 1.25rem;
+				text-decoration: none;
+				color: var(--text-color);
+				text-align: center;
+				font-weight: 500;
+				transition: all 0.3s ease;
+				backdrop-filter: blur(10px);
+			}
 
-		<nav class='horizontal'>
-			<ul class='horizontal-mainmenu'>
-				<li>
-					<a href="index.html" class='horizontal-mainmenu-dropdown'>Home</a>
-				</li>
-				<!-- href="/html/02-Product-List.html" -->
-				<li>
+			.link-card:hover {
+				transform: translateY(-3px);
+				background: rgba(255, 255, 255, 0.1);
+				border-color: var(--accent-color);
+				box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+			}
 
-					<a id="menuButton" class='horizontal-mainmenu-dropdown'>Product
-						List</a>
+			footer {
+				margin-top: auto;
+				padding-top: 4rem;
+				font-size: 0.8rem;
+				opacity: 0.4;
+			}
+		</style>
+	</head>
+	<body>
+		<header>
+			<h1>Scott Michael Anderson</h1>
+			<div class="subtitle">Portfolio & Professional Links</div>
+		</header>
 
-					<ul id="dropDownMenu" class='horizontal-mainmenu-dropdown-dropdown-contents'>
-						<li><a href="/html/03-Bar-Soap.html">Bar Soap</a></li>
-						<li><a href="/html/04-Liquid-Soap.html">Liquid Soap</a></li>
-						<li><a href="/html/05-Dog-Shampoo.html">Dog Shampoo</a></li>
-					</ul>
-				</li>
+		<main class="links-container">
+			<a href="printsearch-frontend-production.up.railway.app" class="link-card"
+				>Print Search Project with Spring Boot and Authentication and Authorization with Tokens</a
+			>
+			<a href="#" class="link-card">LinkedIn Profile</a>
+			<a href="#" class="link-card">GitHub Repository</a>
+			<a href="#" class="link-card">Twitter / X</a>
+			<a href="#" class="link-card">Medium Blog</a>
+			<a href="#" class="link-card">Digital Resume</a>
+			<a href="#" class="link-card">Project Showcase</a>
+			<a href="#" class="link-card">Photography Gallery</a>
+			<a href="#" class="link-card">Contact Me</a>
+			<a href="#" class="link-card">Latest Case Study</a>
+		</main>
 
-				<li><a href="/html/06-Form-Page.html" class='horizontal-mainmenu-dropdown'>Forms
-						Page</a>
-				</li>
-
-				<li><a href="/html/10-About-Us.html" class='horizontal-mainmenu-dropdown'>About Us
-					</a>
-				</li>
-
-				<li><a href="/html/09-Contact-Us.html" class='horizontal-mainmenu-dropdown'>Contact
-						Us
-					</a></li>
-			</ul>
-		</nav>
-	</header>
-
-	<script>
-		console.log(5 + 6);
-	</script>
-
-
-	<div class="container">
-		<section class="flex-container-body-01">
-			<div>
-				<h1>Scrublands Apothecary</h1>
-			</div>
-			<div>
-				<a href="index.html"> <img src="../SOAP_PICS/LOGOS_JPG/transparentLogo.jpeg" alt="Scrub Logo" /></a>
-			</div>
-
-			<div class="slogan">
-				<h2>&quot;Premium soap for your priceless skin&quot;</h2 </div>
-		</section>
-		<div class="container"></div>
-		<section class="flex-container-body-02">
-			<div>
-				<h1>Welcome to Scrublands Apothecary</h1>
-			</div>
-			<div class="text-item">
-				<p>
-					At <strong>Scrublands Apothecary</strong>, our purpose is to make All-Natural, handcrafted, and
-					luxurious soap for folks that
-					love the fresh open air of the countryside. Whether it be your backyard wilderness, Rocky Mountains,
-					Appalachian Mountains,
-					Grand Canyon, Amazon Rainforest, Banff National Park, Joshua Tree National Park, Sedona Arizona,
-					Scrublands Apothecary has the
-					soap for you. The wagon wheel is symbolic of the all-natural purity and handmade goodness of our
-					soap.
-				</p>
-			</div>
-			<div class="figure-container-01">
-				<div class="text-item">
-					<p>
-						At <strong>Scrublands Apothecary</strong>, our purpose is to make All-Natural, handcrafted, and
-						luxurious soap for folks
-						that love the fresh open air of the countryside. Whether it be your backyard wilderness, Rocky
-						Mountains, Appalachian
-						Mountains, Grand Canyon, Amazon Rainforest, Banff National Park, Joshua Tree National Park,
-						Sedona Arizona, Scrublands
-						Apothecary has the soap for you. The wagon wheel is symbolic of the all-natural purity and
-						handmade goodness of our soap.
-					</p>
-				</div>
-				<div class="image-item">
-					<figure>
-						<div>
-							<a href="/html/11-Bar-Soap-Marine-Green.html"><img
-									src="/SOAP_PICS/MARINE_GREEN_JPG_SQUARE/MARINE_GREEN_new_1_square.jpeg"
-									alt="sea green soap" /></a>
-						</div>
-
-						<div class="figure-caption">
-							<figcaption>Figure 1: Sea Salt Green Soap Bar</figcaption>
-						</div>
-					</figure>
-				</div>
-			</div>
-
-			<div class="text-item">
-				<p>
-					Also, the wagon wheel symbolizes the trailblazing spirit we have for exploring the rugged outdoors
-					and our journey for
-					personal and spiritual growth. If you feel tired and bored of detergent based commercial soaps try
-					our homemade all-natural
-					soaps.
-				</p>
-			</div>
-
-			<div class="figure-container-02">
-				<div class="text-item-02">
-					<p>
-						At Scrublands Apothecary, we maintain soap quality and freshness by making small batches of
-						soap. Over the years, we have
-						improved our soap making process to make a beautiful, long lasting, moisturizing soap bar. We
-						are continually exploring
-						exciting and unique cold process soa p formulations. Unlike commercially bought soap, homemade
-						soap contains glycerin
-						which pulls moisture from the air and deeper layers of the skin into the top layer of skin.
-					</p>
-				</div>
-
-				<div class='image-item-02'>
-					<figure>
-						<div>
-							<a href="/html/15-Bar-Soap-8oz-Oatmeal.html"><img
-									src="/SOAP_PICS/8_OZ_GROUND_JPG_SQUARE/8_oz_GROUND_new_4_square.jpeg"
-									alt="SOAP_PICS\8_OZ_GROUND_JPG\8_oz_GROUND_new_3.jpg" /></a>
-						</div>
-						<div class="figure-caption">
-							<figcaption>Figure 2: Oatmeal Homemade Soap Bar.</figcaption>
-						</div>
-					</figure>
-				</div>
-			</div>
-
-			<div class='figure-container-01'>
-				<div class="text-item">
-					<p>
-						As a result, the skin is moisturized, softened, and protected. We only use natural ingredients
-						in our soap. All essential
-						oils are all-natural, and all fragrances are cosmetically approved and safe for soap making. All
-						Scrublands A pothecary
-						Soap is handcrafted in the countryside of North Carolina. Scrublands Apothecary will guarantee
-						you are %100 satisfied with
-						your purchase or your money back. “Some things are more precious because they don't last long.”
-						― Oscar Wilde, The Picture
-						of Dorian Gray
-					</p>
-				</div>
-
-				<div class="image-item">
-					<figure>
-						<a href="html/04-Liquid-Soap.html"><img
-								src="/SOAP_PICS/LIQUID_SOAP_JPG_SQUARE/Liquid-Lavendar-16oz-32oz_square.jpeg"
-								alt="LIQUID" /></a>
-						<div class="figure-caption">
-							<figcaption>Figure 3: Liquid Homemade Soap.</figcaption>
-						</div>
-					</figure>
-				</div>
-			</div>
-
-			<div class="figure-container-01">
-				<div class="text-item">
-					<h2>Nature's Suds: A Sensory Delight</h2>
-					<p>
-						Indulge your senses in the purest form of cleansing with our handcrafted liquid soap. Crafted
-						from nature's finest
-						ingredients, each bar is a symphony of natural oils and botanical extracts, designed to nourish
-						your skin and uplift your
-						spirit. Experience the gentle lather, the subtle fragrance of essential oils, and the soothing
-						touch of botanicals as they
-						cleanse and revitalize. Our all-natural liquid soap is more than just a product; it's a
-						luxurious experience for the body
-						and soul.
-					</p>
-				</div>
-			</div>
-			<br>
-			<br>
-			<br>
-			<br>
-			<br>
-			<br>
-			<div class="text-item-footer">
-				<p>&copy; 2024 Scrublands Apothecary. All rights reserved.</p>
-			</div>
-			<br>
-			<br>
-			<br>
-		</section>
-
-
-	</div>
-
-
-
+		<footer>&copy; 2026 Scott Michael Anderson</footer>
+	</body>
 </html>

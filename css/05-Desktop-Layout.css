@@ -55,14 +55,20 @@ Desktop Styles: 769px and greater
 	}
 
 	ul.horizontal-mainmenu li a {
-		box-shadow: rgba(50, 50, 93, 0.5) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+		box-shadow:
+			rgba(50, 50, 93, 0.5) 0px 50px 100px -20px,
+			rgba(0, 0, 0, 0.3) 0px 30px 60px -30px,
+			rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
 	}
 
 	ul.horizontal-mainmenu li a {
 		font-size: 3rem;
 	}
 	ul.horizontal-mainmenu li {
-		box-shadow: rgba(11, 11, 11, 0.5) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(31, 31, 32, 0.35) 0px -2px 6px 0px inset;
+		box-shadow:
+			rgba(11, 11, 11, 0.5) 0px 50px 100px -20px,
+			rgba(0, 0, 0, 0.3) 0px 30px 60px -30px,
+			rgba(31, 31, 32, 0.35) 0px -2px 6px 0px inset;
 		padding: 2rem;
 		padding: 0;
 		line-height: normal;
@@ -111,7 +117,10 @@ Desktop Styles: 769px and greater
 		position: relative;
 		font-size: 3rem;
 		padding: 1rem 0rem;
-		box-shadow: rgba(50, 50, 93, 0.5) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+		box-shadow:
+			rgba(50, 50, 93, 0.5) 0px 50px 100px -20px,
+			rgba(0, 0, 0, 0.3) 0px 30px 60px -30px,
+			rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
 	}
 	a.horizontal-mainmenu-dropdown:hover + ul.horizontal-mainmenu-dropdown-dropdown-contents {
 		display: flex;
@@ -261,7 +270,9 @@ Desktop Styles: 769px and greater
 	}
 	section.flexContainerBody-BarSoap article div a img {
 		border-radius: 2.5rem;
-		box-shadow: 0 10px 15px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+		box-shadow:
+			0 10px 15px 0 rgba(0, 0, 0, 0.2),
+			0 6px 20px 0 rgba(0, 0, 0, 0.19);
 		max-width: 100%;
 		min-height: 100%;
 	}
@@ -400,7 +411,10 @@ Desktop Styles: 769px and greater
 	}
 	div.figure-container-01 div.image-item figure a img {
 		border-radius: 1em;
-		box-shadow: 0px 50px 100px -20px rgba(50, 50, 93, 0.25), 0px 30px 60px -30px rgba(0, 0, 0, 0.3), inset 0px -2px 6px 0px rgba(10, 37, 64, 0.35);
+		box-shadow:
+			0px 50px 100px -20px rgba(50, 50, 93, 0.25),
+			0px 30px 60px -30px rgba(0, 0, 0, 0.3),
+			inset 0px -2px 6px 0px rgba(10, 37, 64, 0.35);
 		clear: both;
 		float: right;
 		padding: 0;
@@ -461,7 +475,10 @@ Desktop Styles: 769px and greater
 
 	div.figure-container-02 div.image-item-02 figure div a img {
 		border-radius: 1em;
-		box-shadow: 0px 50px 100px -20px rgba(50, 50, 93, 0.25), 0px 30px 60px -30px rgba(0, 0, 0, 0.3), inset 0px -2px 6px 0px rgba(10, 37, 64, 0.35);
+		box-shadow:
+			0px 50px 100px -20px rgba(50, 50, 93, 0.25),
+			0px 30px 60px -30px rgba(0, 0, 0, 0.3),
+			inset 0px -2px 6px 0px rgba(10, 37, 64, 0.35);
 		clear: both;
 
 		max-width: 100%;
@@ -482,7 +499,10 @@ Desktop Styles: 769px and greater
 		position: relative;
 		text-align: center;
 		margin-top: 1rem;
-		box-shadow: 0px 50px 100px -20px rgba(50, 50, 93, 0.25), 0px 30px 60px -30px rgba(0, 0, 0, 0.3), inset 0px -2px 6px 0px rgba(10, 37, 64, 0.35);
+		box-shadow:
+			0px 50px 100px -20px rgba(50, 50, 93, 0.25),
+			0px 30px 60px -30px rgba(0, 0, 0, 0.3),
+			inset 0px -2px 6px 0px rgba(10, 37, 64, 0.35);
 	}
 
 	div.figure-container-01 .page-title > div > h1 {
@@ -608,8 +628,8 @@ Desktop Styles: 769px and greater
 
 	/* The scrublands logo image */
 	section.flex-container-body-01 div a img {
-		border-radius: 1.5rem;
-		box-shadow: 0px 50px 100px -20px rgba(50, 50, 93, 0.25), 0px 30px 60px -30px rgba(0, 0, 0, 0.3), inset 0px -2px 6px 0px rgba(10, 37, 64, 0.35);
+		/* border-radius: 1.5rem; */
+		/* box-shadow: 0px 50px 100px -20px rgba(50, 50, 93, 0.25), 0px 30px 60px -30px rgba(0, 0, 0, 0.3), inset 0px -2px 6px 0px rgba(10, 37, 64, 0.35); */
 		display: block;
 		line-height: 2rem;
 		line-height: normal;
@@ -621,7 +641,10 @@ Desktop Styles: 769px and greater
 
 	section.flex-container-body-01 div.product-page-image > a > img {
 		border-radius: 1.5rem;
-		box-shadow: 0px 50px 100px -20px rgba(50, 50, 93, 0.25), 0px 30px 60px -30px rgba(0, 0, 0, 0.3), inset 0px -2px 6px 0px rgba(10, 37, 64, 0.35);
+		box-shadow:
+			0px 50px 100px -20px rgba(50, 50, 93, 0.25),
+			0px 30px 60px -30px rgba(0, 0, 0, 0.3),
+			inset 0px -2px 6px 0px rgba(10, 37, 64, 0.35);
 		display: block;
 		padding: 0;
 		max-width: 65%;
@@ -694,7 +717,9 @@ Desktop Styles: 769px and greater
 
 	div.grid-item a img {
 		border-radius: 2.5rem;
-		box-shadow: 0 29px 52px rgba(0, 0, 0, 0.4), 0 25px 16px rgba(0, 0, 0, 0.2);
+		box-shadow:
+			0 29px 52px rgba(0, 0, 0, 0.4),
+			0 25px 16px rgba(0, 0, 0, 0.2);
 		padding: 0;
 		padding: 0;
 		max-width: 100%;
